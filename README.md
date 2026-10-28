@@ -101,6 +101,8 @@ python -m deltaweave demo --output runs/demo-released --mode coarse \
   --model .cache/deepseek-r1-distill-qwen-1.5b --adapter artifacts/behavior
 ```
 
+公开链接已用未认证下载、空缓存和全新目录实际恢复，13 个文件与训练导出的原件逐一一致；两套 adapter 的训练记录与底座绑定检查均通过。[公开下载验收收据](experiments/release-verification.json)。
+
 模型实验严格拆开：冻结模型的知识刷新、相同证据下 QA/行为 SFT 的差异，以及冻结 adapter 面对未见实体/条件组合。当前状态控制数据是可审核的合成接口任务，规则策略本来就能执行其合同；不能拿该分数宣称通用问答提升。正式分组、预算、失败分母和保留集规则见 [模型协议](research/protocol-v1.md)。
 
 `--evidence-view reference_context` 保留完整事实输入、改用绑定引用输出；`--evidence-view reference` 同时缩小输入。宿主在验证后展开完整结果，展开的版本与引用不计作模型生成。两者是实验接口；完整输出、错误引用、缓存命中与实际生成分开记录。默认 `full` 保留原合同。

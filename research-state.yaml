@@ -1,5 +1,5 @@
 project: DeltaWeave
-status: verified_local_publication_in_progress
+status: published_and_verified
 mode: research_and_local_execution
 user_decisions:
   objective: Derive an effective and efficient knowledge-update framework coordinating Agent, RAG and SFT; validate locally and publish on GitHub.
@@ -44,5 +44,16 @@ completed:
   - Independent domain oracle, finite counterexamples, SQLite outbox replay, immutable training provenance.
   - Indexed full/coarse/predicate/adaptive cost comparison, retaining losing routes and timing corrections.
   - Frozen test and future model evaluations; raw outputs and combination failures preserved.
-next_steps:
-  - Publish source plus checked adapter/data release assets and verify public bytes and CI.
+  - Independent frozen reference confirmation and the full-engine semantic-cache control; limitations retained.
+  - GitHub source and v0.1.0 research preview published; Python 3.10/3.12 CPU CI passed.
+  - Anonymous public download into fresh cache/destination restored all 13 files; nine asset hashes and both adapter provenances verified.
+publication:
+  repository: https://github.com/1766421040-ux/deltaweave
+  release: https://github.com/1766421040-ux/deltaweave/releases/tag/v0.1.0
+  tag_commit: d7d25ad2d429855ce716738b7292ccca6542c09f
+  verification_receipt: experiments/release-verification.json
+next_steps: []
+unresolved_research_limits:
+  - No universal optimality, arbitrary semantic-retrieval completeness, or production distributed-CDC claim.
+  - Optional model still fails unseen combinations and long evidence; the rule controller remains the default.
+  - Frozen learning data and adapter provenance do not establish online continual learning or parameter unlearning.

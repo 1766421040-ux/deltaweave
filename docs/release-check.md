@@ -86,8 +86,12 @@ python scripts/benchmark_domain.py --output /tmp/deltaweave-domain-new.json
 
 [GitHub Actions 40638152693](https://github.com/1766421040-ux/deltaweave/actions/runs/40638152693) 已完成，Ubuntu 的 Python 3.10 与 3.12 两个 job 均为 success。它们执行 CPU 测试、SQLite demo 和独立领域基准，不下载或运行模型。模型运行证据来自本机单独保存的收据。
 
+加入分片恢复、其回归测试及完整结果说明的提交为 `d7d25ad2d429855ce716738b7292ccca6542c09f`，源码树 `f725cc4f806d6756fbfec2b6e2c2050bef2e3853` 已实际 fetch 比对。[该版本 CI 40640055032](https://github.com/1766421040-ux/deltaweave/actions/runs/40640055032) 的 Python 3.10 / 3.12 均已通过。
+
 ## 权重与训练数据分发
 
 完整 ZIP 为 34,295,413 字节，SHA-256 为 `b9078114f7df68acd8edc36022f3c51f75bbf0a0fb1eaa683daf3600098d86fb`。首次整包上传被服务端中断，因此改为 9 个最大 4 MiB 的分片；拆分没有改变原始 ZIP、两个 adapter 或任何训练数据字节。仓库内 [release manifest](../artifacts/release.json) 绑定分片顺序、长度、摘要与 13 个文件的摘要。
 
 `fetch_release.py` 只访问固定 GitHub Release URL，逐片校验并缓存，合并后再次核对完整 ZIP，随后核对成员白名单与解压摘要；既有目标文件不相同则拒绝覆盖。11 个分发测试包含模拟网络中断、已完成分片复用、错误顺序/URL/大小、分片损坏、合并摘要不一致和解压路径攻击。公开下载的实际验收状态以 manifest 的 `publication_status` 和后续验证收据为准。
+
+[v0.1.0 研究预览版](https://github.com/1766421040-ux/deltaweave/releases/tag/v0.1.0) 已公开发布，标签绑定 `d7d25ad2d429855ce716738b7292ccca6542c09f`。从不带认证的公开下载链接出发，在全新缓存和全新恢复目录内实际完成九片下载、整包合并及全部 13 个文件校验，共恢复 40,943,664 字节。GitHub 记录的每个已上传附件摘要也与 manifest 一致。重新恢复时跳过全部 13 个一致文件；两个 adapter 均通过底座摘要、训练配置与监督 token 预算绑定检查。详见 [完整公开下载收据](../experiments/release-verification.json)。这只验证传输、文件及来源一致，不新增模型质量结论。

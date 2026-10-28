@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "release_tag": "v0.1.0",
-  "publication_status": "pending",
+  "publication_status": "verified",
   "archive": {
     "filename": "deltaweave-artifacts-v0.1.0.zip",
     "url": null,
@@ -133,5 +133,11 @@
     "permissions": "regular files 0644",
     "comment": "",
     "determinism_scope": "Fixed names, metadata and input bytes; compressed bytes may depend on zlib version."
+  },
+  "verification": {
+    "receipt": "experiments/release-verification.json",
+    "verified_at_utc": "2026-10-28T05:54:11.211585+00:00",
+    "release_url": "https://github.com/1766421040-ux/deltaweave/releases/tag/v0.1.0",
+    "tag_commit": "d7d25ad2d429855ce716738b7292ccca6542c09f"
   }
 }
