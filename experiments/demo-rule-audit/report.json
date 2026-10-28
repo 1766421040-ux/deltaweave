@@ -1,0 +1,3282 @@
+{
+  "schema_version": 1,
+  "engine": "coarse",
+  "model": null,
+  "source": {
+    "kind": "managed_sqlite",
+    "source_id": "b38790b8-cb88-43a3-bfa4-17698483f3ab",
+    "path": "knowledge.sqlite"
+  },
+  "catalog_sha256": "968841203b47931ce00871fa5cb0258194fd1ac8a90544a060a68103d3ea66d1",
+  "runs": [
+    {
+      "event": {
+        "name": "initial",
+        "upserts": {},
+        "deletes": {}
+      },
+      "source_receipt": null,
+      "source_binding": {
+        "source_id": "b38790b8-cb88-43a3-bfa4-17698483f3ab",
+        "source_revision": 0,
+        "store_revision": 0,
+        "snapshot_id": "b38790b8-cb88-43a3-bfa4-17698483f3ab@0",
+        "published_snapshot_sha256": "872999dea65c0af8ec165c8f9b746e64dfdca3567a3b4655d7725dd901b88c55"
+      },
+      "result": {
+        "status": "completed",
+        "answer": {
+          "action": "answer",
+          "arguments": {
+            "status": "resolved",
+            "selection": {
+              "certifi": "2025.1.31",
+              "charset-normalizer": "3.4.2",
+              "idna": "3.10",
+              "requests": "2.32.5",
+              "urllib3": "2.5.0"
+            },
+            "citations": [
+              "environment:declared-mac:platform_python_implementation",
+              "environment:declared-mac:python_full_version",
+              "projects:certifi",
+              "projects:charset-normalizer",
+              "projects:idna",
+              "projects:requests",
+              "projects:urllib3",
+              "releases:certifi==2023.7.22",
+              "releases:certifi==2024.8.30",
+              "releases:certifi==2025.1.31",
+              "releases:charset-normalizer==3.1.0",
+              "releases:charset-normalizer==3.3.2",
+              "releases:charset-normalizer==3.4.2",
+              "releases:idna==3.10",
+              "releases:idna==3.4",
+              "releases:idna==3.7",
+              "releases:requests==2.31.0",
+              "releases:requests==2.32.0",
+              "releases:requests==2.32.3",
+              "releases:requests==2.32.5",
+              "releases:urllib3==1.26.18",
+              "releases:urllib3==2.0.0",
+              "releases:urllib3==2.0.7",
+              "releases:urllib3==2.2.3",
+              "releases:urllib3==2.5.0"
+            ]
+          }
+        },
+        "snapshot_revision": 0,
+        "snapshot_sha256": "872999dea65c0af8ec165c8f9b746e64dfdca3567a3b4655d7725dd901b88c55",
+        "runtime_binding": {
+          "snapshot_revision": 0,
+          "snapshot_sha256": "872999dea65c0af8ec165c8f9b746e64dfdca3567a3b4655d7725dd901b88c55",
+          "registry_versions": {
+            "controller_python": "1",
+            "resolve": "finite-domain-v1",
+            "training_sample": "finite-resolver-answer-v1"
+          },
+          "registry_fingerprint": "b7754c4dc4fe55daed4617572d4c7433c2d4d77e5c2d038d8b2388d9b743a6e4"
+        },
+        "query": {
+          "as_of": "2026-10-28",
+          "environment": "declared-mac",
+          "requirements": [
+            "requests>=2.31"
+          ]
+        },
+        "policy_identity": "rule-v1",
+        "steps": [
+          {
+            "state": {
+              "request": "Resolve requests>=2.31 within the selected catalog.",
+              "python": "3.11.9",
+              "target_revision": 0,
+              "publication_ready": true,
+              "observation": null,
+              "cached_answer": null,
+              "catalog_scope": "selected universal-wheel files only; declared constraints, not runtime compatibility"
+            },
+            "action": {
+              "action": "refresh",
+              "arguments": {
+                "tool": "resolve"
+              }
+            },
+            "accepted": true,
+            "receipt": {
+              "kind": "rule",
+              "cache_hit": false,
+              "prompt_sha256": "256ddf70e13ed24d3a0e987a9dbf5fedf83daddd20ac607bf12d77d4cedb08d5"
+            }
+          },
+          {
+            "state": {
+              "request": "Resolve requests>=2.31 within the selected catalog.",
+              "python": "3.11.9",
+              "target_revision": 0,
+              "publication_ready": true,
+              "observation": {
+                "computed_at": 0,
+                "validated_at": 0,
+                "status": "resolved",
+                "selection": {
+                  "certifi": "2025.1.31",
+                  "charset-normalizer": "3.4.2",
+                  "idna": "3.10",
+                  "requests": "2.32.5",
+                  "urllib3": "2.5.0"
+                },
+                "citations": [
+                  "environment:declared-mac:platform_python_implementation",
+                  "environment:declared-mac:python_full_version",
+                  "projects:certifi",
+                  "projects:charset-normalizer",
+                  "projects:idna",
+                  "projects:requests",
+                  "projects:urllib3",
+                  "releases:certifi==2023.7.22",
+                  "releases:certifi==2024.8.30",
+                  "releases:certifi==2025.1.31",
+                  "releases:charset-normalizer==3.1.0",
+                  "releases:charset-normalizer==3.3.2",
+                  "releases:charset-normalizer==3.4.2",
+                  "releases:idna==3.10",
+                  "releases:idna==3.4",
+                  "releases:idna==3.7",
+                  "releases:requests==2.31.0",
+                  "releases:requests==2.32.0",
+                  "releases:requests==2.32.3",
+                  "releases:requests==2.32.5",
+                  "releases:urllib3==1.26.18",
+                  "releases:urllib3==2.0.0",
+                  "releases:urllib3==2.0.7",
+                  "releases:urllib3==2.2.3",
+                  "releases:urllib3==2.5.0"
+                ],
+                "issues": []
+              },
+              "cached_answer": null,
+              "catalog_scope": "selected universal-wheel files only; declared constraints, not runtime compatibility"
+            },
+            "action": {
+              "action": "answer",
+              "arguments": {
+                "status": "resolved",
+                "selection": {
+                  "certifi": "2025.1.31",
+                  "charset-normalizer": "3.4.2",
+                  "idna": "3.10",
+                  "requests": "2.32.5",
+                  "urllib3": "2.5.0"
+                },
+                "citations": [
+                  "environment:declared-mac:platform_python_implementation",
+                  "environment:declared-mac:python_full_version",
+                  "projects:certifi",
+                  "projects:charset-normalizer",
+                  "projects:idna",
+                  "projects:requests",
+                  "projects:urllib3",
+                  "releases:certifi==2023.7.22",
+                  "releases:certifi==2024.8.30",
+                  "releases:certifi==2025.1.31",
+                  "releases:charset-normalizer==3.1.0",
+                  "releases:charset-normalizer==3.3.2",
+                  "releases:charset-normalizer==3.4.2",
+                  "releases:idna==3.10",
+                  "releases:idna==3.4",
+                  "releases:idna==3.7",
+                  "releases:requests==2.31.0",
+                  "releases:requests==2.32.0",
+                  "releases:requests==2.32.3",
+                  "releases:requests==2.32.5",
+                  "releases:urllib3==1.26.18",
+                  "releases:urllib3==2.0.0",
+                  "releases:urllib3==2.0.7",
+                  "releases:urllib3==2.2.3",
+                  "releases:urllib3==2.5.0"
+                ]
+              }
+            },
+            "accepted": true,
+            "receipt": {
+              "kind": "rule",
+              "cache_hit": false,
+              "prompt_sha256": "3e1bba8aa82ce6628a25044e0b90ede10c683dba98379fc25dd8b1fedc23d982"
+            }
+          }
+        ],
+        "tool_receipts": [
+          {
+            "args": {
+              "as_of": "2026-10-28",
+              "environment": "declared-mac",
+              "requirements": [
+                "requests>=2.31"
+              ]
+            },
+            "computed_at": 0,
+            "dependencies": [
+              {
+                "kind": "query",
+                "query": {
+                  "limit": null,
+                  "order_by": [],
+                  "scope": {},
+                  "select": null,
+                  "table": "aliases",
+                  "where": {
+                    "alias": "requests"
+                  }
+                },
+                "value_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+              },
+              {
+                "kind": "query",
+                "query": {
+                  "limit": null,
+                  "order_by": [],
+                  "scope": {
+                    "project": "requests"
+                  },
+                  "select": null,
+                  "table": "projects",
+                  "where": {
+                    "project": "requests"
+                  }
+                },
+                "value_sha256": "b1fa6ee6998d87c451afedd871a5ebbf15d468eed9c79b019c9d50a28cfa5809"
+              },
+              {
+                "kind": "query",
+                "query": {
+                  "limit": null,
+                  "order_by": [],
+                  "scope": {
+                    "project": "requests"
+                  },
+                  "select": null,
+                  "table": "releases",
+                  "where": {
+                    "project": "requests"
+                  }
+                },
+                "value_sha256": "e1c86adc65af1dd71c9288eabf92de921356a1a0571df82a08bac50a2462f613"
+              },
+              {
+                "kind": "query",
+                "query": {
+                  "limit": null,
+                  "order_by": [],
+                  "scope": {},
+                  "select": null,
+                  "table": "environment",
+                  "where": {
+                    "environment": "declared-mac",
+                    "field": "python_full_version"
+                  }
+                },
+                "value_sha256": "8e97ccc339b2229446b1e3ef4cb80564bc861d15c2303733fbafa74af8ef1cea"
+              },
+              {
+                "kind": "query",
+                "query": {
+                  "limit": null,
+                  "order_by": [],
+                  "scope": {},
+                  "select": null,
+                  "table": "aliases",
+                  "where": {
+                    "alias": "charset-normalizer"
+                  }
+                },
+                "value_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+              },
+              {
+                "kind": "query",
+                "query": {
+                  "limit": null,
+                  "order_by": [],
+                  "scope": {},
+                  "select": null,
+                  "table": "aliases",
+                  "where": {
+                    "alias": "idna"
+                  }
+                },
+                "value_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+              },
+              {
+                "kind": "query",
+                "query": {
+                  "limit": null,
+                  "order_by": [],
+                  "scope": {},
+                  "select": null,
+                  "table": "aliases",
+                  "where": {
+                    "alias": "urllib3"
+                  }
+                },
+                "value_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+              },
+              {
+                "kind": "query",
+                "query": {
+                  "limit": null,
+                  "order_by": [],
+                  "scope": {},
+                  "select": null,
+                  "table": "aliases",
+                  "where": {
+                    "alias": "certifi"
+                  }
+                },
+                "value_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+              },
+              {
+                "kind": "query",
+                "query": {
+                  "limit": null,
+                  "order_by": [],
+                  "scope": {
+                    "project": "*"
+                  },
+                  "select": null,
+                  "table": "policies",
+                  "where": {
+                    "project": "*"
+                  }
+                },
+                "value_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+              },
+              {
+                "kind": "query",
+                "query": {
+                  "limit": null,
+                  "order_by": [],
+                  "scope": {
+                    "project": "requests"
+                  },
+                  "select": null,
+                  "table": "policies",
+                  "where": {
+                    "project": "requests"
+                  }
+                },
+                "value_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+              },
+              {
+                "kind": "query",
+                "query": {
+                  "limit": null,
+                  "order_by": [],
+                  "scope": {
+                    "project": "certifi"
+                  },
+                  "select": null,
+                  "table": "projects",
+                  "where": {
+                    "project": "certifi"
+                  }
+                },
+                "value_sha256": "c18d1c0943e6b5e9b81a83f49cc5ec2dc6095d1889f4ddeac0a42477cd53c052"
+              },
+              {
+                "kind": "query",
+                "query": {
+                  "limit": null,
+                  "order_by": [],
+                  "scope": {
+                    "project": "certifi"
+                  },
+                  "select": null,
+                  "table": "releases",
+                  "where": {
+                    "project": "certifi"
+                  }
+                },
+                "value_sha256": "420f23ff340b084830300f339b93606a8a36e86b313b95efaba25b6d99a071d0"
+              },
+              {
+                "kind": "query",
+                "query": {
+                  "limit": null,
+                  "order_by": [],
+                  "scope": {
+                    "project": "certifi"
+                  },
+                  "select": null,
+                  "table": "policies",
+                  "where": {
+                    "project": "certifi"
+                  }
+                },
+                "value_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+              },
+              {
+                "kind": "query",
+                "query": {
+                  "limit": null,
+                  "order_by": [],
+                  "scope": {
+                    "project": "charset-normalizer"
+                  },
+                  "select": null,
+                  "table": "projects",
+                  "where": {
+                    "project": "charset-normalizer"
+                  }
+                },
+                "value_sha256": "b5850aa7abcbd111565bebc356c012e8a59265848563d69269d5014c6acf0153"
+              },
+              {
+                "kind": "query",
+                "query": {
+                  "limit": null,
+                  "order_by": [],
+                  "scope": {
+                    "project": "charset-normalizer"
+                  },
+                  "select": null,
+                  "table": "releases",
+                  "where": {
+                    "project": "charset-normalizer"
+                  }
+                },
+                "value_sha256": "3de86e50d765ed69cf97b8457e6e76d230fc69d9ea38e4972fa9194069ed2700"
+              },
+              {
+                "kind": "query",
+                "query": {
+                  "limit": null,
+                  "order_by": [],
+                  "scope": {
+                    "project": "charset-normalizer"
+                  },
+                  "select": null,
+                  "table": "policies",
+                  "where": {
+                    "project": "charset-normalizer"
+                  }
+                },
+                "value_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+              },
+              {
+                "kind": "query",
+                "query": {
+                  "limit": null,
+                  "order_by": [],
+                  "scope": {
+                    "project": "idna"
+                  },
+                  "select": null,
+                  "table": "projects",
+                  "where": {
+                    "project": "idna"
+                  }
+                },
+                "value_sha256": "795ac648c58b74b3d545ce593f55eac1c391747df00a367a0f46108fc7289f66"
+              },
+              {
+                "kind": "query",
+                "query": {
+                  "limit": null,
+                  "order_by": [],
+                  "scope": {
+                    "project": "idna"
+                  },
+                  "select": null,
+                  "table": "releases",
+                  "where": {
+                    "project": "idna"
+                  }
+                },
+                "value_sha256": "e34c568e3b498ced058952ab4fa29317e79d09683b0b6df78109cefbc083c906"
+              },
+              {
+                "kind": "query",
+                "query": {
+                  "limit": null,
+                  "order_by": [],
+                  "scope": {
+                    "project": "idna"
+                  },
+                  "select": null,
+                  "table": "policies",
+                  "where": {
+                    "project": "idna"
+                  }
+                },
+                "value_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+              },
+              {
+                "kind": "query",
+                "query": {
+                  "limit": null,
+                  "order_by": [],
+                  "scope": {
+                    "project": "urllib3"
+                  },
+                  "select": null,
+                  "table": "projects",
+                  "where": {
+                    "project": "urllib3"
+                  }
+                },
+                "value_sha256": "b6866fbc7e1287e7d7f230d26a7c55a846156b69798ccc220cef8b19e6e18aac"
+              },
+              {
+                "kind": "query",
+                "query": {
+                  "limit": null,
+                  "order_by": [],
+                  "scope": {
+                    "project": "urllib3"
+                  },
+                  "select": null,
+                  "table": "releases",
+                  "where": {
+                    "project": "urllib3"
+                  }
+                },
+                "value_sha256": "67dbb2c2a02e8c7fd0950bb7ef7291ec0af8fdcacbd07e51a6a2843fa03119a8"
+              },
+              {
+                "kind": "query",
+                "query": {
+                  "limit": null,
+                  "order_by": [],
+                  "scope": {},
+                  "select": null,
+                  "table": "environment",
+                  "where": {
+                    "environment": "declared-mac",
+                    "field": "platform_python_implementation"
+                  }
+                },
+                "value_sha256": "6faea8668add0bfb5ea851ece8a20f35f9df800ac5ae040f0e31e4fd37dc1481"
+              },
+              {
+                "kind": "query",
+                "query": {
+                  "limit": null,
+                  "order_by": [],
+                  "scope": {
+                    "project": "urllib3"
+                  },
+                  "select": null,
+                  "table": "policies",
+                  "where": {
+                    "project": "urllib3"
+                  }
+                },
+                "value_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+              }
+            ],
+            "execution_policy": {
+              "reason": "fixed_mode",
+              "requested_mode": "coarse",
+              "selected_mode": "coarse",
+              "snapshot": 0
+            },
+            "key_sha256": "6e0d0640f01bd6f972ffe09e926a6afc5525081aadda252314bf01fc888c8036",
+            "kind": "task",
+            "mode": "coarse",
+            "name": "resolve",
+            "registry_epoch": 3,
+            "stats": {
+              "adaptive_coarse_runs": 0,
+              "adaptive_fallback_runs": 0,
+              "adaptive_full_runs": 0,
+              "adaptive_policy_seconds": 0.0,
+              "dependency_checks": 0,
+              "dependency_edges_written": 23,
+              "guard_checks": 0,
+              "guard_matches": 0,
+              "guard_seconds": 0.0,
+              "observation_changes": 0,
+              "query_executions": 23,
+              "query_receipt_writes": 23,
+              "query_reuses": 0,
+              "query_scans": 25,
+              "query_seconds": 0.0004715430000000187,
+              "run_seconds": 0.007950084000000003,
+              "runs": 1,
+              "task_executions": 1,
+              "task_reuses": 0,
+              "task_self_seconds": 0.007124418000000014,
+              "task_validations": 0,
+              "trace_writes": 1,
+              "validation_self_seconds": 0.0
+            },
+            "status": "valid",
+            "validated_at": 0,
+            "validation_contract": "conservative_observation",
+            "value_sha256": "53f00cf9290889e6edce6118b2d302cfedc9608159d457b63586cc1487527483",
+            "version": "finite-domain-v1"
+          }
+        ],
+        "seconds": 0.008900582999999997,
+        "fresh_model_calls": 0,
+        "model_cache_hits": 0,
+        "closed_loop_contract_success": true,
+        "raw_model_success": null,
+        "scope": "Finite declared constraints; a blocked prediction is not counted as a correct model answer."
+      },
+      "dataset_manifest": "datasets/dataset-r0-cd802fce5f5ffac2.json",
+      "dataset_sha256": "cd802fce5f5ffac2222a9e8fa45b189bab9a30db34b4720a89f5285a778eba27",
+      "changed_sample_ids": [
+        "requests-baseline"
+      ]
+    },
+    {
+      "event": {
+        "name": "new_org_constraint",
+        "upserts": {
+          "policies": [
+            {
+              "id": "demo-deny",
+              "project": "requests",
+              "kind": "deny",
+              "versions": ">=2.32"
+            }
+          ]
+        },
+        "deletes": {}
+      },
+      "source_receipt": {
+        "source_id": "b38790b8-cb88-43a3-bfa4-17698483f3ab",
+        "revision": 1,
+        "request_id": "demo-1",
+        "duplicate": false
+      },
+      "source_binding": {
+        "source_id": "b38790b8-cb88-43a3-bfa4-17698483f3ab",
+        "source_revision": 1,
+        "store_revision": 1,
+        "snapshot_id": "b38790b8-cb88-43a3-bfa4-17698483f3ab@1",
+        "published_snapshot_sha256": "d1fcf19c5e2bda86e2471b1f34f6ac73c00702309430a7ed0fda5acb60c6ec53"
+      },
+      "result": {
+        "status": "completed",
+        "answer": {
+          "action": "answer",
+          "arguments": {
+            "status": "resolved",
+            "selection": {
+              "certifi": "2025.1.31",
+              "charset-normalizer": "3.4.2",
+              "idna": "3.10",
+              "requests": "2.31.0",
+              "urllib3": "2.5.0"
+            },
+            "citations": [
+              "environment:declared-mac:platform_python_implementation",
+              "environment:declared-mac:python_full_version",
+              "policies:demo-deny",
+              "projects:certifi",
+              "projects:charset-normalizer",
+              "projects:idna",
+              "projects:requests",
+              "projects:urllib3",
+              "releases:certifi==2023.7.22",
+              "releases:certifi==2024.8.30",
+              "releases:certifi==2025.1.31",
+              "releases:charset-normalizer==3.1.0",
+              "releases:charset-normalizer==3.3.2",
+              "releases:charset-normalizer==3.4.2",
+              "releases:idna==3.10",
+              "releases:idna==3.4",
+              "releases:idna==3.7",
+              "releases:requests==2.31.0",
+              "releases:requests==2.32.0",
+              "releases:requests==2.32.3",
+              "releases:requests==2.32.5",
+              "releases:urllib3==1.26.18",
+              "releases:urllib3==2.0.0",
+              "releases:urllib3==2.0.7",
+              "releases:urllib3==2.2.3",
+              "releases:urllib3==2.5.0"
+            ]
+          }
+        },
+        "snapshot_revision": 1,
+        "snapshot_sha256": "d1fcf19c5e2bda86e2471b1f34f6ac73c00702309430a7ed0fda5acb60c6ec53",
+        "runtime_binding": {
+          "snapshot_revision": 1,
+          "snapshot_sha256": "d1fcf19c5e2bda86e2471b1f34f6ac73c00702309430a7ed0fda5acb60c6ec53",
+          "registry_versions": {
+            "controller_python": "1",
+            "resolve": "finite-domain-v1",
+            "training_sample": "finite-resolver-answer-v1"
+          },
+          "registry_fingerprint": "b7754c4dc4fe55daed4617572d4c7433c2d4d77e5c2d038d8b2388d9b743a6e4"
+        },
+        "query": {
+          "as_of": "2026-10-28",
+          "environment": "declared-mac",
+          "requirements": [
+            "requests>=2.31"
+          ]
+        },
+        "policy_identity": "rule-v1",
+        "steps": [
+          {
+            "state": {
+              "request": "Resolve requests>=2.31 within the selected catalog.",
+              "python": "3.11.9",
+              "target_revision": 1,
+              "publication_ready": true,
+              "observation": {
+                "computed_at": 1,
+                "validated_at": 1,
+                "status": "resolved",
+                "selection": {
+                  "certifi": "2025.1.31",
+                  "charset-normalizer": "3.4.2",
+                  "idna": "3.10",
+                  "requests": "2.31.0",
+                  "urllib3": "2.5.0"
+                },
+                "citations": [
+                  "environment:declared-mac:platform_python_implementation",
+                  "environment:declared-mac:python_full_version",
+                  "policies:demo-deny",
+                  "projects:certifi",
+                  "projects:charset-normalizer",
+                  "projects:idna",
+                  "projects:requests",
+                  "projects:urllib3",
+                  "releases:certifi==2023.7.22",
+                  "releases:certifi==2024.8.30",
+                  "releases:certifi==2025.1.31",
+                  "releases:charset-normalizer==3.1.0",
+                  "releases:charset-normalizer==3.3.2",
+                  "releases:charset-normalizer==3.4.2",
+                  "releases:idna==3.10",
+                  "releases:idna==3.4",
+                  "releases:idna==3.7",
+                  "releases:requests==2.31.0",
+                  "releases:requests==2.32.0",
+                  "releases:requests==2.32.3",
+                  "releases:requests==2.32.5",
+                  "releases:urllib3==1.26.18",
+                  "releases:urllib3==2.0.0",
+                  "releases:urllib3==2.0.7",
+                  "releases:urllib3==2.2.3",
+                  "releases:urllib3==2.5.0"
+                ],
+                "issues": []
+              },
+              "cached_answer": null,
+              "catalog_scope": "selected universal-wheel files only; declared constraints, not runtime compatibility"
+            },
+            "action": {
+              "action": "answer",
+              "arguments": {
+                "status": "resolved",
+                "selection": {
+                  "certifi": "2025.1.31",
+                  "charset-normalizer": "3.4.2",
+                  "idna": "3.10",
+                  "requests": "2.31.0",
+                  "urllib3": "2.5.0"
+                },
+                "citations": [
+                  "environment:declared-mac:platform_python_implementation",
+                  "environment:declared-mac:python_full_version",
+                  "policies:demo-deny",
+                  "projects:certifi",
+                  "projects:charset-normalizer",
+                  "projects:idna",
+                  "projects:requests",
+                  "projects:urllib3",
+                  "releases:certifi==2023.7.22",
+                  "releases:certifi==2024.8.30",
+                  "releases:certifi==2025.1.31",
+                  "releases:charset-normalizer==3.1.0",
+                  "releases:charset-normalizer==3.3.2",
+                  "releases:charset-normalizer==3.4.2",
+                  "releases:idna==3.10",
+                  "releases:idna==3.4",
+                  "releases:idna==3.7",
+                  "releases:requests==2.31.0",
+                  "releases:requests==2.32.0",
+                  "releases:requests==2.32.3",
+                  "releases:requests==2.32.5",
+                  "releases:urllib3==1.26.18",
+                  "releases:urllib3==2.0.0",
+                  "releases:urllib3==2.0.7",
+                  "releases:urllib3==2.2.3",
+                  "releases:urllib3==2.5.0"
+                ]
+              }
+            },
+            "accepted": true,
+            "receipt": {
+              "kind": "rule",
+              "cache_hit": false,
+              "prompt_sha256": "36a0a328733cf020a5656411934c2e8177e6e11274e4209534b4f3b77f88eac4"
+            }
+          }
+        ],
+        "tool_receipts": [
+          {
+            "args": {
+              "as_of": "2026-10-28",
+              "environment": "declared-mac",
+              "requirements": [
+                "requests>=2.31"
+              ]
+            },
+            "computed_at": 1,
+            "dependencies": [
+              {
+                "kind": "query",
+                "query": {
+                  "limit": null,
+                  "order_by": [],
+                  "scope": {},
+                  "select": null,
+                  "table": "aliases",
+                  "where": {
+                    "alias": "requests"
+                  }
+                },
+                "value_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+              },
+              {
+                "kind": "query",
+                "query": {
+                  "limit": null,
+                  "order_by": [],
+                  "scope": {
+                    "project": "requests"
+                  },
+                  "select": null,
+                  "table": "projects",
+                  "where": {
+                    "project": "requests"
+                  }
+                },
+                "value_sha256": "b1fa6ee6998d87c451afedd871a5ebbf15d468eed9c79b019c9d50a28cfa5809"
+              },
+              {
+                "kind": "query",
+                "query": {
+                  "limit": null,
+                  "order_by": [],
+                  "scope": {
+                    "project": "requests"
+                  },
+                  "select": null,
+                  "table": "releases",
+                  "where": {
+                    "project": "requests"
+                  }
+                },
+                "value_sha256": "e1c86adc65af1dd71c9288eabf92de921356a1a0571df82a08bac50a2462f613"
+              },
+              {
+                "kind": "query",
+                "query": {
+                  "limit": null,
+                  "order_by": [],
+                  "scope": {},
+                  "select": null,
+                  "table": "environment",
+                  "where": {
+                    "environment": "declared-mac",
+                    "field": "python_full_version"
+                  }
+                },
+                "value_sha256": "8e97ccc339b2229446b1e3ef4cb80564bc861d15c2303733fbafa74af8ef1cea"
+              },
+              {
+                "kind": "query",
+                "query": {
+                  "limit": null,
+                  "order_by": [],
+                  "scope": {},
+                  "select": null,
+                  "table": "aliases",
+                  "where": {
+                    "alias": "charset-normalizer"
+                  }
+                },
+                "value_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+              },
+              {
+                "kind": "query",
+                "query": {
+                  "limit": null,
+                  "order_by": [],
+                  "scope": {},
+                  "select": null,
+                  "table": "aliases",
+                  "where": {
+                    "alias": "idna"
+                  }
+                },
+                "value_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+              },
+              {
+                "kind": "query",
+                "query": {
+                  "limit": null,
+                  "order_by": [],
+                  "scope": {},
+                  "select": null,
+                  "table": "aliases",
+                  "where": {
+                    "alias": "urllib3"
+                  }
+                },
+                "value_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+              },
+              {
+                "kind": "query",
+                "query": {
+                  "limit": null,
+                  "order_by": [],
+                  "scope": {},
+                  "select": null,
+                  "table": "aliases",
+                  "where": {
+                    "alias": "certifi"
+                  }
+                },
+                "value_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+              },
+              {
+                "kind": "query",
+                "query": {
+                  "limit": null,
+                  "order_by": [],
+                  "scope": {
+                    "project": "*"
+                  },
+                  "select": null,
+                  "table": "policies",
+                  "where": {
+                    "project": "*"
+                  }
+                },
+                "value_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+              },
+              {
+                "kind": "query",
+                "query": {
+                  "limit": null,
+                  "order_by": [],
+                  "scope": {
+                    "project": "requests"
+                  },
+                  "select": null,
+                  "table": "policies",
+                  "where": {
+                    "project": "requests"
+                  }
+                },
+                "value_sha256": "9d28e8b3075b122eb8a52099e4289e80c463faadcad6c6005f70c10c8ff62998"
+              },
+              {
+                "kind": "query",
+                "query": {
+                  "limit": null,
+                  "order_by": [],
+                  "scope": {
+                    "project": "certifi"
+                  },
+                  "select": null,
+                  "table": "projects",
+                  "where": {
+                    "project": "certifi"
+                  }
+                },
+                "value_sha256": "c18d1c0943e6b5e9b81a83f49cc5ec2dc6095d1889f4ddeac0a42477cd53c052"
+              },
+              {
+                "kind": "query",
+                "query": {
+                  "limit": null,
+                  "order_by": [],
+                  "scope": {
+                    "project": "certifi"
+                  },
+                  "select": null,
+                  "table": "releases",
+                  "where": {
+                    "project": "certifi"
+                  }
+                },
+                "value_sha256": "420f23ff340b084830300f339b93606a8a36e86b313b95efaba25b6d99a071d0"
+              },
+              {
+                "kind": "query",
+                "query": {
+                  "limit": null,
+                  "order_by": [],
+                  "scope": {
+                    "project": "certifi"
+                  },
+                  "select": null,
+                  "table": "policies",
+                  "where": {
+                    "project": "certifi"
+                  }
+                },
+                "value_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+              },
+              {
+                "kind": "query",
+                "query": {
+                  "limit": null,
+                  "order_by": [],
+                  "scope": {
+                    "project": "charset-normalizer"
+                  },
+                  "select": null,
+                  "table": "projects",
+                  "where": {
+                    "project": "charset-normalizer"
+                  }
+                },
+                "value_sha256": "b5850aa7abcbd111565bebc356c012e8a59265848563d69269d5014c6acf0153"
+              },
+              {
+                "kind": "query",
+                "query": {
+                  "limit": null,
+                  "order_by": [],
+                  "scope": {
+                    "project": "charset-normalizer"
+                  },
+                  "select": null,
+                  "table": "releases",
+                  "where": {
+                    "project": "charset-normalizer"
+                  }
+                },
+                "value_sha256": "3de86e50d765ed69cf97b8457e6e76d230fc69d9ea38e4972fa9194069ed2700"
+              },
+              {
+                "kind": "query",
+                "query": {
+                  "limit": null,
+                  "order_by": [],
+                  "scope": {
+                    "project": "charset-normalizer"
+                  },
+                  "select": null,
+                  "table": "policies",
+                  "where": {
+                    "project": "charset-normalizer"
+                  }
+                },
+                "value_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+              },
+              {
+                "kind": "query",
+                "query": {
+                  "limit": null,
+                  "order_by": [],
+                  "scope": {
+                    "project": "idna"
+                  },
+                  "select": null,
+                  "table": "projects",
+                  "where": {
+                    "project": "idna"
+                  }
+                },
+                "value_sha256": "795ac648c58b74b3d545ce593f55eac1c391747df00a367a0f46108fc7289f66"
+              },
+              {
+                "kind": "query",
+                "query": {
+                  "limit": null,
+                  "order_by": [],
+                  "scope": {
+                    "project": "idna"
+                  },
+                  "select": null,
+                  "table": "releases",
+                  "where": {
+                    "project": "idna"
+                  }
+                },
+                "value_sha256": "e34c568e3b498ced058952ab4fa29317e79d09683b0b6df78109cefbc083c906"
+              },
+              {
+                "kind": "query",
+                "query": {
+                  "limit": null,
+                  "order_by": [],
+                  "scope": {
+                    "project": "idna"
+                  },
+                  "select": null,
+                  "table": "policies",
+                  "where": {
+                    "project": "idna"
+                  }
+                },
+                "value_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+              },
+              {
+                "kind": "query",
+                "query": {
+                  "limit": null,
+                  "order_by": [],
+                  "scope": {
+                    "project": "urllib3"
+                  },
+                  "select": null,
+                  "table": "projects",
+                  "where": {
+                    "project": "urllib3"
+                  }
+                },
+                "value_sha256": "b6866fbc7e1287e7d7f230d26a7c55a846156b69798ccc220cef8b19e6e18aac"
+              },
+              {
+                "kind": "query",
+                "query": {
+                  "limit": null,
+                  "order_by": [],
+                  "scope": {
+                    "project": "urllib3"
+                  },
+                  "select": null,
+                  "table": "releases",
+                  "where": {
+                    "project": "urllib3"
+                  }
+                },
+                "value_sha256": "67dbb2c2a02e8c7fd0950bb7ef7291ec0af8fdcacbd07e51a6a2843fa03119a8"
+              },
+              {
+                "kind": "query",
+                "query": {
+                  "limit": null,
+                  "order_by": [],
+                  "scope": {},
+                  "select": null,
+                  "table": "environment",
+                  "where": {
+                    "environment": "declared-mac",
+                    "field": "platform_python_implementation"
+                  }
+                },
+                "value_sha256": "6faea8668add0bfb5ea851ece8a20f35f9df800ac5ae040f0e31e4fd37dc1481"
+              },
+              {
+                "kind": "query",
+                "query": {
+                  "limit": null,
+                  "order_by": [],
+                  "scope": {
+                    "project": "urllib3"
+                  },
+                  "select": null,
+                  "table": "policies",
+                  "where": {
+                    "project": "urllib3"
+                  }
+                },
+                "value_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+              }
+            ],
+            "execution_policy": {
+              "reason": "fixed_mode",
+              "requested_mode": "coarse",
+              "selected_mode": "coarse",
+              "snapshot": 1
+            },
+            "key_sha256": "6e0d0640f01bd6f972ffe09e926a6afc5525081aadda252314bf01fc888c8036",
+            "kind": "task",
+            "mode": "coarse",
+            "name": "resolve",
+            "registry_epoch": 3,
+            "stats": {
+              "adaptive_coarse_runs": 0,
+              "adaptive_fallback_runs": 0,
+              "adaptive_full_runs": 0,
+              "adaptive_policy_seconds": 0.0,
+              "dependency_checks": 10,
+              "dependency_edges_written": 23,
+              "guard_checks": 23,
+              "guard_matches": 1,
+              "guard_seconds": 6.487399999999255e-05,
+              "observation_changes": 1,
+              "query_executions": 1,
+              "query_receipt_writes": 23,
+              "query_reuses": 32,
+              "query_scans": 1,
+              "query_seconds": 1.5792000000000583e-05,
+              "run_seconds": 0.00817779099999999,
+              "runs": 1,
+              "task_executions": 1,
+              "task_reuses": 0,
+              "task_self_seconds": 0.0076301270000000004,
+              "task_validations": 1,
+              "trace_writes": 1,
+              "validation_self_seconds": 1.6250000000606057e-06
+            },
+            "status": "valid",
+            "validated_at": 1,
+            "validation_contract": "conservative_observation",
+            "value_sha256": "36a802466796f83b36608422f625388916e1cd33921de9d1677505b3777bf891",
+            "version": "finite-domain-v1"
+          }
+        ],
+        "seconds": 0.009032417000000001,
+        "fresh_model_calls": 0,
+        "model_cache_hits": 0,
+        "closed_loop_contract_success": true,
+        "raw_model_success": null,
+        "scope": "Finite declared constraints; a blocked prediction is not counted as a correct model answer."
+      },
+      "dataset_manifest": "datasets/dataset-r1-28dc6c840c7a527a.json",
+      "dataset_sha256": "28dc6c840c7a527a29deafde505c41f5f8b2f76c20e5de4f06b6f4accec02326",
+      "changed_sample_ids": [
+        "requests-baseline"
+      ]
+    },
+    {
+      "event": {
+        "name": "unrelated_project_policy",
+        "upserts": {
+          "policies": [
+            {
+              "id": "unrelated-deny",
+              "project": "anyio",
+              "kind": "deny",
+              "versions": ">=4"
+            }
+          ]
+        },
+        "deletes": {}
+      },
+      "source_receipt": {
+        "source_id": "b38790b8-cb88-43a3-bfa4-17698483f3ab",
+        "revision": 2,
+        "request_id": "demo-2",
+        "duplicate": false
+      },
+      "source_binding": {
+        "source_id": "b38790b8-cb88-43a3-bfa4-17698483f3ab",
+        "source_revision": 2,
+        "store_revision": 2,
+        "snapshot_id": "b38790b8-cb88-43a3-bfa4-17698483f3ab@2",
+        "published_snapshot_sha256": "6f86e87bce11394258b573adc0e52552a8d81bdc9921d7d5bb4873960bf4e562"
+      },
+      "result": {
+        "status": "completed",
+        "answer": {
+          "action": "answer",
+          "arguments": {
+            "status": "resolved",
+            "selection": {
+              "certifi": "2025.1.31",
+              "charset-normalizer": "3.4.2",
+              "idna": "3.10",
+              "requests": "2.31.0",
+              "urllib3": "2.5.0"
+            },
+            "citations": [
+              "environment:declared-mac:platform_python_implementation",
+              "environment:declared-mac:python_full_version",
+              "policies:demo-deny",
+              "projects:certifi",
+              "projects:charset-normalizer",
+              "projects:idna",
+              "projects:requests",
+              "projects:urllib3",
+              "releases:certifi==2023.7.22",
+              "releases:certifi==2024.8.30",
+              "releases:certifi==2025.1.31",
+              "releases:charset-normalizer==3.1.0",
+              "releases:charset-normalizer==3.3.2",
+              "releases:charset-normalizer==3.4.2",
+              "releases:idna==3.10",
+              "releases:idna==3.4",
+              "releases:idna==3.7",
+              "releases:requests==2.31.0",
+              "releases:requests==2.32.0",
+              "releases:requests==2.32.3",
+              "releases:requests==2.32.5",
+              "releases:urllib3==1.26.18",
+              "releases:urllib3==2.0.0",
+              "releases:urllib3==2.0.7",
+              "releases:urllib3==2.2.3",
+              "releases:urllib3==2.5.0"
+            ]
+          }
+        },
+        "snapshot_revision": 2,
+        "snapshot_sha256": "6f86e87bce11394258b573adc0e52552a8d81bdc9921d7d5bb4873960bf4e562",
+        "runtime_binding": {
+          "snapshot_revision": 2,
+          "snapshot_sha256": "6f86e87bce11394258b573adc0e52552a8d81bdc9921d7d5bb4873960bf4e562",
+          "registry_versions": {
+            "controller_python": "1",
+            "resolve": "finite-domain-v1",
+            "training_sample": "finite-resolver-answer-v1"
+          },
+          "registry_fingerprint": "b7754c4dc4fe55daed4617572d4c7433c2d4d77e5c2d038d8b2388d9b743a6e4"
+        },
+        "query": {
+          "as_of": "2026-10-28",
+          "environment": "declared-mac",
+          "requirements": [
+            "requests>=2.31"
+          ]
+        },
+        "policy_identity": "rule-v1",
+        "steps": [
+          {
+            "state": {
+              "request": "Resolve requests>=2.31 within the selected catalog.",
+              "python": "3.11.9",
+              "target_revision": 2,
+              "publication_ready": true,
+              "observation": {
+                "computed_at": 1,
+                "validated_at": 2,
+                "status": "resolved",
+                "selection": {
+                  "certifi": "2025.1.31",
+                  "charset-normalizer": "3.4.2",
+                  "idna": "3.10",
+                  "requests": "2.31.0",
+                  "urllib3": "2.5.0"
+                },
+                "citations": [
+                  "environment:declared-mac:platform_python_implementation",
+                  "environment:declared-mac:python_full_version",
+                  "policies:demo-deny",
+                  "projects:certifi",
+                  "projects:charset-normalizer",
+                  "projects:idna",
+                  "projects:requests",
+                  "projects:urllib3",
+                  "releases:certifi==2023.7.22",
+                  "releases:certifi==2024.8.30",
+                  "releases:certifi==2025.1.31",
+                  "releases:charset-normalizer==3.1.0",
+                  "releases:charset-normalizer==3.3.2",
+                  "releases:charset-normalizer==3.4.2",
+                  "releases:idna==3.10",
+                  "releases:idna==3.4",
+                  "releases:idna==3.7",
+                  "releases:requests==2.31.0",
+                  "releases:requests==2.32.0",
+                  "releases:requests==2.32.3",
+                  "releases:requests==2.32.5",
+                  "releases:urllib3==1.26.18",
+                  "releases:urllib3==2.0.0",
+                  "releases:urllib3==2.0.7",
+                  "releases:urllib3==2.2.3",
+                  "releases:urllib3==2.5.0"
+                ],
+                "issues": []
+              },
+              "cached_answer": null,
+              "catalog_scope": "selected universal-wheel files only; declared constraints, not runtime compatibility"
+            },
+            "action": {
+              "action": "answer",
+              "arguments": {
+                "status": "resolved",
+                "selection": {
+                  "certifi": "2025.1.31",
+                  "charset-normalizer": "3.4.2",
+                  "idna": "3.10",
+                  "requests": "2.31.0",
+                  "urllib3": "2.5.0"
+                },
+                "citations": [
+                  "environment:declared-mac:platform_python_implementation",
+                  "environment:declared-mac:python_full_version",
+                  "policies:demo-deny",
+                  "projects:certifi",
+                  "projects:charset-normalizer",
+                  "projects:idna",
+                  "projects:requests",
+                  "projects:urllib3",
+                  "releases:certifi==2023.7.22",
+                  "releases:certifi==2024.8.30",
+                  "releases:certifi==2025.1.31",
+                  "releases:charset-normalizer==3.1.0",
+                  "releases:charset-normalizer==3.3.2",
+                  "releases:charset-normalizer==3.4.2",
+                  "releases:idna==3.10",
+                  "releases:idna==3.4",
+                  "releases:idna==3.7",
+                  "releases:requests==2.31.0",
+                  "releases:requests==2.32.0",
+                  "releases:requests==2.32.3",
+                  "releases:requests==2.32.5",
+                  "releases:urllib3==1.26.18",
+                  "releases:urllib3==2.0.0",
+                  "releases:urllib3==2.0.7",
+                  "releases:urllib3==2.2.3",
+                  "releases:urllib3==2.5.0"
+                ]
+              }
+            },
+            "accepted": true,
+            "receipt": {
+              "kind": "rule",
+              "cache_hit": false,
+              "prompt_sha256": "36a0a328733cf020a5656411934c2e8177e6e11274e4209534b4f3b77f88eac4"
+            }
+          }
+        ],
+        "tool_receipts": [
+          {
+            "args": {
+              "as_of": "2026-10-28",
+              "environment": "declared-mac",
+              "requirements": [
+                "requests>=2.31"
+              ]
+            },
+            "computed_at": 1,
+            "dependencies": [
+              {
+                "kind": "query",
+                "query": {
+                  "limit": null,
+                  "order_by": [],
+                  "scope": {},
+                  "select": null,
+                  "table": "aliases",
+                  "where": {
+                    "alias": "requests"
+                  }
+                },
+                "value_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+              },
+              {
+                "kind": "query",
+                "query": {
+                  "limit": null,
+                  "order_by": [],
+                  "scope": {
+                    "project": "requests"
+                  },
+                  "select": null,
+                  "table": "projects",
+                  "where": {
+                    "project": "requests"
+                  }
+                },
+                "value_sha256": "b1fa6ee6998d87c451afedd871a5ebbf15d468eed9c79b019c9d50a28cfa5809"
+              },
+              {
+                "kind": "query",
+                "query": {
+                  "limit": null,
+                  "order_by": [],
+                  "scope": {
+                    "project": "requests"
+                  },
+                  "select": null,
+                  "table": "releases",
+                  "where": {
+                    "project": "requests"
+                  }
+                },
+                "value_sha256": "e1c86adc65af1dd71c9288eabf92de921356a1a0571df82a08bac50a2462f613"
+              },
+              {
+                "kind": "query",
+                "query": {
+                  "limit": null,
+                  "order_by": [],
+                  "scope": {},
+                  "select": null,
+                  "table": "environment",
+                  "where": {
+                    "environment": "declared-mac",
+                    "field": "python_full_version"
+                  }
+                },
+                "value_sha256": "8e97ccc339b2229446b1e3ef4cb80564bc861d15c2303733fbafa74af8ef1cea"
+              },
+              {
+                "kind": "query",
+                "query": {
+                  "limit": null,
+                  "order_by": [],
+                  "scope": {},
+                  "select": null,
+                  "table": "aliases",
+                  "where": {
+                    "alias": "charset-normalizer"
+                  }
+                },
+                "value_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+              },
+              {
+                "kind": "query",
+                "query": {
+                  "limit": null,
+                  "order_by": [],
+                  "scope": {},
+                  "select": null,
+                  "table": "aliases",
+                  "where": {
+                    "alias": "idna"
+                  }
+                },
+                "value_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+              },
+              {
+                "kind": "query",
+                "query": {
+                  "limit": null,
+                  "order_by": [],
+                  "scope": {},
+                  "select": null,
+                  "table": "aliases",
+                  "where": {
+                    "alias": "urllib3"
+                  }
+                },
+                "value_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+              },
+              {
+                "kind": "query",
+                "query": {
+                  "limit": null,
+                  "order_by": [],
+                  "scope": {},
+                  "select": null,
+                  "table": "aliases",
+                  "where": {
+                    "alias": "certifi"
+                  }
+                },
+                "value_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+              },
+              {
+                "kind": "query",
+                "query": {
+                  "limit": null,
+                  "order_by": [],
+                  "scope": {
+                    "project": "*"
+                  },
+                  "select": null,
+                  "table": "policies",
+                  "where": {
+                    "project": "*"
+                  }
+                },
+                "value_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+              },
+              {
+                "kind": "query",
+                "query": {
+                  "limit": null,
+                  "order_by": [],
+                  "scope": {
+                    "project": "requests"
+                  },
+                  "select": null,
+                  "table": "policies",
+                  "where": {
+                    "project": "requests"
+                  }
+                },
+                "value_sha256": "9d28e8b3075b122eb8a52099e4289e80c463faadcad6c6005f70c10c8ff62998"
+              },
+              {
+                "kind": "query",
+                "query": {
+                  "limit": null,
+                  "order_by": [],
+                  "scope": {
+                    "project": "certifi"
+                  },
+                  "select": null,
+                  "table": "projects",
+                  "where": {
+                    "project": "certifi"
+                  }
+                },
+                "value_sha256": "c18d1c0943e6b5e9b81a83f49cc5ec2dc6095d1889f4ddeac0a42477cd53c052"
+              },
+              {
+                "kind": "query",
+                "query": {
+                  "limit": null,
+                  "order_by": [],
+                  "scope": {
+                    "project": "certifi"
+                  },
+                  "select": null,
+                  "table": "releases",
+                  "where": {
+                    "project": "certifi"
+                  }
+                },
+                "value_sha256": "420f23ff340b084830300f339b93606a8a36e86b313b95efaba25b6d99a071d0"
+              },
+              {
+                "kind": "query",
+                "query": {
+                  "limit": null,
+                  "order_by": [],
+                  "scope": {
+                    "project": "certifi"
+                  },
+                  "select": null,
+                  "table": "policies",
+                  "where": {
+                    "project": "certifi"
+                  }
+                },
+                "value_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+              },
+              {
+                "kind": "query",
+                "query": {
+                  "limit": null,
+                  "order_by": [],
+                  "scope": {
+                    "project": "charset-normalizer"
+                  },
+                  "select": null,
+                  "table": "projects",
+                  "where": {
+                    "project": "charset-normalizer"
+                  }
+                },
+                "value_sha256": "b5850aa7abcbd111565bebc356c012e8a59265848563d69269d5014c6acf0153"
+              },
+              {
+                "kind": "query",
+                "query": {
+                  "limit": null,
+                  "order_by": [],
+                  "scope": {
+                    "project": "charset-normalizer"
+                  },
+                  "select": null,
+                  "table": "releases",
+                  "where": {
+                    "project": "charset-normalizer"
+                  }
+                },
+                "value_sha256": "3de86e50d765ed69cf97b8457e6e76d230fc69d9ea38e4972fa9194069ed2700"
+              },
+              {
+                "kind": "query",
+                "query": {
+                  "limit": null,
+                  "order_by": [],
+                  "scope": {
+                    "project": "charset-normalizer"
+                  },
+                  "select": null,
+                  "table": "policies",
+                  "where": {
+                    "project": "charset-normalizer"
+                  }
+                },
+                "value_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+              },
+              {
+                "kind": "query",
+                "query": {
+                  "limit": null,
+                  "order_by": [],
+                  "scope": {
+                    "project": "idna"
+                  },
+                  "select": null,
+                  "table": "projects",
+                  "where": {
+                    "project": "idna"
+                  }
+                },
+                "value_sha256": "795ac648c58b74b3d545ce593f55eac1c391747df00a367a0f46108fc7289f66"
+              },
+              {
+                "kind": "query",
+                "query": {
+                  "limit": null,
+                  "order_by": [],
+                  "scope": {
+                    "project": "idna"
+                  },
+                  "select": null,
+                  "table": "releases",
+                  "where": {
+                    "project": "idna"
+                  }
+                },
+                "value_sha256": "e34c568e3b498ced058952ab4fa29317e79d09683b0b6df78109cefbc083c906"
+              },
+              {
+                "kind": "query",
+                "query": {
+                  "limit": null,
+                  "order_by": [],
+                  "scope": {
+                    "project": "idna"
+                  },
+                  "select": null,
+                  "table": "policies",
+                  "where": {
+                    "project": "idna"
+                  }
+                },
+                "value_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+              },
+              {
+                "kind": "query",
+                "query": {
+                  "limit": null,
+                  "order_by": [],
+                  "scope": {
+                    "project": "urllib3"
+                  },
+                  "select": null,
+                  "table": "projects",
+                  "where": {
+                    "project": "urllib3"
+                  }
+                },
+                "value_sha256": "b6866fbc7e1287e7d7f230d26a7c55a846156b69798ccc220cef8b19e6e18aac"
+              },
+              {
+                "kind": "query",
+                "query": {
+                  "limit": null,
+                  "order_by": [],
+                  "scope": {
+                    "project": "urllib3"
+                  },
+                  "select": null,
+                  "table": "releases",
+                  "where": {
+                    "project": "urllib3"
+                  }
+                },
+                "value_sha256": "67dbb2c2a02e8c7fd0950bb7ef7291ec0af8fdcacbd07e51a6a2843fa03119a8"
+              },
+              {
+                "kind": "query",
+                "query": {
+                  "limit": null,
+                  "order_by": [],
+                  "scope": {},
+                  "select": null,
+                  "table": "environment",
+                  "where": {
+                    "environment": "declared-mac",
+                    "field": "platform_python_implementation"
+                  }
+                },
+                "value_sha256": "6faea8668add0bfb5ea851ece8a20f35f9df800ac5ae040f0e31e4fd37dc1481"
+              },
+              {
+                "kind": "query",
+                "query": {
+                  "limit": null,
+                  "order_by": [],
+                  "scope": {
+                    "project": "urllib3"
+                  },
+                  "select": null,
+                  "table": "policies",
+                  "where": {
+                    "project": "urllib3"
+                  }
+                },
+                "value_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+              }
+            ],
+            "execution_policy": {
+              "reason": "fixed_mode",
+              "requested_mode": "coarse",
+              "selected_mode": "coarse",
+              "snapshot": 2
+            },
+            "key_sha256": "6e0d0640f01bd6f972ffe09e926a6afc5525081aadda252314bf01fc888c8036",
+            "kind": "task",
+            "mode": "coarse",
+            "name": "resolve",
+            "registry_epoch": 3,
+            "stats": {
+              "adaptive_coarse_runs": 0,
+              "adaptive_fallback_runs": 0,
+              "adaptive_full_runs": 0,
+              "adaptive_policy_seconds": 0.0,
+              "dependency_checks": 23,
+              "dependency_edges_written": 23,
+              "guard_checks": 23,
+              "guard_matches": 0,
+              "guard_seconds": 5.329100000001086e-05,
+              "observation_changes": 0,
+              "query_executions": 0,
+              "query_receipt_writes": 23,
+              "query_reuses": 23,
+              "query_scans": 0,
+              "query_seconds": 0.0,
+              "run_seconds": 0.00032687500000000425,
+              "runs": 1,
+              "task_executions": 0,
+              "task_reuses": 1,
+              "task_self_seconds": 0.0,
+              "task_validations": 1,
+              "trace_writes": 1,
+              "validation_self_seconds": 3.3759999999993795e-06
+            },
+            "status": "valid",
+            "validated_at": 2,
+            "validation_contract": "conservative_observation",
+            "value_sha256": "36a802466796f83b36608422f625388916e1cd33921de9d1677505b3777bf891",
+            "version": "finite-domain-v1"
+          }
+        ],
+        "seconds": 0.0013160419999999895,
+        "fresh_model_calls": 0,
+        "model_cache_hits": 0,
+        "closed_loop_contract_success": true,
+        "raw_model_success": null,
+        "scope": "Finite declared constraints; a blocked prediction is not counted as a correct model answer."
+      },
+      "dataset_manifest": "datasets/dataset-r2-28a784f6249913ef.json",
+      "dataset_sha256": "28a784f6249913efcffed413272371cc2eb84a0adc3052741e5e21423c16261b",
+      "changed_sample_ids": []
+    },
+    {
+      "event": {
+        "name": "remove_org_constraint",
+        "upserts": {},
+        "deletes": {
+          "policies": [
+            "demo-deny"
+          ]
+        }
+      },
+      "source_receipt": {
+        "source_id": "b38790b8-cb88-43a3-bfa4-17698483f3ab",
+        "revision": 3,
+        "request_id": "demo-3",
+        "duplicate": false
+      },
+      "source_binding": {
+        "source_id": "b38790b8-cb88-43a3-bfa4-17698483f3ab",
+        "source_revision": 3,
+        "store_revision": 3,
+        "snapshot_id": "b38790b8-cb88-43a3-bfa4-17698483f3ab@3",
+        "published_snapshot_sha256": "9764255b5629476970637a32f8be169418929f035b8012af66f161fa85c09430"
+      },
+      "result": {
+        "status": "completed",
+        "answer": {
+          "action": "answer",
+          "arguments": {
+            "status": "resolved",
+            "selection": {
+              "certifi": "2025.1.31",
+              "charset-normalizer": "3.4.2",
+              "idna": "3.10",
+              "requests": "2.32.5",
+              "urllib3": "2.5.0"
+            },
+            "citations": [
+              "environment:declared-mac:platform_python_implementation",
+              "environment:declared-mac:python_full_version",
+              "projects:certifi",
+              "projects:charset-normalizer",
+              "projects:idna",
+              "projects:requests",
+              "projects:urllib3",
+              "releases:certifi==2023.7.22",
+              "releases:certifi==2024.8.30",
+              "releases:certifi==2025.1.31",
+              "releases:charset-normalizer==3.1.0",
+              "releases:charset-normalizer==3.3.2",
+              "releases:charset-normalizer==3.4.2",
+              "releases:idna==3.10",
+              "releases:idna==3.4",
+              "releases:idna==3.7",
+              "releases:requests==2.31.0",
+              "releases:requests==2.32.0",
+              "releases:requests==2.32.3",
+              "releases:requests==2.32.5",
+              "releases:urllib3==1.26.18",
+              "releases:urllib3==2.0.0",
+              "releases:urllib3==2.0.7",
+              "releases:urllib3==2.2.3",
+              "releases:urllib3==2.5.0"
+            ]
+          }
+        },
+        "snapshot_revision": 3,
+        "snapshot_sha256": "9764255b5629476970637a32f8be169418929f035b8012af66f161fa85c09430",
+        "runtime_binding": {
+          "snapshot_revision": 3,
+          "snapshot_sha256": "9764255b5629476970637a32f8be169418929f035b8012af66f161fa85c09430",
+          "registry_versions": {
+            "controller_python": "1",
+            "resolve": "finite-domain-v1",
+            "training_sample": "finite-resolver-answer-v1"
+          },
+          "registry_fingerprint": "b7754c4dc4fe55daed4617572d4c7433c2d4d77e5c2d038d8b2388d9b743a6e4"
+        },
+        "query": {
+          "as_of": "2026-10-28",
+          "environment": "declared-mac",
+          "requirements": [
+            "requests>=2.31"
+          ]
+        },
+        "policy_identity": "rule-v1",
+        "steps": [
+          {
+            "state": {
+              "request": "Resolve requests>=2.31 within the selected catalog.",
+              "python": "3.11.9",
+              "target_revision": 3,
+              "publication_ready": true,
+              "observation": {
+                "computed_at": 3,
+                "validated_at": 3,
+                "status": "resolved",
+                "selection": {
+                  "certifi": "2025.1.31",
+                  "charset-normalizer": "3.4.2",
+                  "idna": "3.10",
+                  "requests": "2.32.5",
+                  "urllib3": "2.5.0"
+                },
+                "citations": [
+                  "environment:declared-mac:platform_python_implementation",
+                  "environment:declared-mac:python_full_version",
+                  "projects:certifi",
+                  "projects:charset-normalizer",
+                  "projects:idna",
+                  "projects:requests",
+                  "projects:urllib3",
+                  "releases:certifi==2023.7.22",
+                  "releases:certifi==2024.8.30",
+                  "releases:certifi==2025.1.31",
+                  "releases:charset-normalizer==3.1.0",
+                  "releases:charset-normalizer==3.3.2",
+                  "releases:charset-normalizer==3.4.2",
+                  "releases:idna==3.10",
+                  "releases:idna==3.4",
+                  "releases:idna==3.7",
+                  "releases:requests==2.31.0",
+                  "releases:requests==2.32.0",
+                  "releases:requests==2.32.3",
+                  "releases:requests==2.32.5",
+                  "releases:urllib3==1.26.18",
+                  "releases:urllib3==2.0.0",
+                  "releases:urllib3==2.0.7",
+                  "releases:urllib3==2.2.3",
+                  "releases:urllib3==2.5.0"
+                ],
+                "issues": []
+              },
+              "cached_answer": null,
+              "catalog_scope": "selected universal-wheel files only; declared constraints, not runtime compatibility"
+            },
+            "action": {
+              "action": "answer",
+              "arguments": {
+                "status": "resolved",
+                "selection": {
+                  "certifi": "2025.1.31",
+                  "charset-normalizer": "3.4.2",
+                  "idna": "3.10",
+                  "requests": "2.32.5",
+                  "urllib3": "2.5.0"
+                },
+                "citations": [
+                  "environment:declared-mac:platform_python_implementation",
+                  "environment:declared-mac:python_full_version",
+                  "projects:certifi",
+                  "projects:charset-normalizer",
+                  "projects:idna",
+                  "projects:requests",
+                  "projects:urllib3",
+                  "releases:certifi==2023.7.22",
+                  "releases:certifi==2024.8.30",
+                  "releases:certifi==2025.1.31",
+                  "releases:charset-normalizer==3.1.0",
+                  "releases:charset-normalizer==3.3.2",
+                  "releases:charset-normalizer==3.4.2",
+                  "releases:idna==3.10",
+                  "releases:idna==3.4",
+                  "releases:idna==3.7",
+                  "releases:requests==2.31.0",
+                  "releases:requests==2.32.0",
+                  "releases:requests==2.32.3",
+                  "releases:requests==2.32.5",
+                  "releases:urllib3==1.26.18",
+                  "releases:urllib3==2.0.0",
+                  "releases:urllib3==2.0.7",
+                  "releases:urllib3==2.2.3",
+                  "releases:urllib3==2.5.0"
+                ]
+              }
+            },
+            "accepted": true,
+            "receipt": {
+              "kind": "rule",
+              "cache_hit": false,
+              "prompt_sha256": "3e1bba8aa82ce6628a25044e0b90ede10c683dba98379fc25dd8b1fedc23d982"
+            }
+          }
+        ],
+        "tool_receipts": [
+          {
+            "args": {
+              "as_of": "2026-10-28",
+              "environment": "declared-mac",
+              "requirements": [
+                "requests>=2.31"
+              ]
+            },
+            "computed_at": 3,
+            "dependencies": [
+              {
+                "kind": "query",
+                "query": {
+                  "limit": null,
+                  "order_by": [],
+                  "scope": {},
+                  "select": null,
+                  "table": "aliases",
+                  "where": {
+                    "alias": "requests"
+                  }
+                },
+                "value_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+              },
+              {
+                "kind": "query",
+                "query": {
+                  "limit": null,
+                  "order_by": [],
+                  "scope": {
+                    "project": "requests"
+                  },
+                  "select": null,
+                  "table": "projects",
+                  "where": {
+                    "project": "requests"
+                  }
+                },
+                "value_sha256": "b1fa6ee6998d87c451afedd871a5ebbf15d468eed9c79b019c9d50a28cfa5809"
+              },
+              {
+                "kind": "query",
+                "query": {
+                  "limit": null,
+                  "order_by": [],
+                  "scope": {
+                    "project": "requests"
+                  },
+                  "select": null,
+                  "table": "releases",
+                  "where": {
+                    "project": "requests"
+                  }
+                },
+                "value_sha256": "e1c86adc65af1dd71c9288eabf92de921356a1a0571df82a08bac50a2462f613"
+              },
+              {
+                "kind": "query",
+                "query": {
+                  "limit": null,
+                  "order_by": [],
+                  "scope": {},
+                  "select": null,
+                  "table": "environment",
+                  "where": {
+                    "environment": "declared-mac",
+                    "field": "python_full_version"
+                  }
+                },
+                "value_sha256": "8e97ccc339b2229446b1e3ef4cb80564bc861d15c2303733fbafa74af8ef1cea"
+              },
+              {
+                "kind": "query",
+                "query": {
+                  "limit": null,
+                  "order_by": [],
+                  "scope": {},
+                  "select": null,
+                  "table": "aliases",
+                  "where": {
+                    "alias": "charset-normalizer"
+                  }
+                },
+                "value_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+              },
+              {
+                "kind": "query",
+                "query": {
+                  "limit": null,
+                  "order_by": [],
+                  "scope": {},
+                  "select": null,
+                  "table": "aliases",
+                  "where": {
+                    "alias": "idna"
+                  }
+                },
+                "value_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+              },
+              {
+                "kind": "query",
+                "query": {
+                  "limit": null,
+                  "order_by": [],
+                  "scope": {},
+                  "select": null,
+                  "table": "aliases",
+                  "where": {
+                    "alias": "urllib3"
+                  }
+                },
+                "value_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+              },
+              {
+                "kind": "query",
+                "query": {
+                  "limit": null,
+                  "order_by": [],
+                  "scope": {},
+                  "select": null,
+                  "table": "aliases",
+                  "where": {
+                    "alias": "certifi"
+                  }
+                },
+                "value_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+              },
+              {
+                "kind": "query",
+                "query": {
+                  "limit": null,
+                  "order_by": [],
+                  "scope": {
+                    "project": "*"
+                  },
+                  "select": null,
+                  "table": "policies",
+                  "where": {
+                    "project": "*"
+                  }
+                },
+                "value_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+              },
+              {
+                "kind": "query",
+                "query": {
+                  "limit": null,
+                  "order_by": [],
+                  "scope": {
+                    "project": "requests"
+                  },
+                  "select": null,
+                  "table": "policies",
+                  "where": {
+                    "project": "requests"
+                  }
+                },
+                "value_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+              },
+              {
+                "kind": "query",
+                "query": {
+                  "limit": null,
+                  "order_by": [],
+                  "scope": {
+                    "project": "certifi"
+                  },
+                  "select": null,
+                  "table": "projects",
+                  "where": {
+                    "project": "certifi"
+                  }
+                },
+                "value_sha256": "c18d1c0943e6b5e9b81a83f49cc5ec2dc6095d1889f4ddeac0a42477cd53c052"
+              },
+              {
+                "kind": "query",
+                "query": {
+                  "limit": null,
+                  "order_by": [],
+                  "scope": {
+                    "project": "certifi"
+                  },
+                  "select": null,
+                  "table": "releases",
+                  "where": {
+                    "project": "certifi"
+                  }
+                },
+                "value_sha256": "420f23ff340b084830300f339b93606a8a36e86b313b95efaba25b6d99a071d0"
+              },
+              {
+                "kind": "query",
+                "query": {
+                  "limit": null,
+                  "order_by": [],
+                  "scope": {
+                    "project": "certifi"
+                  },
+                  "select": null,
+                  "table": "policies",
+                  "where": {
+                    "project": "certifi"
+                  }
+                },
+                "value_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+              },
+              {
+                "kind": "query",
+                "query": {
+                  "limit": null,
+                  "order_by": [],
+                  "scope": {
+                    "project": "charset-normalizer"
+                  },
+                  "select": null,
+                  "table": "projects",
+                  "where": {
+                    "project": "charset-normalizer"
+                  }
+                },
+                "value_sha256": "b5850aa7abcbd111565bebc356c012e8a59265848563d69269d5014c6acf0153"
+              },
+              {
+                "kind": "query",
+                "query": {
+                  "limit": null,
+                  "order_by": [],
+                  "scope": {
+                    "project": "charset-normalizer"
+                  },
+                  "select": null,
+                  "table": "releases",
+                  "where": {
+                    "project": "charset-normalizer"
+                  }
+                },
+                "value_sha256": "3de86e50d765ed69cf97b8457e6e76d230fc69d9ea38e4972fa9194069ed2700"
+              },
+              {
+                "kind": "query",
+                "query": {
+                  "limit": null,
+                  "order_by": [],
+                  "scope": {
+                    "project": "charset-normalizer"
+                  },
+                  "select": null,
+                  "table": "policies",
+                  "where": {
+                    "project": "charset-normalizer"
+                  }
+                },
+                "value_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+              },
+              {
+                "kind": "query",
+                "query": {
+                  "limit": null,
+                  "order_by": [],
+                  "scope": {
+                    "project": "idna"
+                  },
+                  "select": null,
+                  "table": "projects",
+                  "where": {
+                    "project": "idna"
+                  }
+                },
+                "value_sha256": "795ac648c58b74b3d545ce593f55eac1c391747df00a367a0f46108fc7289f66"
+              },
+              {
+                "kind": "query",
+                "query": {
+                  "limit": null,
+                  "order_by": [],
+                  "scope": {
+                    "project": "idna"
+                  },
+                  "select": null,
+                  "table": "releases",
+                  "where": {
+                    "project": "idna"
+                  }
+                },
+                "value_sha256": "e34c568e3b498ced058952ab4fa29317e79d09683b0b6df78109cefbc083c906"
+              },
+              {
+                "kind": "query",
+                "query": {
+                  "limit": null,
+                  "order_by": [],
+                  "scope": {
+                    "project": "idna"
+                  },
+                  "select": null,
+                  "table": "policies",
+                  "where": {
+                    "project": "idna"
+                  }
+                },
+                "value_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+              },
+              {
+                "kind": "query",
+                "query": {
+                  "limit": null,
+                  "order_by": [],
+                  "scope": {
+                    "project": "urllib3"
+                  },
+                  "select": null,
+                  "table": "projects",
+                  "where": {
+                    "project": "urllib3"
+                  }
+                },
+                "value_sha256": "b6866fbc7e1287e7d7f230d26a7c55a846156b69798ccc220cef8b19e6e18aac"
+              },
+              {
+                "kind": "query",
+                "query": {
+                  "limit": null,
+                  "order_by": [],
+                  "scope": {
+                    "project": "urllib3"
+                  },
+                  "select": null,
+                  "table": "releases",
+                  "where": {
+                    "project": "urllib3"
+                  }
+                },
+                "value_sha256": "67dbb2c2a02e8c7fd0950bb7ef7291ec0af8fdcacbd07e51a6a2843fa03119a8"
+              },
+              {
+                "kind": "query",
+                "query": {
+                  "limit": null,
+                  "order_by": [],
+                  "scope": {},
+                  "select": null,
+                  "table": "environment",
+                  "where": {
+                    "environment": "declared-mac",
+                    "field": "platform_python_implementation"
+                  }
+                },
+                "value_sha256": "6faea8668add0bfb5ea851ece8a20f35f9df800ac5ae040f0e31e4fd37dc1481"
+              },
+              {
+                "kind": "query",
+                "query": {
+                  "limit": null,
+                  "order_by": [],
+                  "scope": {
+                    "project": "urllib3"
+                  },
+                  "select": null,
+                  "table": "policies",
+                  "where": {
+                    "project": "urllib3"
+                  }
+                },
+                "value_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+              }
+            ],
+            "execution_policy": {
+              "reason": "fixed_mode",
+              "requested_mode": "coarse",
+              "selected_mode": "coarse",
+              "snapshot": 3
+            },
+            "key_sha256": "6e0d0640f01bd6f972ffe09e926a6afc5525081aadda252314bf01fc888c8036",
+            "kind": "task",
+            "mode": "coarse",
+            "name": "resolve",
+            "registry_epoch": 3,
+            "stats": {
+              "adaptive_coarse_runs": 0,
+              "adaptive_fallback_runs": 0,
+              "adaptive_full_runs": 0,
+              "adaptive_policy_seconds": 0.0,
+              "dependency_checks": 10,
+              "dependency_edges_written": 23,
+              "guard_checks": 23,
+              "guard_matches": 1,
+              "guard_seconds": 6.424999999998793e-05,
+              "observation_changes": 1,
+              "query_executions": 1,
+              "query_receipt_writes": 23,
+              "query_reuses": 32,
+              "query_scans": 0,
+              "query_seconds": 1.0999999999997123e-05,
+              "run_seconds": 0.00677341699999999,
+              "runs": 1,
+              "task_executions": 1,
+              "task_reuses": 0,
+              "task_self_seconds": 0.0062426250000000155,
+              "task_validations": 1,
+              "trace_writes": 1,
+              "validation_self_seconds": 1.959999999995299e-06
+            },
+            "status": "valid",
+            "validated_at": 3,
+            "validation_contract": "conservative_observation",
+            "value_sha256": "53f00cf9290889e6edce6118b2d302cfedc9608159d457b63586cc1487527483",
+            "version": "finite-domain-v1"
+          }
+        ],
+        "seconds": 0.007676041999999994,
+        "fresh_model_calls": 0,
+        "model_cache_hits": 0,
+        "closed_loop_contract_success": true,
+        "raw_model_success": null,
+        "scope": "Finite declared constraints; a blocked prediction is not counted as a correct model answer."
+      },
+      "dataset_manifest": "datasets/dataset-r3-6faa5d6632efc45e.json",
+      "dataset_sha256": "6faa5d6632efc45e77cef07a9f5e32ac1173087d0cfaa7a5c4d61b4b5787f996",
+      "changed_sample_ids": [
+        "requests-baseline"
+      ]
+    },
+    {
+      "event": {
+        "name": "withdraw_selected_file",
+        "upserts": {},
+        "deletes": {
+          "releases": [
+            "requests==2.32.5"
+          ]
+        }
+      },
+      "source_receipt": {
+        "source_id": "b38790b8-cb88-43a3-bfa4-17698483f3ab",
+        "revision": 4,
+        "request_id": "demo-4",
+        "duplicate": false
+      },
+      "source_binding": {
+        "source_id": "b38790b8-cb88-43a3-bfa4-17698483f3ab",
+        "source_revision": 4,
+        "store_revision": 4,
+        "snapshot_id": "b38790b8-cb88-43a3-bfa4-17698483f3ab@4",
+        "published_snapshot_sha256": "4fc1a461fd90a078479fb4bf57096894270e8c56adf95f039ba684e550a90ceb"
+      },
+      "result": {
+        "status": "completed",
+        "answer": {
+          "action": "answer",
+          "arguments": {
+            "status": "resolved",
+            "selection": {
+              "certifi": "2025.1.31",
+              "charset-normalizer": "3.4.2",
+              "idna": "3.10",
+              "requests": "2.32.3",
+              "urllib3": "2.5.0"
+            },
+            "citations": [
+              "environment:declared-mac:platform_python_implementation",
+              "environment:declared-mac:python_full_version",
+              "projects:certifi",
+              "projects:charset-normalizer",
+              "projects:idna",
+              "projects:requests",
+              "projects:urllib3",
+              "releases:certifi==2023.7.22",
+              "releases:certifi==2024.8.30",
+              "releases:certifi==2025.1.31",
+              "releases:charset-normalizer==3.1.0",
+              "releases:charset-normalizer==3.3.2",
+              "releases:charset-normalizer==3.4.2",
+              "releases:idna==3.10",
+              "releases:idna==3.4",
+              "releases:idna==3.7",
+              "releases:requests==2.31.0",
+              "releases:requests==2.32.0",
+              "releases:requests==2.32.3",
+              "releases:urllib3==1.26.18",
+              "releases:urllib3==2.0.0",
+              "releases:urllib3==2.0.7",
+              "releases:urllib3==2.2.3",
+              "releases:urllib3==2.5.0"
+            ]
+          }
+        },
+        "snapshot_revision": 4,
+        "snapshot_sha256": "4fc1a461fd90a078479fb4bf57096894270e8c56adf95f039ba684e550a90ceb",
+        "runtime_binding": {
+          "snapshot_revision": 4,
+          "snapshot_sha256": "4fc1a461fd90a078479fb4bf57096894270e8c56adf95f039ba684e550a90ceb",
+          "registry_versions": {
+            "controller_python": "1",
+            "resolve": "finite-domain-v1",
+            "training_sample": "finite-resolver-answer-v1"
+          },
+          "registry_fingerprint": "b7754c4dc4fe55daed4617572d4c7433c2d4d77e5c2d038d8b2388d9b743a6e4"
+        },
+        "query": {
+          "as_of": "2026-10-28",
+          "environment": "declared-mac",
+          "requirements": [
+            "requests>=2.31"
+          ]
+        },
+        "policy_identity": "rule-v1",
+        "steps": [
+          {
+            "state": {
+              "request": "Resolve requests>=2.31 within the selected catalog.",
+              "python": "3.11.9",
+              "target_revision": 4,
+              "publication_ready": true,
+              "observation": {
+                "computed_at": 4,
+                "validated_at": 4,
+                "status": "resolved",
+                "selection": {
+                  "certifi": "2025.1.31",
+                  "charset-normalizer": "3.4.2",
+                  "idna": "3.10",
+                  "requests": "2.32.3",
+                  "urllib3": "2.5.0"
+                },
+                "citations": [
+                  "environment:declared-mac:platform_python_implementation",
+                  "environment:declared-mac:python_full_version",
+                  "projects:certifi",
+                  "projects:charset-normalizer",
+                  "projects:idna",
+                  "projects:requests",
+                  "projects:urllib3",
+                  "releases:certifi==2023.7.22",
+                  "releases:certifi==2024.8.30",
+                  "releases:certifi==2025.1.31",
+                  "releases:charset-normalizer==3.1.0",
+                  "releases:charset-normalizer==3.3.2",
+                  "releases:charset-normalizer==3.4.2",
+                  "releases:idna==3.10",
+                  "releases:idna==3.4",
+                  "releases:idna==3.7",
+                  "releases:requests==2.31.0",
+                  "releases:requests==2.32.0",
+                  "releases:requests==2.32.3",
+                  "releases:urllib3==1.26.18",
+                  "releases:urllib3==2.0.0",
+                  "releases:urllib3==2.0.7",
+                  "releases:urllib3==2.2.3",
+                  "releases:urllib3==2.5.0"
+                ],
+                "issues": []
+              },
+              "cached_answer": null,
+              "catalog_scope": "selected universal-wheel files only; declared constraints, not runtime compatibility"
+            },
+            "action": {
+              "action": "answer",
+              "arguments": {
+                "status": "resolved",
+                "selection": {
+                  "certifi": "2025.1.31",
+                  "charset-normalizer": "3.4.2",
+                  "idna": "3.10",
+                  "requests": "2.32.3",
+                  "urllib3": "2.5.0"
+                },
+                "citations": [
+                  "environment:declared-mac:platform_python_implementation",
+                  "environment:declared-mac:python_full_version",
+                  "projects:certifi",
+                  "projects:charset-normalizer",
+                  "projects:idna",
+                  "projects:requests",
+                  "projects:urllib3",
+                  "releases:certifi==2023.7.22",
+                  "releases:certifi==2024.8.30",
+                  "releases:certifi==2025.1.31",
+                  "releases:charset-normalizer==3.1.0",
+                  "releases:charset-normalizer==3.3.2",
+                  "releases:charset-normalizer==3.4.2",
+                  "releases:idna==3.10",
+                  "releases:idna==3.4",
+                  "releases:idna==3.7",
+                  "releases:requests==2.31.0",
+                  "releases:requests==2.32.0",
+                  "releases:requests==2.32.3",
+                  "releases:urllib3==1.26.18",
+                  "releases:urllib3==2.0.0",
+                  "releases:urllib3==2.0.7",
+                  "releases:urllib3==2.2.3",
+                  "releases:urllib3==2.5.0"
+                ]
+              }
+            },
+            "accepted": true,
+            "receipt": {
+              "kind": "rule",
+              "cache_hit": false,
+              "prompt_sha256": "2f928c26095bde1e757565816c46a4e87cd649e03cbbe7fb4224bbefc6a75a23"
+            }
+          }
+        ],
+        "tool_receipts": [
+          {
+            "args": {
+              "as_of": "2026-10-28",
+              "environment": "declared-mac",
+              "requirements": [
+                "requests>=2.31"
+              ]
+            },
+            "computed_at": 4,
+            "dependencies": [
+              {
+                "kind": "query",
+                "query": {
+                  "limit": null,
+                  "order_by": [],
+                  "scope": {},
+                  "select": null,
+                  "table": "aliases",
+                  "where": {
+                    "alias": "requests"
+                  }
+                },
+                "value_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+              },
+              {
+                "kind": "query",
+                "query": {
+                  "limit": null,
+                  "order_by": [],
+                  "scope": {
+                    "project": "requests"
+                  },
+                  "select": null,
+                  "table": "projects",
+                  "where": {
+                    "project": "requests"
+                  }
+                },
+                "value_sha256": "b1fa6ee6998d87c451afedd871a5ebbf15d468eed9c79b019c9d50a28cfa5809"
+              },
+              {
+                "kind": "query",
+                "query": {
+                  "limit": null,
+                  "order_by": [],
+                  "scope": {
+                    "project": "requests"
+                  },
+                  "select": null,
+                  "table": "releases",
+                  "where": {
+                    "project": "requests"
+                  }
+                },
+                "value_sha256": "67cf5187b0671bf84d76238bf26066ff5cc7bda27fcf26dbd817677628f669b0"
+              },
+              {
+                "kind": "query",
+                "query": {
+                  "limit": null,
+                  "order_by": [],
+                  "scope": {},
+                  "select": null,
+                  "table": "environment",
+                  "where": {
+                    "environment": "declared-mac",
+                    "field": "python_full_version"
+                  }
+                },
+                "value_sha256": "8e97ccc339b2229446b1e3ef4cb80564bc861d15c2303733fbafa74af8ef1cea"
+              },
+              {
+                "kind": "query",
+                "query": {
+                  "limit": null,
+                  "order_by": [],
+                  "scope": {},
+                  "select": null,
+                  "table": "aliases",
+                  "where": {
+                    "alias": "charset-normalizer"
+                  }
+                },
+                "value_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+              },
+              {
+                "kind": "query",
+                "query": {
+                  "limit": null,
+                  "order_by": [],
+                  "scope": {},
+                  "select": null,
+                  "table": "aliases",
+                  "where": {
+                    "alias": "idna"
+                  }
+                },
+                "value_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+              },
+              {
+                "kind": "query",
+                "query": {
+                  "limit": null,
+                  "order_by": [],
+                  "scope": {},
+                  "select": null,
+                  "table": "aliases",
+                  "where": {
+                    "alias": "urllib3"
+                  }
+                },
+                "value_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+              },
+              {
+                "kind": "query",
+                "query": {
+                  "limit": null,
+                  "order_by": [],
+                  "scope": {},
+                  "select": null,
+                  "table": "aliases",
+                  "where": {
+                    "alias": "certifi"
+                  }
+                },
+                "value_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+              },
+              {
+                "kind": "query",
+                "query": {
+                  "limit": null,
+                  "order_by": [],
+                  "scope": {
+                    "project": "*"
+                  },
+                  "select": null,
+                  "table": "policies",
+                  "where": {
+                    "project": "*"
+                  }
+                },
+                "value_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+              },
+              {
+                "kind": "query",
+                "query": {
+                  "limit": null,
+                  "order_by": [],
+                  "scope": {
+                    "project": "requests"
+                  },
+                  "select": null,
+                  "table": "policies",
+                  "where": {
+                    "project": "requests"
+                  }
+                },
+                "value_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+              },
+              {
+                "kind": "query",
+                "query": {
+                  "limit": null,
+                  "order_by": [],
+                  "scope": {
+                    "project": "certifi"
+                  },
+                  "select": null,
+                  "table": "projects",
+                  "where": {
+                    "project": "certifi"
+                  }
+                },
+                "value_sha256": "c18d1c0943e6b5e9b81a83f49cc5ec2dc6095d1889f4ddeac0a42477cd53c052"
+              },
+              {
+                "kind": "query",
+                "query": {
+                  "limit": null,
+                  "order_by": [],
+                  "scope": {
+                    "project": "certifi"
+                  },
+                  "select": null,
+                  "table": "releases",
+                  "where": {
+                    "project": "certifi"
+                  }
+                },
+                "value_sha256": "420f23ff340b084830300f339b93606a8a36e86b313b95efaba25b6d99a071d0"
+              },
+              {
+                "kind": "query",
+                "query": {
+                  "limit": null,
+                  "order_by": [],
+                  "scope": {
+                    "project": "certifi"
+                  },
+                  "select": null,
+                  "table": "policies",
+                  "where": {
+                    "project": "certifi"
+                  }
+                },
+                "value_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+              },
+              {
+                "kind": "query",
+                "query": {
+                  "limit": null,
+                  "order_by": [],
+                  "scope": {
+                    "project": "charset-normalizer"
+                  },
+                  "select": null,
+                  "table": "projects",
+                  "where": {
+                    "project": "charset-normalizer"
+                  }
+                },
+                "value_sha256": "b5850aa7abcbd111565bebc356c012e8a59265848563d69269d5014c6acf0153"
+              },
+              {
+                "kind": "query",
+                "query": {
+                  "limit": null,
+                  "order_by": [],
+                  "scope": {
+                    "project": "charset-normalizer"
+                  },
+                  "select": null,
+                  "table": "releases",
+                  "where": {
+                    "project": "charset-normalizer"
+                  }
+                },
+                "value_sha256": "3de86e50d765ed69cf97b8457e6e76d230fc69d9ea38e4972fa9194069ed2700"
+              },
+              {
+                "kind": "query",
+                "query": {
+                  "limit": null,
+                  "order_by": [],
+                  "scope": {
+                    "project": "charset-normalizer"
+                  },
+                  "select": null,
+                  "table": "policies",
+                  "where": {
+                    "project": "charset-normalizer"
+                  }
+                },
+                "value_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+              },
+              {
+                "kind": "query",
+                "query": {
+                  "limit": null,
+                  "order_by": [],
+                  "scope": {
+                    "project": "idna"
+                  },
+                  "select": null,
+                  "table": "projects",
+                  "where": {
+                    "project": "idna"
+                  }
+                },
+                "value_sha256": "795ac648c58b74b3d545ce593f55eac1c391747df00a367a0f46108fc7289f66"
+              },
+              {
+                "kind": "query",
+                "query": {
+                  "limit": null,
+                  "order_by": [],
+                  "scope": {
+                    "project": "idna"
+                  },
+                  "select": null,
+                  "table": "releases",
+                  "where": {
+                    "project": "idna"
+                  }
+                },
+                "value_sha256": "e34c568e3b498ced058952ab4fa29317e79d09683b0b6df78109cefbc083c906"
+              },
+              {
+                "kind": "query",
+                "query": {
+                  "limit": null,
+                  "order_by": [],
+                  "scope": {
+                    "project": "idna"
+                  },
+                  "select": null,
+                  "table": "policies",
+                  "where": {
+                    "project": "idna"
+                  }
+                },
+                "value_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+              },
+              {
+                "kind": "query",
+                "query": {
+                  "limit": null,
+                  "order_by": [],
+                  "scope": {
+                    "project": "urllib3"
+                  },
+                  "select": null,
+                  "table": "projects",
+                  "where": {
+                    "project": "urllib3"
+                  }
+                },
+                "value_sha256": "b6866fbc7e1287e7d7f230d26a7c55a846156b69798ccc220cef8b19e6e18aac"
+              },
+              {
+                "kind": "query",
+                "query": {
+                  "limit": null,
+                  "order_by": [],
+                  "scope": {
+                    "project": "urllib3"
+                  },
+                  "select": null,
+                  "table": "releases",
+                  "where": {
+                    "project": "urllib3"
+                  }
+                },
+                "value_sha256": "67dbb2c2a02e8c7fd0950bb7ef7291ec0af8fdcacbd07e51a6a2843fa03119a8"
+              },
+              {
+                "kind": "query",
+                "query": {
+                  "limit": null,
+                  "order_by": [],
+                  "scope": {},
+                  "select": null,
+                  "table": "environment",
+                  "where": {
+                    "environment": "declared-mac",
+                    "field": "platform_python_implementation"
+                  }
+                },
+                "value_sha256": "6faea8668add0bfb5ea851ece8a20f35f9df800ac5ae040f0e31e4fd37dc1481"
+              },
+              {
+                "kind": "query",
+                "query": {
+                  "limit": null,
+                  "order_by": [],
+                  "scope": {
+                    "project": "urllib3"
+                  },
+                  "select": null,
+                  "table": "policies",
+                  "where": {
+                    "project": "urllib3"
+                  }
+                },
+                "value_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+              }
+            ],
+            "execution_policy": {
+              "reason": "fixed_mode",
+              "requested_mode": "coarse",
+              "selected_mode": "coarse",
+              "snapshot": 4
+            },
+            "key_sha256": "6e0d0640f01bd6f972ffe09e926a6afc5525081aadda252314bf01fc888c8036",
+            "kind": "task",
+            "mode": "coarse",
+            "name": "resolve",
+            "registry_epoch": 3,
+            "stats": {
+              "adaptive_coarse_runs": 0,
+              "adaptive_fallback_runs": 0,
+              "adaptive_full_runs": 0,
+              "adaptive_policy_seconds": 0.0,
+              "dependency_checks": 3,
+              "dependency_edges_written": 23,
+              "guard_checks": 23,
+              "guard_matches": 1,
+              "guard_seconds": 7.362600000003494e-05,
+              "observation_changes": 1,
+              "query_executions": 1,
+              "query_receipt_writes": 23,
+              "query_reuses": 25,
+              "query_scans": 3,
+              "query_seconds": 4.5125000000006965e-05,
+              "run_seconds": 0.006667000000000006,
+              "runs": 1,
+              "task_executions": 1,
+              "task_reuses": 0,
+              "task_self_seconds": 0.006119417000000016,
+              "task_validations": 1,
+              "trace_writes": 1,
+              "validation_self_seconds": 7.489999999943375e-07
+            },
+            "status": "valid",
+            "validated_at": 4,
+            "validation_contract": "conservative_observation",
+            "value_sha256": "80fe1f5199336f5cd668aabae7e39773c4754ec873e887d447a08093f381c32d",
+            "version": "finite-domain-v1"
+          }
+        ],
+        "seconds": 0.007527707999999994,
+        "fresh_model_calls": 0,
+        "model_cache_hits": 0,
+        "closed_loop_contract_success": true,
+        "raw_model_success": null,
+        "scope": "Finite declared constraints; a blocked prediction is not counted as a correct model answer."
+      },
+      "dataset_manifest": "datasets/dataset-r4-2d1f89f4971f0f60.json",
+      "dataset_sha256": "2d1f89f4971f0f60c5237134ef52c487344e2a901ea961d3e170418fc02b48ef",
+      "changed_sample_ids": [
+        "requests-baseline"
+      ]
+    },
+    {
+      "event": {
+        "name": "remove_completeness_certificate",
+        "upserts": {},
+        "deletes": {
+          "projects": [
+            "requests"
+          ]
+        }
+      },
+      "source_receipt": {
+        "source_id": "b38790b8-cb88-43a3-bfa4-17698483f3ab",
+        "revision": 5,
+        "request_id": "demo-5",
+        "duplicate": false
+      },
+      "source_binding": {
+        "source_id": "b38790b8-cb88-43a3-bfa4-17698483f3ab",
+        "source_revision": 5,
+        "store_revision": 5,
+        "snapshot_id": "b38790b8-cb88-43a3-bfa4-17698483f3ab@5",
+        "published_snapshot_sha256": "f90e33b0c5f5cade4ff7378a76feab5db54d077d693887628f6ef06097ce4b45"
+      },
+      "result": {
+        "status": "completed",
+        "answer": {
+          "action": "abstain",
+          "arguments": {
+            "reason": "incomplete_catalog"
+          }
+        },
+        "snapshot_revision": 5,
+        "snapshot_sha256": "f90e33b0c5f5cade4ff7378a76feab5db54d077d693887628f6ef06097ce4b45",
+        "runtime_binding": {
+          "snapshot_revision": 5,
+          "snapshot_sha256": "f90e33b0c5f5cade4ff7378a76feab5db54d077d693887628f6ef06097ce4b45",
+          "registry_versions": {
+            "controller_python": "1",
+            "resolve": "finite-domain-v1",
+            "training_sample": "finite-resolver-answer-v1"
+          },
+          "registry_fingerprint": "b7754c4dc4fe55daed4617572d4c7433c2d4d77e5c2d038d8b2388d9b743a6e4"
+        },
+        "query": {
+          "as_of": "2026-10-28",
+          "environment": "declared-mac",
+          "requirements": [
+            "requests>=2.31"
+          ]
+        },
+        "policy_identity": "rule-v1",
+        "steps": [
+          {
+            "state": {
+              "request": "Resolve requests>=2.31 within the selected catalog.",
+              "python": "3.11.9",
+              "target_revision": 5,
+              "publication_ready": true,
+              "observation": {
+                "computed_at": 5,
+                "validated_at": 5,
+                "status": "incomplete",
+                "selection": {},
+                "citations": [],
+                "issues": [
+                  "no complete finite-universe certificate: requests"
+                ]
+              },
+              "cached_answer": null,
+              "catalog_scope": "selected universal-wheel files only; declared constraints, not runtime compatibility"
+            },
+            "action": {
+              "action": "abstain",
+              "arguments": {
+                "reason": "incomplete_catalog"
+              }
+            },
+            "accepted": true,
+            "receipt": {
+              "kind": "rule",
+              "cache_hit": false,
+              "prompt_sha256": "68a720de6a973ae1f0a84712eed187e04342b9983b388eeb7b99fa7372f82e20"
+            }
+          }
+        ],
+        "tool_receipts": [
+          {
+            "args": {
+              "as_of": "2026-10-28",
+              "environment": "declared-mac",
+              "requirements": [
+                "requests>=2.31"
+              ]
+            },
+            "computed_at": 5,
+            "dependencies": [
+              {
+                "kind": "query",
+                "query": {
+                  "limit": null,
+                  "order_by": [],
+                  "scope": {},
+                  "select": null,
+                  "table": "aliases",
+                  "where": {
+                    "alias": "requests"
+                  }
+                },
+                "value_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+              },
+              {
+                "kind": "query",
+                "query": {
+                  "limit": null,
+                  "order_by": [],
+                  "scope": {
+                    "project": "requests"
+                  },
+                  "select": null,
+                  "table": "projects",
+                  "where": {
+                    "project": "requests"
+                  }
+                },
+                "value_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+              }
+            ],
+            "execution_policy": {
+              "reason": "fixed_mode",
+              "requested_mode": "coarse",
+              "selected_mode": "coarse",
+              "snapshot": 5
+            },
+            "key_sha256": "6e0d0640f01bd6f972ffe09e926a6afc5525081aadda252314bf01fc888c8036",
+            "kind": "task",
+            "mode": "coarse",
+            "name": "resolve",
+            "registry_epoch": 3,
+            "stats": {
+              "adaptive_coarse_runs": 0,
+              "adaptive_fallback_runs": 0,
+              "adaptive_full_runs": 0,
+              "adaptive_policy_seconds": 0.0,
+              "dependency_checks": 2,
+              "dependency_edges_written": 2,
+              "guard_checks": 2,
+              "guard_matches": 1,
+              "guard_seconds": 7.166000000002892e-06,
+              "observation_changes": 1,
+              "query_executions": 1,
+              "query_receipt_writes": 2,
+              "query_reuses": 3,
+              "query_scans": 0,
+              "query_seconds": 1.0375000000006906e-05,
+              "run_seconds": 0.00022316699999999634,
+              "runs": 1,
+              "task_executions": 1,
+              "task_reuses": 0,
+              "task_self_seconds": 0.00014020800000000277,
+              "task_validations": 1,
+              "trace_writes": 1,
+              "validation_self_seconds": 5.839999999979195e-07
+            },
+            "status": "valid",
+            "validated_at": 5,
+            "validation_contract": "conservative_observation",
+            "value_sha256": "efc3ebfa4d4be8c5457b20bf8f04b55590a4a1ec32b7be7ca303ea7d1b0da728",
+            "version": "finite-domain-v1"
+          }
+        ],
+        "seconds": 0.0009160000000000001,
+        "fresh_model_calls": 0,
+        "model_cache_hits": 0,
+        "closed_loop_contract_success": true,
+        "raw_model_success": null,
+        "scope": "Finite declared constraints; a blocked prediction is not counted as a correct model answer."
+      },
+      "dataset_manifest": "datasets/dataset-r5-6dc1fc6d40f38a3a.json",
+      "dataset_sha256": "6dc1fc6d40f38a3aa02f18b6796b000c52fa1c03f2d79b2f4be37dcddc783a56",
+      "changed_sample_ids": [
+        "requests-baseline"
+      ]
+    }
+  ],
+  "stats": {
+    "runs": 18,
+    "task_executions": 11,
+    "task_reuses": 17,
+    "task_validations": 15,
+    "query_executions": 28,
+    "query_reuses": 120,
+    "query_scans": 30,
+    "guard_checks": 99,
+    "guard_matches": 4,
+    "observation_changes": 8,
+    "dependency_checks": 58,
+    "trace_writes": 18,
+    "dependency_edges_written": 129,
+    "query_receipt_writes": 123,
+    "adaptive_full_runs": 0,
+    "adaptive_coarse_runs": 0,
+    "adaptive_fallback_runs": 0,
+    "run_seconds": 0.030897834,
+    "query_seconds": 0.0005760850000000317,
+    "guard_seconds": 0.0002799160000000328,
+    "task_self_seconds": 0.027443506000000013,
+    "validation_self_seconds": 1.5170000000050421e-05,
+    "adaptive_policy_seconds": 0.0
+  },
+  "scope": "Actual local SQLite updates and optional local model. All events after initial are synthetic experimental overlays, not real PyPI incidents."
+}

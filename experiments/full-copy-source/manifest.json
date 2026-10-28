@@ -1,0 +1,10 @@
+{
+  "reason": "Exact source bytes before adding optional bound-reference transport; full-copy model demonstration used the preceding full view.",
+  "files_sha256": {
+    "src/deltaweave/session.py": "e8dad2942e762d7018e162b87346e2016bf80ffc3dba91bccaba6fab2b1e7692",
+    "src/deltaweave/cli.py": "2e9825842c45a88a7f4020231a07a8b81a3eef9be78b0745bd1c08211faaa329",
+    "src/deltaweave/engine.py": "adad4b58f9fddcc5a2b1f554ba51f3abe8ae60847b650ada2f34b53fe76f154d",
+    "src/deltaweave/provenance.py": "dbeb717825142228371cb9015bed201b75d20a291d61a658843f0c2050fa9780",
+    "src/deltaweave/learning_data.py": "29f13b7c823c5b93accd6974b8c25f03055a3a7e79b98fc0085f4e7aa2758c08"
+  }
+}

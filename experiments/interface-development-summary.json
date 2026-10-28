@@ -1,0 +1,41 @@
+{
+  "scope": "Development six-session comparison; full/reference_context preserve factual evidence; reference also reduces input. Host-expanded facts are not model-generated. Not a held-out confirmation.",
+  "results": [
+    {
+      "view": "full",
+      "report": "experiments/demo-behavior-coarse/report.json",
+      "sessions": 6,
+      "completed": 1,
+      "fresh_generations": 5,
+      "fresh_accepted": 2,
+      "cache_hits": 2,
+      "new_tokens": 1068,
+      "input_tokens": 2958,
+      "generation_seconds": 34.305808207951486
+    },
+    {
+      "view": "reference_context",
+      "report": "experiments/demo-behavior-reference_context/report.json",
+      "sessions": 6,
+      "completed": 1,
+      "fresh_generations": 5,
+      "fresh_accepted": 2,
+      "cache_hits": 2,
+      "new_tokens": 222,
+      "input_tokens": 4174,
+      "generation_seconds": 9.944010833045468
+    },
+    {
+      "view": "reference",
+      "report": "experiments/demo-behavior-reference/report.json",
+      "sessions": 6,
+      "completed": 4,
+      "fresh_generations": 5,
+      "fresh_accepted": 4,
+      "cache_hits": 2,
+      "new_tokens": 196,
+      "input_tokens": 3061,
+      "generation_seconds": 8.526828291942365
+    }
+  ]
+}

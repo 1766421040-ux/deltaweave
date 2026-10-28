@@ -1,0 +1,1489 @@
+{
+  "format": "deltaweave.reference-tokenizer-preflight.v1",
+  "model_weights_loaded": false,
+  "gpu_used": false,
+  "manifest_sha256": "04e2bdee4e294f8c9878066fb50a2a91a3bbe3e8b92bbae4b11b3f1ba3678f28",
+  "tokenizer_sha256": "88145e3c3249adc2546ede277e9819d6e405e19072456e4b521cbc724bd60773",
+  "views": {
+    "full": {
+      "prompts": 81,
+      "max_input_tokens": 984,
+      "over_2048": 0,
+      "rows": [
+        {
+          "case_id": "ref00-9c8ccb",
+          "event_index": 0,
+          "step": 0,
+          "input_tokens": 378
+        },
+        {
+          "case_id": "ref00-9c8ccb",
+          "event_index": 0,
+          "step": 1,
+          "input_tokens": 493
+        },
+        {
+          "case_id": "ref00-9c8ccb",
+          "event_index": 1,
+          "step": 0,
+          "input_tokens": 492
+        },
+        {
+          "case_id": "ref00-9c8ccb",
+          "event_index": 1,
+          "step": 1,
+          "input_tokens": 482
+        },
+        {
+          "case_id": "ref00-9c8ccb",
+          "event_index": 2,
+          "step": 0,
+          "input_tokens": 481
+        },
+        {
+          "case_id": "ref00-9c8ccb",
+          "event_index": 2,
+          "step": 1,
+          "input_tokens": 493
+        },
+        {
+          "case_id": "ref01-7bdfa7",
+          "event_index": 0,
+          "step": 0,
+          "input_tokens": 378
+        },
+        {
+          "case_id": "ref01-7bdfa7",
+          "event_index": 0,
+          "step": 1,
+          "input_tokens": 901
+        },
+        {
+          "case_id": "ref01-7bdfa7",
+          "event_index": 1,
+          "step": 0,
+          "input_tokens": 794
+        },
+        {
+          "case_id": "ref01-7bdfa7",
+          "event_index": 2,
+          "step": 0,
+          "input_tokens": 911
+        },
+        {
+          "case_id": "ref10-c05565",
+          "event_index": 0,
+          "step": 0,
+          "input_tokens": 379
+        },
+        {
+          "case_id": "ref10-c05565",
+          "event_index": 0,
+          "step": 1,
+          "input_tokens": 500
+        },
+        {
+          "case_id": "ref10-c05565",
+          "event_index": 1,
+          "step": 0,
+          "input_tokens": 499
+        },
+        {
+          "case_id": "ref10-c05565",
+          "event_index": 1,
+          "step": 1,
+          "input_tokens": 471
+        },
+        {
+          "case_id": "ref10-c05565",
+          "event_index": 2,
+          "step": 0,
+          "input_tokens": 470
+        },
+        {
+          "case_id": "ref10-c05565",
+          "event_index": 2,
+          "step": 1,
+          "input_tokens": 500
+        },
+        {
+          "case_id": "ref11-254529",
+          "event_index": 0,
+          "step": 0,
+          "input_tokens": 380
+        },
+        {
+          "case_id": "ref11-254529",
+          "event_index": 0,
+          "step": 1,
+          "input_tokens": 963
+        },
+        {
+          "case_id": "ref11-254529",
+          "event_index": 1,
+          "step": 0,
+          "input_tokens": 824
+        },
+        {
+          "case_id": "ref11-254529",
+          "event_index": 2,
+          "step": 0,
+          "input_tokens": 963
+        },
+        {
+          "case_id": "ref20-14ecb1",
+          "event_index": 0,
+          "step": 0,
+          "input_tokens": 379
+        },
+        {
+          "case_id": "ref20-14ecb1",
+          "event_index": 0,
+          "step": 1,
+          "input_tokens": 500
+        },
+        {
+          "case_id": "ref20-14ecb1",
+          "event_index": 1,
+          "step": 0,
+          "input_tokens": 499
+        },
+        {
+          "case_id": "ref20-14ecb1",
+          "event_index": 1,
+          "step": 1,
+          "input_tokens": 498
+        },
+        {
+          "case_id": "ref20-14ecb1",
+          "event_index": 2,
+          "step": 0,
+          "input_tokens": 497
+        },
+        {
+          "case_id": "ref20-14ecb1",
+          "event_index": 2,
+          "step": 1,
+          "input_tokens": 471
+        },
+        {
+          "case_id": "ref21-6adfb8",
+          "event_index": 0,
+          "step": 0,
+          "input_tokens": 378
+        },
+        {
+          "case_id": "ref21-6adfb8",
+          "event_index": 0,
+          "step": 1,
+          "input_tokens": 901
+        },
+        {
+          "case_id": "ref21-6adfb8",
+          "event_index": 1,
+          "step": 0,
+          "input_tokens": 899
+        },
+        {
+          "case_id": "ref21-6adfb8",
+          "event_index": 2,
+          "step": 0,
+          "input_tokens": 778
+        },
+        {
+          "case_id": "ref30-7e8508",
+          "event_index": 0,
+          "step": 0,
+          "input_tokens": 380
+        },
+        {
+          "case_id": "ref30-7e8508",
+          "event_index": 0,
+          "step": 1,
+          "input_tokens": 493
+        },
+        {
+          "case_id": "ref30-7e8508",
+          "event_index": 1,
+          "step": 0,
+          "input_tokens": 492
+        },
+        {
+          "case_id": "ref30-7e8508",
+          "event_index": 1,
+          "step": 1,
+          "input_tokens": 493
+        },
+        {
+          "case_id": "ref30-7e8508",
+          "event_index": 2,
+          "step": 0,
+          "input_tokens": 492
+        },
+        {
+          "case_id": "ref30-7e8508",
+          "event_index": 2,
+          "step": 1,
+          "input_tokens": 526
+        },
+        {
+          "case_id": "ref31-f3a1da",
+          "event_index": 0,
+          "step": 0,
+          "input_tokens": 378
+        },
+        {
+          "case_id": "ref31-f3a1da",
+          "event_index": 0,
+          "step": 1,
+          "input_tokens": 793
+        },
+        {
+          "case_id": "ref31-f3a1da",
+          "event_index": 1,
+          "step": 0,
+          "input_tokens": 793
+        },
+        {
+          "case_id": "ref31-f3a1da",
+          "event_index": 2,
+          "step": 0,
+          "input_tokens": 918
+        },
+        {
+          "case_id": "ref40-713dde",
+          "event_index": 0,
+          "step": 0,
+          "input_tokens": 379
+        },
+        {
+          "case_id": "ref40-713dde",
+          "event_index": 1,
+          "step": 0,
+          "input_tokens": 379
+        },
+        {
+          "case_id": "ref40-713dde",
+          "event_index": 1,
+          "step": 1,
+          "input_tokens": 455
+        },
+        {
+          "case_id": "ref40-713dde",
+          "event_index": 2,
+          "step": 0,
+          "input_tokens": 454
+        },
+        {
+          "case_id": "ref40-713dde",
+          "event_index": 2,
+          "step": 1,
+          "input_tokens": 468
+        },
+        {
+          "case_id": "ref41-512b35",
+          "event_index": 0,
+          "step": 0,
+          "input_tokens": 381
+        },
+        {
+          "case_id": "ref41-512b35",
+          "event_index": 1,
+          "step": 0,
+          "input_tokens": 381
+        },
+        {
+          "case_id": "ref41-512b35",
+          "event_index": 1,
+          "step": 1,
+          "input_tokens": 919
+        },
+        {
+          "case_id": "ref41-512b35",
+          "event_index": 2,
+          "step": 0,
+          "input_tokens": 476
+        },
+        {
+          "case_id": "ref50-373e85",
+          "event_index": 0,
+          "step": 0,
+          "input_tokens": 380
+        },
+        {
+          "case_id": "ref50-373e85",
+          "event_index": 0,
+          "step": 1,
+          "input_tokens": 513
+        },
+        {
+          "case_id": "ref50-373e85",
+          "event_index": 1,
+          "step": 0,
+          "input_tokens": 380
+        },
+        {
+          "case_id": "ref50-373e85",
+          "event_index": 1,
+          "step": 1,
+          "input_tokens": 503
+        },
+        {
+          "case_id": "ref50-373e85",
+          "event_index": 2,
+          "step": 0,
+          "input_tokens": 380
+        },
+        {
+          "case_id": "ref50-373e85",
+          "event_index": 2,
+          "step": 1,
+          "input_tokens": 513
+        },
+        {
+          "case_id": "ref51-10b5d1",
+          "event_index": 0,
+          "step": 0,
+          "input_tokens": 380
+        },
+        {
+          "case_id": "ref51-10b5d1",
+          "event_index": 0,
+          "step": 1,
+          "input_tokens": 969
+        },
+        {
+          "case_id": "ref51-10b5d1",
+          "event_index": 1,
+          "step": 0,
+          "input_tokens": 380
+        },
+        {
+          "case_id": "ref51-10b5d1",
+          "event_index": 1,
+          "step": 1,
+          "input_tokens": 851
+        },
+        {
+          "case_id": "ref51-10b5d1",
+          "event_index": 2,
+          "step": 0,
+          "input_tokens": 380
+        },
+        {
+          "case_id": "ref51-10b5d1",
+          "event_index": 2,
+          "step": 1,
+          "input_tokens": 969
+        },
+        {
+          "case_id": "ref60-8a83b7",
+          "event_index": 0,
+          "step": 0,
+          "input_tokens": 380
+        },
+        {
+          "case_id": "ref60-8a83b7",
+          "event_index": 0,
+          "step": 1,
+          "input_tokens": 512
+        },
+        {
+          "case_id": "ref60-8a83b7",
+          "event_index": 1,
+          "step": 0,
+          "input_tokens": 511
+        },
+        {
+          "case_id": "ref60-8a83b7",
+          "event_index": 1,
+          "step": 1,
+          "input_tokens": 453
+        },
+        {
+          "case_id": "ref60-8a83b7",
+          "event_index": 2,
+          "step": 0,
+          "input_tokens": 452
+        },
+        {
+          "case_id": "ref60-8a83b7",
+          "event_index": 2,
+          "step": 1,
+          "input_tokens": 463
+        },
+        {
+          "case_id": "ref61-75059d",
+          "event_index": 0,
+          "step": 0,
+          "input_tokens": 380
+        },
+        {
+          "case_id": "ref61-75059d",
+          "event_index": 0,
+          "step": 1,
+          "input_tokens": 968
+        },
+        {
+          "case_id": "ref61-75059d",
+          "event_index": 1,
+          "step": 0,
+          "input_tokens": 443
+        },
+        {
+          "case_id": "ref61-75059d",
+          "event_index": 2,
+          "step": 0,
+          "input_tokens": 968
+        },
+        {
+          "case_id": "ref70-287e4f",
+          "event_index": 0,
+          "step": 0,
+          "input_tokens": 382
+        },
+        {
+          "case_id": "ref70-287e4f",
+          "event_index": 0,
+          "step": 1,
+          "input_tokens": 456
+        },
+        {
+          "case_id": "ref70-287e4f",
+          "event_index": 1,
+          "step": 0,
+          "input_tokens": 455
+        },
+        {
+          "case_id": "ref70-287e4f",
+          "event_index": 1,
+          "step": 1,
+          "input_tokens": 528
+        },
+        {
+          "case_id": "ref70-287e4f",
+          "event_index": 2,
+          "step": 0,
+          "input_tokens": 527
+        },
+        {
+          "case_id": "ref70-287e4f",
+          "event_index": 2,
+          "step": 1,
+          "input_tokens": 484
+        },
+        {
+          "case_id": "ref71-752e04",
+          "event_index": 0,
+          "step": 0,
+          "input_tokens": 382
+        },
+        {
+          "case_id": "ref71-752e04",
+          "event_index": 0,
+          "step": 1,
+          "input_tokens": 456
+        },
+        {
+          "case_id": "ref71-752e04",
+          "event_index": 1,
+          "step": 0,
+          "input_tokens": 984
+        },
+        {
+          "case_id": "ref71-752e04",
+          "event_index": 2,
+          "step": 0,
+          "input_tokens": 832
+        }
+      ]
+    },
+    "reference_context": {
+      "prompts": 81,
+      "max_input_tokens": 1239,
+      "over_2048": 0,
+      "rows": [
+        {
+          "case_id": "ref00-9c8ccb",
+          "event_index": 0,
+          "step": 0,
+          "input_tokens": 571
+        },
+        {
+          "case_id": "ref00-9c8ccb",
+          "event_index": 0,
+          "step": 1,
+          "input_tokens": 745
+        },
+        {
+          "case_id": "ref00-9c8ccb",
+          "event_index": 1,
+          "step": 0,
+          "input_tokens": 743
+        },
+        {
+          "case_id": "ref00-9c8ccb",
+          "event_index": 1,
+          "step": 1,
+          "input_tokens": 743
+        },
+        {
+          "case_id": "ref00-9c8ccb",
+          "event_index": 2,
+          "step": 0,
+          "input_tokens": 741
+        },
+        {
+          "case_id": "ref00-9c8ccb",
+          "event_index": 2,
+          "step": 1,
+          "input_tokens": 761
+        },
+        {
+          "case_id": "ref01-7bdfa7",
+          "event_index": 0,
+          "step": 0,
+          "input_tokens": 571
+        },
+        {
+          "case_id": "ref01-7bdfa7",
+          "event_index": 0,
+          "step": 1,
+          "input_tokens": 1156
+        },
+        {
+          "case_id": "ref01-7bdfa7",
+          "event_index": 1,
+          "step": 0,
+          "input_tokens": 1047
+        },
+        {
+          "case_id": "ref01-7bdfa7",
+          "event_index": 2,
+          "step": 0,
+          "input_tokens": 1167
+        },
+        {
+          "case_id": "ref10-c05565",
+          "event_index": 0,
+          "step": 0,
+          "input_tokens": 572
+        },
+        {
+          "case_id": "ref10-c05565",
+          "event_index": 0,
+          "step": 1,
+          "input_tokens": 752
+        },
+        {
+          "case_id": "ref10-c05565",
+          "event_index": 1,
+          "step": 0,
+          "input_tokens": 750
+        },
+        {
+          "case_id": "ref10-c05565",
+          "event_index": 1,
+          "step": 1,
+          "input_tokens": 738
+        },
+        {
+          "case_id": "ref10-c05565",
+          "event_index": 2,
+          "step": 0,
+          "input_tokens": 736
+        },
+        {
+          "case_id": "ref10-c05565",
+          "event_index": 2,
+          "step": 1,
+          "input_tokens": 753
+        },
+        {
+          "case_id": "ref11-254529",
+          "event_index": 0,
+          "step": 0,
+          "input_tokens": 573
+        },
+        {
+          "case_id": "ref11-254529",
+          "event_index": 0,
+          "step": 1,
+          "input_tokens": 1211
+        },
+        {
+          "case_id": "ref11-254529",
+          "event_index": 1,
+          "step": 0,
+          "input_tokens": 1098
+        },
+        {
+          "case_id": "ref11-254529",
+          "event_index": 2,
+          "step": 0,
+          "input_tokens": 1219
+        },
+        {
+          "case_id": "ref20-14ecb1",
+          "event_index": 0,
+          "step": 0,
+          "input_tokens": 572
+        },
+        {
+          "case_id": "ref20-14ecb1",
+          "event_index": 0,
+          "step": 1,
+          "input_tokens": 752
+        },
+        {
+          "case_id": "ref20-14ecb1",
+          "event_index": 1,
+          "step": 0,
+          "input_tokens": 750
+        },
+        {
+          "case_id": "ref20-14ecb1",
+          "event_index": 1,
+          "step": 1,
+          "input_tokens": 750
+        },
+        {
+          "case_id": "ref20-14ecb1",
+          "event_index": 2,
+          "step": 0,
+          "input_tokens": 748
+        },
+        {
+          "case_id": "ref20-14ecb1",
+          "event_index": 2,
+          "step": 1,
+          "input_tokens": 735
+        },
+        {
+          "case_id": "ref21-6adfb8",
+          "event_index": 0,
+          "step": 0,
+          "input_tokens": 571
+        },
+        {
+          "case_id": "ref21-6adfb8",
+          "event_index": 0,
+          "step": 1,
+          "input_tokens": 1157
+        },
+        {
+          "case_id": "ref21-6adfb8",
+          "event_index": 1,
+          "step": 0,
+          "input_tokens": 1153
+        },
+        {
+          "case_id": "ref21-6adfb8",
+          "event_index": 2,
+          "step": 0,
+          "input_tokens": 1044
+        },
+        {
+          "case_id": "ref30-7e8508",
+          "event_index": 0,
+          "step": 0,
+          "input_tokens": 573
+        },
+        {
+          "case_id": "ref30-7e8508",
+          "event_index": 0,
+          "step": 1,
+          "input_tokens": 759
+        },
+        {
+          "case_id": "ref30-7e8508",
+          "event_index": 1,
+          "step": 0,
+          "input_tokens": 757
+        },
+        {
+          "case_id": "ref30-7e8508",
+          "event_index": 1,
+          "step": 1,
+          "input_tokens": 763
+        },
+        {
+          "case_id": "ref30-7e8508",
+          "event_index": 2,
+          "step": 0,
+          "input_tokens": 761
+        },
+        {
+          "case_id": "ref30-7e8508",
+          "event_index": 2,
+          "step": 1,
+          "input_tokens": 778
+        },
+        {
+          "case_id": "ref31-f3a1da",
+          "event_index": 0,
+          "step": 0,
+          "input_tokens": 571
+        },
+        {
+          "case_id": "ref31-f3a1da",
+          "event_index": 0,
+          "step": 1,
+          "input_tokens": 1061
+        },
+        {
+          "case_id": "ref31-f3a1da",
+          "event_index": 1,
+          "step": 0,
+          "input_tokens": 1062
+        },
+        {
+          "case_id": "ref31-f3a1da",
+          "event_index": 2,
+          "step": 0,
+          "input_tokens": 1170
+        },
+        {
+          "case_id": "ref40-713dde",
+          "event_index": 0,
+          "step": 0,
+          "input_tokens": 572
+        },
+        {
+          "case_id": "ref40-713dde",
+          "event_index": 1,
+          "step": 0,
+          "input_tokens": 572
+        },
+        {
+          "case_id": "ref40-713dde",
+          "event_index": 1,
+          "step": 1,
+          "input_tokens": 701
+        },
+        {
+          "case_id": "ref40-713dde",
+          "event_index": 2,
+          "step": 0,
+          "input_tokens": 699
+        },
+        {
+          "case_id": "ref40-713dde",
+          "event_index": 2,
+          "step": 1,
+          "input_tokens": 741
+        },
+        {
+          "case_id": "ref41-512b35",
+          "event_index": 0,
+          "step": 0,
+          "input_tokens": 574
+        },
+        {
+          "case_id": "ref41-512b35",
+          "event_index": 1,
+          "step": 0,
+          "input_tokens": 574
+        },
+        {
+          "case_id": "ref41-512b35",
+          "event_index": 1,
+          "step": 1,
+          "input_tokens": 1175
+        },
+        {
+          "case_id": "ref41-512b35",
+          "event_index": 2,
+          "step": 0,
+          "input_tokens": 745
+        },
+        {
+          "case_id": "ref50-373e85",
+          "event_index": 0,
+          "step": 0,
+          "input_tokens": 573
+        },
+        {
+          "case_id": "ref50-373e85",
+          "event_index": 0,
+          "step": 1,
+          "input_tokens": 761
+        },
+        {
+          "case_id": "ref50-373e85",
+          "event_index": 1,
+          "step": 0,
+          "input_tokens": 573
+        },
+        {
+          "case_id": "ref50-373e85",
+          "event_index": 1,
+          "step": 1,
+          "input_tokens": 773
+        },
+        {
+          "case_id": "ref50-373e85",
+          "event_index": 2,
+          "step": 0,
+          "input_tokens": 573
+        },
+        {
+          "case_id": "ref50-373e85",
+          "event_index": 2,
+          "step": 1,
+          "input_tokens": 767
+        },
+        {
+          "case_id": "ref51-10b5d1",
+          "event_index": 0,
+          "step": 0,
+          "input_tokens": 573
+        },
+        {
+          "case_id": "ref51-10b5d1",
+          "event_index": 0,
+          "step": 1,
+          "input_tokens": 1225
+        },
+        {
+          "case_id": "ref51-10b5d1",
+          "event_index": 1,
+          "step": 0,
+          "input_tokens": 573
+        },
+        {
+          "case_id": "ref51-10b5d1",
+          "event_index": 1,
+          "step": 1,
+          "input_tokens": 1118
+        },
+        {
+          "case_id": "ref51-10b5d1",
+          "event_index": 2,
+          "step": 0,
+          "input_tokens": 573
+        },
+        {
+          "case_id": "ref51-10b5d1",
+          "event_index": 2,
+          "step": 1,
+          "input_tokens": 1214
+        },
+        {
+          "case_id": "ref60-8a83b7",
+          "event_index": 0,
+          "step": 0,
+          "input_tokens": 573
+        },
+        {
+          "case_id": "ref60-8a83b7",
+          "event_index": 0,
+          "step": 1,
+          "input_tokens": 767
+        },
+        {
+          "case_id": "ref60-8a83b7",
+          "event_index": 1,
+          "step": 0,
+          "input_tokens": 765
+        },
+        {
+          "case_id": "ref60-8a83b7",
+          "event_index": 1,
+          "step": 1,
+          "input_tokens": 716
+        },
+        {
+          "case_id": "ref60-8a83b7",
+          "event_index": 2,
+          "step": 0,
+          "input_tokens": 714
+        },
+        {
+          "case_id": "ref60-8a83b7",
+          "event_index": 2,
+          "step": 1,
+          "input_tokens": 715
+        },
+        {
+          "case_id": "ref61-75059d",
+          "event_index": 0,
+          "step": 0,
+          "input_tokens": 573
+        },
+        {
+          "case_id": "ref61-75059d",
+          "event_index": 0,
+          "step": 1,
+          "input_tokens": 1219
+        },
+        {
+          "case_id": "ref61-75059d",
+          "event_index": 1,
+          "step": 0,
+          "input_tokens": 704
+        },
+        {
+          "case_id": "ref61-75059d",
+          "event_index": 2,
+          "step": 0,
+          "input_tokens": 1219
+        },
+        {
+          "case_id": "ref70-287e4f",
+          "event_index": 0,
+          "step": 0,
+          "input_tokens": 575
+        },
+        {
+          "case_id": "ref70-287e4f",
+          "event_index": 0,
+          "step": 1,
+          "input_tokens": 728
+        },
+        {
+          "case_id": "ref70-287e4f",
+          "event_index": 1,
+          "step": 0,
+          "input_tokens": 726
+        },
+        {
+          "case_id": "ref70-287e4f",
+          "event_index": 1,
+          "step": 1,
+          "input_tokens": 784
+        },
+        {
+          "case_id": "ref70-287e4f",
+          "event_index": 2,
+          "step": 0,
+          "input_tokens": 782
+        },
+        {
+          "case_id": "ref70-287e4f",
+          "event_index": 2,
+          "step": 1,
+          "input_tokens": 755
+        },
+        {
+          "case_id": "ref71-752e04",
+          "event_index": 0,
+          "step": 0,
+          "input_tokens": 575
+        },
+        {
+          "case_id": "ref71-752e04",
+          "event_index": 0,
+          "step": 1,
+          "input_tokens": 726
+        },
+        {
+          "case_id": "ref71-752e04",
+          "event_index": 1,
+          "step": 0,
+          "input_tokens": 1239
+        },
+        {
+          "case_id": "ref71-752e04",
+          "event_index": 2,
+          "step": 0,
+          "input_tokens": 1105
+        }
+      ]
+    },
+    "reference": {
+      "prompts": 81,
+      "max_input_tokens": 649,
+      "over_2048": 0,
+      "rows": [
+        {
+          "case_id": "ref00-9c8ccb",
+          "event_index": 0,
+          "step": 0,
+          "input_tokens": 565
+        },
+        {
+          "case_id": "ref00-9c8ccb",
+          "event_index": 0,
+          "step": 1,
+          "input_tokens": 624
+        },
+        {
+          "case_id": "ref00-9c8ccb",
+          "event_index": 1,
+          "step": 0,
+          "input_tokens": 623
+        },
+        {
+          "case_id": "ref00-9c8ccb",
+          "event_index": 1,
+          "step": 1,
+          "input_tokens": 633
+        },
+        {
+          "case_id": "ref00-9c8ccb",
+          "event_index": 2,
+          "step": 0,
+          "input_tokens": 632
+        },
+        {
+          "case_id": "ref00-9c8ccb",
+          "event_index": 2,
+          "step": 1,
+          "input_tokens": 640
+        },
+        {
+          "case_id": "ref01-7bdfa7",
+          "event_index": 0,
+          "step": 0,
+          "input_tokens": 565
+        },
+        {
+          "case_id": "ref01-7bdfa7",
+          "event_index": 0,
+          "step": 1,
+          "input_tokens": 627
+        },
+        {
+          "case_id": "ref01-7bdfa7",
+          "event_index": 1,
+          "step": 0,
+          "input_tokens": 625
+        },
+        {
+          "case_id": "ref01-7bdfa7",
+          "event_index": 2,
+          "step": 0,
+          "input_tokens": 628
+        },
+        {
+          "case_id": "ref10-c05565",
+          "event_index": 0,
+          "step": 0,
+          "input_tokens": 566
+        },
+        {
+          "case_id": "ref10-c05565",
+          "event_index": 0,
+          "step": 1,
+          "input_tokens": 625
+        },
+        {
+          "case_id": "ref10-c05565",
+          "event_index": 1,
+          "step": 0,
+          "input_tokens": 624
+        },
+        {
+          "case_id": "ref10-c05565",
+          "event_index": 1,
+          "step": 1,
+          "input_tokens": 640
+        },
+        {
+          "case_id": "ref10-c05565",
+          "event_index": 2,
+          "step": 0,
+          "input_tokens": 639
+        },
+        {
+          "case_id": "ref10-c05565",
+          "event_index": 2,
+          "step": 1,
+          "input_tokens": 626
+        },
+        {
+          "case_id": "ref11-254529",
+          "event_index": 0,
+          "step": 0,
+          "input_tokens": 567
+        },
+        {
+          "case_id": "ref11-254529",
+          "event_index": 0,
+          "step": 1,
+          "input_tokens": 622
+        },
+        {
+          "case_id": "ref11-254529",
+          "event_index": 1,
+          "step": 0,
+          "input_tokens": 648
+        },
+        {
+          "case_id": "ref11-254529",
+          "event_index": 2,
+          "step": 0,
+          "input_tokens": 630
+        },
+        {
+          "case_id": "ref20-14ecb1",
+          "event_index": 0,
+          "step": 0,
+          "input_tokens": 566
+        },
+        {
+          "case_id": "ref20-14ecb1",
+          "event_index": 0,
+          "step": 1,
+          "input_tokens": 625
+        },
+        {
+          "case_id": "ref20-14ecb1",
+          "event_index": 1,
+          "step": 0,
+          "input_tokens": 624
+        },
+        {
+          "case_id": "ref20-14ecb1",
+          "event_index": 1,
+          "step": 1,
+          "input_tokens": 625
+        },
+        {
+          "case_id": "ref20-14ecb1",
+          "event_index": 2,
+          "step": 0,
+          "input_tokens": 624
+        },
+        {
+          "case_id": "ref20-14ecb1",
+          "event_index": 2,
+          "step": 1,
+          "input_tokens": 637
+        },
+        {
+          "case_id": "ref21-6adfb8",
+          "event_index": 0,
+          "step": 0,
+          "input_tokens": 565
+        },
+        {
+          "case_id": "ref21-6adfb8",
+          "event_index": 0,
+          "step": 1,
+          "input_tokens": 628
+        },
+        {
+          "case_id": "ref21-6adfb8",
+          "event_index": 1,
+          "step": 0,
+          "input_tokens": 626
+        },
+        {
+          "case_id": "ref21-6adfb8",
+          "event_index": 2,
+          "step": 0,
+          "input_tokens": 638
+        },
+        {
+          "case_id": "ref30-7e8508",
+          "event_index": 0,
+          "step": 0,
+          "input_tokens": 567
+        },
+        {
+          "case_id": "ref30-7e8508",
+          "event_index": 0,
+          "step": 1,
+          "input_tokens": 640
+        },
+        {
+          "case_id": "ref30-7e8508",
+          "event_index": 1,
+          "step": 0,
+          "input_tokens": 639
+        },
+        {
+          "case_id": "ref30-7e8508",
+          "event_index": 1,
+          "step": 1,
+          "input_tokens": 644
+        },
+        {
+          "case_id": "ref30-7e8508",
+          "event_index": 2,
+          "step": 0,
+          "input_tokens": 643
+        },
+        {
+          "case_id": "ref30-7e8508",
+          "event_index": 2,
+          "step": 1,
+          "input_tokens": 626
+        },
+        {
+          "case_id": "ref31-f3a1da",
+          "event_index": 0,
+          "step": 0,
+          "input_tokens": 565
+        },
+        {
+          "case_id": "ref31-f3a1da",
+          "event_index": 0,
+          "step": 1,
+          "input_tokens": 640
+        },
+        {
+          "case_id": "ref31-f3a1da",
+          "event_index": 1,
+          "step": 0,
+          "input_tokens": 641
+        },
+        {
+          "case_id": "ref31-f3a1da",
+          "event_index": 2,
+          "step": 0,
+          "input_tokens": 624
+        },
+        {
+          "case_id": "ref40-713dde",
+          "event_index": 0,
+          "step": 0,
+          "input_tokens": 566
+        },
+        {
+          "case_id": "ref40-713dde",
+          "event_index": 1,
+          "step": 0,
+          "input_tokens": 566
+        },
+        {
+          "case_id": "ref40-713dde",
+          "event_index": 1,
+          "step": 1,
+          "input_tokens": 619
+        },
+        {
+          "case_id": "ref40-713dde",
+          "event_index": 2,
+          "step": 0,
+          "input_tokens": 618
+        },
+        {
+          "case_id": "ref40-713dde",
+          "event_index": 2,
+          "step": 1,
+          "input_tokens": 646
+        },
+        {
+          "case_id": "ref41-512b35",
+          "event_index": 0,
+          "step": 0,
+          "input_tokens": 568
+        },
+        {
+          "case_id": "ref41-512b35",
+          "event_index": 1,
+          "step": 0,
+          "input_tokens": 568
+        },
+        {
+          "case_id": "ref41-512b35",
+          "event_index": 1,
+          "step": 1,
+          "input_tokens": 631
+        },
+        {
+          "case_id": "ref41-512b35",
+          "event_index": 2,
+          "step": 0,
+          "input_tokens": 644
+        },
+        {
+          "case_id": "ref50-373e85",
+          "event_index": 0,
+          "step": 0,
+          "input_tokens": 567
+        },
+        {
+          "case_id": "ref50-373e85",
+          "event_index": 0,
+          "step": 1,
+          "input_tokens": 622
+        },
+        {
+          "case_id": "ref50-373e85",
+          "event_index": 1,
+          "step": 0,
+          "input_tokens": 567
+        },
+        {
+          "case_id": "ref50-373e85",
+          "event_index": 1,
+          "step": 1,
+          "input_tokens": 644
+        },
+        {
+          "case_id": "ref50-373e85",
+          "event_index": 2,
+          "step": 0,
+          "input_tokens": 567
+        },
+        {
+          "case_id": "ref50-373e85",
+          "event_index": 2,
+          "step": 1,
+          "input_tokens": 628
+        },
+        {
+          "case_id": "ref51-10b5d1",
+          "event_index": 0,
+          "step": 0,
+          "input_tokens": 567
+        },
+        {
+          "case_id": "ref51-10b5d1",
+          "event_index": 0,
+          "step": 1,
+          "input_tokens": 630
+        },
+        {
+          "case_id": "ref51-10b5d1",
+          "event_index": 1,
+          "step": 0,
+          "input_tokens": 567
+        },
+        {
+          "case_id": "ref51-10b5d1",
+          "event_index": 1,
+          "step": 1,
+          "input_tokens": 641
+        },
+        {
+          "case_id": "ref51-10b5d1",
+          "event_index": 2,
+          "step": 0,
+          "input_tokens": 567
+        },
+        {
+          "case_id": "ref51-10b5d1",
+          "event_index": 2,
+          "step": 1,
+          "input_tokens": 619
+        },
+        {
+          "case_id": "ref60-8a83b7",
+          "event_index": 0,
+          "step": 0,
+          "input_tokens": 567
+        },
+        {
+          "case_id": "ref60-8a83b7",
+          "event_index": 0,
+          "step": 1,
+          "input_tokens": 629
+        },
+        {
+          "case_id": "ref60-8a83b7",
+          "event_index": 1,
+          "step": 0,
+          "input_tokens": 628
+        },
+        {
+          "case_id": "ref60-8a83b7",
+          "event_index": 1,
+          "step": 1,
+          "input_tokens": 637
+        },
+        {
+          "case_id": "ref60-8a83b7",
+          "event_index": 2,
+          "step": 0,
+          "input_tokens": 636
+        },
+        {
+          "case_id": "ref60-8a83b7",
+          "event_index": 2,
+          "step": 1,
+          "input_tokens": 626
+        },
+        {
+          "case_id": "ref61-75059d",
+          "event_index": 0,
+          "step": 0,
+          "input_tokens": 567
+        },
+        {
+          "case_id": "ref61-75059d",
+          "event_index": 0,
+          "step": 1,
+          "input_tokens": 625
+        },
+        {
+          "case_id": "ref61-75059d",
+          "event_index": 1,
+          "step": 0,
+          "input_tokens": 630
+        },
+        {
+          "case_id": "ref61-75059d",
+          "event_index": 2,
+          "step": 0,
+          "input_tokens": 625
+        },
+        {
+          "case_id": "ref70-287e4f",
+          "event_index": 0,
+          "step": 0,
+          "input_tokens": 569
+        },
+        {
+          "case_id": "ref70-287e4f",
+          "event_index": 0,
+          "step": 1,
+          "input_tokens": 648
+        },
+        {
+          "case_id": "ref70-287e4f",
+          "event_index": 1,
+          "step": 0,
+          "input_tokens": 647
+        },
+        {
+          "case_id": "ref70-287e4f",
+          "event_index": 1,
+          "step": 1,
+          "input_tokens": 632
+        },
+        {
+          "case_id": "ref70-287e4f",
+          "event_index": 2,
+          "step": 0,
+          "input_tokens": 631
+        },
+        {
+          "case_id": "ref70-287e4f",
+          "event_index": 2,
+          "step": 1,
+          "input_tokens": 647
+        },
+        {
+          "case_id": "ref71-752e04",
+          "event_index": 0,
+          "step": 0,
+          "input_tokens": 569
+        },
+        {
+          "case_id": "ref71-752e04",
+          "event_index": 0,
+          "step": 1,
+          "input_tokens": 646
+        },
+        {
+          "case_id": "ref71-752e04",
+          "event_index": 1,
+          "step": 0,
+          "input_tokens": 631
+        },
+        {
+          "case_id": "ref71-752e04",
+          "event_index": 2,
+          "step": 0,
+          "input_tokens": 649
+        }
+      ]
+    }
+  },
+  "scope": "Rule trajectories only; model failures may cause different later states. No truncation or budget changes."
+}

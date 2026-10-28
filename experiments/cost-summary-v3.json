@@ -1,0 +1,1027 @@
+{
+  "cost_file": "experiments/updates-confirm-v3.json",
+  "cost_sha256": "1847ab693d0dc19e8a2e1b29a46b0e821d89db55d6c5d1772c110c3c39aa7dd4",
+  "cost_aggregates": [
+    {
+      "rows": 240,
+      "pattern": "unrelated",
+      "mode": "full",
+      "median_total_seconds": 0.026671458152122796,
+      "min_total_seconds": 0.02666383294854313,
+      "max_total_seconds": 0.028914586058817804,
+      "mismatches_per_run": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "query_executions": 624,
+      "query_scans": 1872
+    },
+    {
+      "rows": 240,
+      "pattern": "unrelated",
+      "mode": "positive",
+      "median_total_seconds": 0.012645459966734052,
+      "min_total_seconds": 0.01248712686356157,
+      "max_total_seconds": 0.013566041714511812,
+      "mismatches_per_run": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "query_executions": 48,
+      "query_scans": 144
+    },
+    {
+      "rows": 240,
+      "pattern": "unrelated",
+      "mode": "coarse",
+      "median_total_seconds": 0.012937503168359399,
+      "min_total_seconds": 0.012692710035480559,
+      "max_total_seconds": 0.013410877087153494,
+      "mismatches_per_run": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "query_executions": 48,
+      "query_scans": 144
+    },
+    {
+      "rows": 240,
+      "pattern": "unrelated",
+      "mode": "predicate",
+      "median_total_seconds": 0.012910499004647136,
+      "min_total_seconds": 0.012602500151842833,
+      "max_total_seconds": 0.014361919136717916,
+      "mismatches_per_run": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "query_executions": 48,
+      "query_scans": 144
+    },
+    {
+      "rows": 240,
+      "pattern": "unrelated",
+      "mode": "adaptive",
+      "median_total_seconds": 0.013985333032906055,
+      "min_total_seconds": 0.013581461040303111,
+      "max_total_seconds": 0.014316582004539669,
+      "mismatches_per_run": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "query_executions": 48,
+      "query_scans": 144
+    },
+    {
+      "rows": 240,
+      "pattern": "filtered",
+      "mode": "full",
+      "median_total_seconds": 0.027592460857704282,
+      "min_total_seconds": 0.027177251176908612,
+      "max_total_seconds": 0.02861429180484265,
+      "mismatches_per_run": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "query_executions": 624,
+      "query_scans": 1872
+    },
+    {
+      "rows": 240,
+      "pattern": "filtered",
+      "mode": "positive",
+      "median_total_seconds": 0.012949959142133594,
+      "min_total_seconds": 0.012736878008581698,
+      "max_total_seconds": 0.01480366790201515,
+      "mismatches_per_run": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "query_executions": 48,
+      "query_scans": 144
+    },
+    {
+      "rows": 240,
+      "pattern": "filtered",
+      "mode": "coarse",
+      "median_total_seconds": 0.013566874084062874,
+      "min_total_seconds": 0.013412835192866623,
+      "max_total_seconds": 0.01509583496954292,
+      "mismatches_per_run": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "query_executions": 60,
+      "query_scans": 204
+    },
+    {
+      "rows": 240,
+      "pattern": "filtered",
+      "mode": "predicate",
+      "median_total_seconds": 0.0133399578044191,
+      "min_total_seconds": 0.013011878123506904,
+      "max_total_seconds": 0.013631336158141494,
+      "mismatches_per_run": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "query_executions": 48,
+      "query_scans": 144
+    },
+    {
+      "rows": 240,
+      "pattern": "filtered",
+      "mode": "adaptive",
+      "median_total_seconds": 0.014788664178922772,
+      "min_total_seconds": 0.014683918561786413,
+      "max_total_seconds": 0.015855290926992893,
+      "mismatches_per_run": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "query_executions": 60,
+      "query_scans": 204
+    },
+    {
+      "rows": 240,
+      "pattern": "same_observation",
+      "mode": "full",
+      "median_total_seconds": 0.027837750152684748,
+      "min_total_seconds": 0.027108667069114745,
+      "max_total_seconds": 0.02869937615469098,
+      "mismatches_per_run": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "query_executions": 624,
+      "query_scans": 1872
+    },
+    {
+      "rows": 240,
+      "pattern": "same_observation",
+      "mode": "positive",
+      "median_total_seconds": 0.012936626095324755,
+      "min_total_seconds": 0.012653918704017997,
+      "max_total_seconds": 0.013025001040659845,
+      "mismatches_per_run": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "query_executions": 50,
+      "query_scans": 164
+    },
+    {
+      "rows": 240,
+      "pattern": "same_observation",
+      "mode": "coarse",
+      "median_total_seconds": 0.013580291997641325,
+      "min_total_seconds": 0.01313483202829957,
+      "max_total_seconds": 0.014785415842197835,
+      "mismatches_per_run": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "query_executions": 60,
+      "query_scans": 204
+    },
+    {
+      "rows": 240,
+      "pattern": "same_observation",
+      "mode": "predicate",
+      "median_total_seconds": 0.013647500076331198,
+      "min_total_seconds": 0.013438958092592657,
+      "max_total_seconds": 0.014671250828541815,
+      "mismatches_per_run": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "query_executions": 54,
+      "query_scans": 204
+    },
+    {
+      "rows": 240,
+      "pattern": "same_observation",
+      "mode": "adaptive",
+      "median_total_seconds": 0.014724333654157817,
+      "min_total_seconds": 0.014468626235611737,
+      "max_total_seconds": 0.014860708033666015,
+      "mismatches_per_run": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "query_executions": 60,
+      "query_scans": 204
+    },
+    {
+      "rows": 240,
+      "pattern": "mixed",
+      "mode": "full",
+      "median_total_seconds": 0.02787170826923102,
+      "min_total_seconds": 0.02668875001836568,
+      "max_total_seconds": 0.02815362683031708,
+      "mismatches_per_run": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "query_executions": 624,
+      "query_scans": 1892
+    },
+    {
+      "rows": 240,
+      "pattern": "mixed",
+      "mode": "positive",
+      "median_total_seconds": 0.012660873588174582,
+      "min_total_seconds": 0.012435378041118383,
+      "max_total_seconds": 0.012766042142175138,
+      "mismatches_per_run": [
+        40,
+        40,
+        40,
+        40,
+        40
+      ],
+      "query_executions": 48,
+      "query_scans": 144
+    },
+    {
+      "rows": 240,
+      "pattern": "mixed",
+      "mode": "coarse",
+      "median_total_seconds": 0.013912206050008535,
+      "min_total_seconds": 0.013526623253710568,
+      "max_total_seconds": 0.014051126083359122,
+      "mismatches_per_run": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "query_executions": 60,
+      "query_scans": 198
+    },
+    {
+      "rows": 240,
+      "pattern": "mixed",
+      "mode": "predicate",
+      "median_total_seconds": 0.01392608298920095,
+      "min_total_seconds": 0.013735625077970326,
+      "max_total_seconds": 0.014933206955902278,
+      "mismatches_per_run": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "query_executions": 60,
+      "query_scans": 198
+    },
+    {
+      "rows": 240,
+      "pattern": "mixed",
+      "mode": "adaptive",
+      "median_total_seconds": 0.014574251952581108,
+      "min_total_seconds": 0.014470334048382938,
+      "max_total_seconds": 0.015638377983123064,
+      "mismatches_per_run": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "query_executions": 60,
+      "query_scans": 198
+    },
+    {
+      "rows": 240,
+      "pattern": "high_fanout",
+      "mode": "full",
+      "median_total_seconds": 0.07475779310334474,
+      "min_total_seconds": 0.07404795801267028,
+      "max_total_seconds": 0.0753175423014909,
+      "mismatches_per_run": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "query_executions": 624,
+      "query_scans": 1872
+    },
+    {
+      "rows": 240,
+      "pattern": "high_fanout",
+      "mode": "positive",
+      "median_total_seconds": 0.07800283515825868,
+      "min_total_seconds": 0.07681041897740215,
+      "max_total_seconds": 0.07875937491189688,
+      "mismatches_per_run": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "query_executions": 192,
+      "query_scans": 1584
+    },
+    {
+      "rows": 240,
+      "pattern": "high_fanout",
+      "mode": "coarse",
+      "median_total_seconds": 0.08495716494508088,
+      "min_total_seconds": 0.08279112400487065,
+      "max_total_seconds": 0.08570845995564014,
+      "mismatches_per_run": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "query_executions": 336,
+      "query_scans": 1584
+    },
+    {
+      "rows": 240,
+      "pattern": "high_fanout",
+      "mode": "predicate",
+      "median_total_seconds": 0.15394637372810394,
+      "min_total_seconds": 0.15312570799142122,
+      "max_total_seconds": 0.15516079089138657,
+      "mismatches_per_run": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "query_executions": 192,
+      "query_scans": 1584
+    },
+    {
+      "rows": 240,
+      "pattern": "high_fanout",
+      "mode": "adaptive",
+      "median_total_seconds": 0.07659000088460743,
+      "min_total_seconds": 0.07601133303251117,
+      "max_total_seconds": 0.07893124897964299,
+      "mismatches_per_run": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "query_executions": 624,
+      "query_scans": 1872
+    },
+    {
+      "rows": 240,
+      "pattern": "low_reuse",
+      "mode": "full",
+      "median_total_seconds": 0.029339125147089362,
+      "min_total_seconds": 0.02881583198904991,
+      "max_total_seconds": 0.029639128013513982,
+      "mismatches_per_run": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "query_executions": 624,
+      "query_scans": 720
+    },
+    {
+      "rows": 240,
+      "pattern": "low_reuse",
+      "mode": "positive",
+      "median_total_seconds": 0.02928095916286111,
+      "min_total_seconds": 0.028365291887894273,
+      "max_total_seconds": 0.029932500096037984,
+      "mismatches_per_run": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "query_executions": 624,
+      "query_scans": 720
+    },
+    {
+      "rows": 240,
+      "pattern": "low_reuse",
+      "mode": "coarse",
+      "median_total_seconds": 0.02999508415814489,
+      "min_total_seconds": 0.028893584851175547,
+      "max_total_seconds": 0.030354790738783777,
+      "mismatches_per_run": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "query_executions": 624,
+      "query_scans": 720
+    },
+    {
+      "rows": 240,
+      "pattern": "low_reuse",
+      "mode": "predicate",
+      "median_total_seconds": 0.028812166885472834,
+      "min_total_seconds": 0.02853400108870119,
+      "max_total_seconds": 0.03081595932599157,
+      "mismatches_per_run": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "query_executions": 624,
+      "query_scans": 720
+    },
+    {
+      "rows": 240,
+      "pattern": "low_reuse",
+      "mode": "adaptive",
+      "median_total_seconds": 0.02975125005468726,
+      "min_total_seconds": 0.029579002177342772,
+      "max_total_seconds": 0.03202004195190966,
+      "mismatches_per_run": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "query_executions": 624,
+      "query_scans": 720
+    },
+    {
+      "rows": 2400,
+      "pattern": "unrelated",
+      "mode": "full",
+      "median_total_seconds": 0.1017591271083802,
+      "min_total_seconds": 0.10022166708949953,
+      "max_total_seconds": 0.10291158512700349,
+      "mismatches_per_run": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "query_executions": 624,
+      "query_scans": 15912
+    },
+    {
+      "rows": 2400,
+      "pattern": "unrelated",
+      "mode": "positive",
+      "median_total_seconds": 0.042712500086054206,
+      "min_total_seconds": 0.042093333206139505,
+      "max_total_seconds": 0.043513251934200525,
+      "mismatches_per_run": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "query_executions": 48,
+      "query_scans": 1224
+    },
+    {
+      "rows": 2400,
+      "pattern": "unrelated",
+      "mode": "coarse",
+      "median_total_seconds": 0.044505665893666446,
+      "min_total_seconds": 0.04371987597551197,
+      "max_total_seconds": 0.04560471186414361,
+      "mismatches_per_run": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "query_executions": 48,
+      "query_scans": 1224
+    },
+    {
+      "rows": 2400,
+      "pattern": "unrelated",
+      "mode": "predicate",
+      "median_total_seconds": 0.04469833371695131,
+      "min_total_seconds": 0.042655917815864086,
+      "max_total_seconds": 0.046292084152810276,
+      "mismatches_per_run": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "query_executions": 48,
+      "query_scans": 1224
+    },
+    {
+      "rows": 2400,
+      "pattern": "unrelated",
+      "mode": "adaptive",
+      "median_total_seconds": 0.044567039934918284,
+      "min_total_seconds": 0.04399412707425654,
+      "max_total_seconds": 0.04720712569542229,
+      "mismatches_per_run": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "query_executions": 48,
+      "query_scans": 1224
+    },
+    {
+      "rows": 2400,
+      "pattern": "filtered",
+      "mode": "full",
+      "median_total_seconds": 0.1020613758591935,
+      "min_total_seconds": 0.09886095870751888,
+      "max_total_seconds": 0.10509641701355577,
+      "mismatches_per_run": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "query_executions": 624,
+      "query_scans": 15912
+    },
+    {
+      "rows": 2400,
+      "pattern": "filtered",
+      "mode": "positive",
+      "median_total_seconds": 0.04333071084693074,
+      "min_total_seconds": 0.04200312297325581,
+      "max_total_seconds": 0.04410962469410151,
+      "mismatches_per_run": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "query_executions": 48,
+      "query_scans": 1224
+    },
+    {
+      "rows": 2400,
+      "pattern": "filtered",
+      "mode": "coarse",
+      "median_total_seconds": 0.046405712026171386,
+      "min_total_seconds": 0.04566183779388666,
+      "max_total_seconds": 0.04798595909960568,
+      "mismatches_per_run": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "query_executions": 60,
+      "query_scans": 1824
+    },
+    {
+      "rows": 2400,
+      "pattern": "filtered",
+      "mode": "predicate",
+      "median_total_seconds": 0.04427996010053903,
+      "min_total_seconds": 0.04259779292624444,
+      "max_total_seconds": 0.045512500917539,
+      "mismatches_per_run": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "query_executions": 48,
+      "query_scans": 1224
+    },
+    {
+      "rows": 2400,
+      "pattern": "filtered",
+      "mode": "adaptive",
+      "median_total_seconds": 0.04685787484049797,
+      "min_total_seconds": 0.04573887400329113,
+      "max_total_seconds": 0.047893459210172296,
+      "mismatches_per_run": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "query_executions": 60,
+      "query_scans": 1824
+    },
+    {
+      "rows": 2400,
+      "pattern": "same_observation",
+      "mode": "full",
+      "median_total_seconds": 0.0989252901636064,
+      "min_total_seconds": 0.0956700830720365,
+      "max_total_seconds": 0.10204158199485391,
+      "mismatches_per_run": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "query_executions": 624,
+      "query_scans": 15912
+    },
+    {
+      "rows": 2400,
+      "pattern": "same_observation",
+      "mode": "positive",
+      "median_total_seconds": 0.04382596001960337,
+      "min_total_seconds": 0.04142941581085324,
+      "max_total_seconds": 0.043848626664839685,
+      "mismatches_per_run": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "query_executions": 50,
+      "query_scans": 1424
+    },
+    {
+      "rows": 2400,
+      "pattern": "same_observation",
+      "mode": "coarse",
+      "median_total_seconds": 0.04434775095432997,
+      "min_total_seconds": 0.04325287358369678,
+      "max_total_seconds": 0.04742204397916794,
+      "mismatches_per_run": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "query_executions": 60,
+      "query_scans": 1824
+    },
+    {
+      "rows": 2400,
+      "pattern": "same_observation",
+      "mode": "predicate",
+      "median_total_seconds": 0.045005581923760474,
+      "min_total_seconds": 0.044472916051745415,
+      "max_total_seconds": 0.0466859161388129,
+      "mismatches_per_run": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "query_executions": 54,
+      "query_scans": 1824
+    },
+    {
+      "rows": 2400,
+      "pattern": "same_observation",
+      "mode": "adaptive",
+      "median_total_seconds": 0.045298750163055956,
+      "min_total_seconds": 0.04453153978101909,
+      "max_total_seconds": 0.04632287670392543,
+      "mismatches_per_run": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "query_executions": 60,
+      "query_scans": 1824
+    },
+    {
+      "rows": 2400,
+      "pattern": "mixed",
+      "mode": "full",
+      "median_total_seconds": 0.09865166584495455,
+      "min_total_seconds": 0.09762829088140279,
+      "max_total_seconds": 0.10186403873376548,
+      "mismatches_per_run": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "query_executions": 624,
+      "query_scans": 15948
+    },
+    {
+      "rows": 2400,
+      "pattern": "mixed",
+      "mode": "positive",
+      "median_total_seconds": 0.04259008204098791,
+      "min_total_seconds": 0.04131750296801329,
+      "max_total_seconds": 0.043316624709405005,
+      "mismatches_per_run": [
+        52,
+        52,
+        52,
+        52,
+        52
+      ],
+      "query_executions": 48,
+      "query_scans": 1224
+    },
+    {
+      "rows": 2400,
+      "pattern": "mixed",
+      "mode": "coarse",
+      "median_total_seconds": 0.04546895774547011,
+      "min_total_seconds": 0.04292449995409697,
+      "max_total_seconds": 0.045876792166382074,
+      "mismatches_per_run": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "query_executions": 60,
+      "query_scans": 1532
+    },
+    {
+      "rows": 2400,
+      "pattern": "mixed",
+      "mode": "predicate",
+      "median_total_seconds": 0.044184251804836094,
+      "min_total_seconds": 0.043893793947063386,
+      "max_total_seconds": 0.045602290076203644,
+      "mismatches_per_run": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "query_executions": 60,
+      "query_scans": 1532
+    },
+    {
+      "rows": 2400,
+      "pattern": "mixed",
+      "mode": "adaptive",
+      "median_total_seconds": 0.045865168678574264,
+      "min_total_seconds": 0.044921584078110754,
+      "max_total_seconds": 0.04706221038941294,
+      "mismatches_per_run": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "query_executions": 60,
+      "query_scans": 1532
+    },
+    {
+      "rows": 2400,
+      "pattern": "high_fanout",
+      "mode": "full",
+      "median_total_seconds": 0.5919793348293751,
+      "min_total_seconds": 0.5835932497866452,
+      "max_total_seconds": 0.5948953739134595,
+      "mismatches_per_run": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "query_executions": 624,
+      "query_scans": 15912
+    },
+    {
+      "rows": 2400,
+      "pattern": "high_fanout",
+      "mode": "positive",
+      "median_total_seconds": 0.6424053340451792,
+      "min_total_seconds": 0.6309042918728665,
+      "max_total_seconds": 0.6523465838981792,
+      "mismatches_per_run": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "query_executions": 192,
+      "query_scans": 15624
+    },
+    {
+      "rows": 2400,
+      "pattern": "high_fanout",
+      "mode": "coarse",
+      "median_total_seconds": 0.631967292050831,
+      "min_total_seconds": 0.6279320002067834,
+      "max_total_seconds": 0.6530699179274961,
+      "mismatches_per_run": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "query_executions": 336,
+      "query_scans": 15624
+    },
+    {
+      "rows": 2400,
+      "pattern": "high_fanout",
+      "mode": "predicate",
+      "median_total_seconds": 1.3804584600729868,
+      "min_total_seconds": 1.3615582073107362,
+      "max_total_seconds": 1.3985029166797176,
+      "mismatches_per_run": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "query_executions": 192,
+      "query_scans": 15624
+    },
+    {
+      "rows": 2400,
+      "pattern": "high_fanout",
+      "mode": "adaptive",
+      "median_total_seconds": 0.5928420807467774,
+      "min_total_seconds": 0.5898756239330396,
+      "max_total_seconds": 0.6008337112143636,
+      "mismatches_per_run": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "query_executions": 624,
+      "query_scans": 15912
+    },
+    {
+      "rows": 2400,
+      "pattern": "low_reuse",
+      "mode": "full",
+      "median_total_seconds": 0.0612164189806208,
+      "min_total_seconds": 0.05977254000026733,
+      "max_total_seconds": 0.06397462449967861,
+      "mismatches_per_run": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "query_executions": 624,
+      "query_scans": 1800
+    },
+    {
+      "rows": 2400,
+      "pattern": "low_reuse",
+      "mode": "positive",
+      "median_total_seconds": 0.06183695490472019,
+      "min_total_seconds": 0.06107741396408528,
+      "max_total_seconds": 0.06249441404361278,
+      "mismatches_per_run": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "query_executions": 624,
+      "query_scans": 1800
+    },
+    {
+      "rows": 2400,
+      "pattern": "low_reuse",
+      "mode": "coarse",
+      "median_total_seconds": 0.06182091392111033,
+      "min_total_seconds": 0.05944762600120157,
+      "max_total_seconds": 0.063144626095891,
+      "mismatches_per_run": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "query_executions": 624,
+      "query_scans": 1800
+    },
+    {
+      "rows": 2400,
+      "pattern": "low_reuse",
+      "mode": "predicate",
+      "median_total_seconds": 0.06083179288543761,
+      "min_total_seconds": 0.059842250077053905,
+      "max_total_seconds": 0.061431792099028826,
+      "mismatches_per_run": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "query_executions": 624,
+      "query_scans": 1800
+    },
+    {
+      "rows": 2400,
+      "pattern": "low_reuse",
+      "mode": "adaptive",
+      "median_total_seconds": 0.061463916674256325,
+      "min_total_seconds": 0.060421624104492366,
+      "max_total_seconds": 0.06267929275054485,
+      "mismatches_per_run": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "query_executions": 624,
+      "query_scans": 1800
+    }
+  ],
+  "models": []
+}

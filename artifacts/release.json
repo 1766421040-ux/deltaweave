@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "release_tag": "v0.1.0",
+  "publication_status": "pending",
+  "archive": {
+    "filename": "deltaweave-artifacts-v0.1.0.zip",
+    "url": "https://github.com/1766421040-ux/deltaweave/releases/download/v0.1.0/deltaweave-artifacts-v0.1.0.zip",
+    "sha256": "b9078114f7df68acd8edc36022f3c51f75bbf0a0fb1eaa683daf3600098d86fb",
+    "bytes": 34295413
+  },
+  "files": {
+    "artifacts/behavior/adapter_config.json": {
+      "sha256": "19bc7b423b5e4ead5da6d6670b254eea3af22f14592a0aa97b4b9b5b4002c9d4",
+      "bytes": 1233
+    },
+    "artifacts/behavior/adapter_model.safetensors": {
+      "sha256": "c2b0217f2df30bab1170bf8546f2e1ebaea450053a90605ea2d6473e9971d213",
+      "bytes": 18516064
+    },
+    "artifacts/behavior/training_manifest.json": {
+      "sha256": "11adf5e4a564c5fae97b950aac72b0406d95f3745fd6208459452c15de491d11",
+      "bytes": 3727
+    },
+    "artifacts/manifest.json": {
+      "sha256": "21f0936ac5c6792e7b9127925d4c7411bd032c1e1e222829788df95c33a37996",
+      "bytes": 273680
+    },
+    "artifacts/qa/adapter_config.json": {
+      "sha256": "d73f77b12b8e68f220e14e994fcfdb94cd37e619f5f2ec8e29fa752b5bb9e2ed",
+      "bytes": 1233
+    },
+    "artifacts/qa/adapter_model.safetensors": {
+      "sha256": "59c70119a4663b3fe2c2f54467e770d37e812f53ac552752dc67e63c44cb1d09",
+      "bytes": 18516064
+    },
+    "artifacts/qa/training_manifest.json": {
+      "sha256": "de3708d5d78b9965d19ebbb899bb500038536a6b7d398a3792f9dc6c55e8a976",
+      "bytes": 3727
+    },
+    "data/learning/dev.jsonl": {
+      "sha256": "46a6626e99a1ea7cf7623bb801e8f848a47c2972bc3b03e468ba062fbaaf9c10",
+      "bytes": 92642
+    },
+    "data/learning/future.jsonl": {
+      "sha256": "82f5ed5843982ea7ab4fd65a6d0fbf38682c03fc5b824baa4a1733b64c8e4a4a",
+      "bytes": 91190
+    },
+    "data/learning/manifest.json": {
+      "sha256": "b1104b21db7c48364ee0b60981e55d826c80d61422af0c515dab278dcd0eff4a",
+      "bytes": 1592
+    },
+    "data/learning/test.jsonl": {
+      "sha256": "38f138f2924467945875fe04a33b0e4709fe41dc62d9076533dfc4e3d903d906",
+      "bytes": 92328
+    },
+    "data/learning/train_behavior.jsonl": {
+      "sha256": "59a8bebdea1208f24d51fed17323e478d79f18e6a3744261886dfe8734ed840d",
+      "bytes": 2221040
+    },
+    "data/learning/train_qa.jsonl": {
+      "sha256": "b603d5e4dee1caca4aab3355adb30a890dff31122b90cdbfcdb38d3637de6747",
+      "bytes": 1129144
+    }
+  },
+  "packaging": {
+    "member_order": "lexicographic",
+    "timestamp": [
+      1980,
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "compression": "deflate",
+    "compression_level": 9,
+    "permissions": "regular files 0644",
+    "comment": "",
+    "determinism_scope": "Fixed names, metadata and input bytes; compressed bytes may depend on zlib version."
+  }
+}

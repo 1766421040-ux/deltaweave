@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "task": "closed state controller, not general NLP QA",
+  "files": {
+    "train_behavior.jsonl": {
+      "sha256": "59a8bebdea1208f24d51fed17323e478d79f18e6a3744261886dfe8734ed840d",
+      "rows": 768,
+      "groups": 96,
+      "action_counts": {
+        "abstain": 96,
+        "answer": 288,
+        "ask": 96,
+        "refresh": 192,
+        "wait": 96
+      }
+    },
+    "train_qa.jsonl": {
+      "sha256": "b603d5e4dee1caca4aab3355adb30a890dff31122b90cdbfcdb38d3637de6747",
+      "rows": 384,
+      "groups": 96,
+      "action_counts": {
+        "abstain": 96,
+        "answer": 192,
+        "ask": 96
+      }
+    },
+    "dev.jsonl": {
+      "sha256": "46a6626e99a1ea7cf7623bb801e8f848a47c2972bc3b03e468ba062fbaaf9c10",
+      "rows": 32,
+      "groups": 4,
+      "action_counts": {
+        "abstain": 4,
+        "answer": 12,
+        "ask": 4,
+        "refresh": 8,
+        "wait": 4
+      }
+    },
+    "test.jsonl": {
+      "sha256": "38f138f2924467945875fe04a33b0e4709fe41dc62d9076533dfc4e3d903d906",
+      "rows": 32,
+      "groups": 4,
+      "action_counts": {
+        "abstain": 4,
+        "answer": 12,
+        "ask": 4,
+        "refresh": 8,
+        "wait": 4
+      }
+    },
+    "future.jsonl": {
+      "sha256": "82f5ed5843982ea7ab4fd65a6d0fbf38682c03fc5b824baa4a1733b64c8e4a4a",
+      "rows": 32,
+      "groups": 4,
+      "action_counts": {
+        "abstain": 4,
+        "answer": 12,
+        "ask": 4,
+        "refresh": 8,
+        "wait": 4
+      }
+    }
+  },
+  "generator_sha256": "29f13b7c823c5b93accd6974b8c25f03055a3a7e79b98fc0085f4e7aa2758c08"
+}

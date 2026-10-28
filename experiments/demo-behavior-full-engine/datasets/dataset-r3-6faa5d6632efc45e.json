@@ -1,0 +1,246 @@
+{
+  "schema_version": 1,
+  "manifest_sha256": "6faa5d6632efc45e77cef07a9f5e32ac1173087d0cfaa7a5c4d61b4b5787f996",
+  "snapshot_revision": 3,
+  "snapshot_sha256": "9764255b5629476970637a32f8be169418929f035b8012af66f161fa85c09430",
+  "runtime_binding": {
+    "snapshot_revision": 3,
+    "snapshot_sha256": "9764255b5629476970637a32f8be169418929f035b8012af66f161fa85c09430",
+    "registry_versions": {
+      "controller_python": "1",
+      "resolve": "finite-domain-v1",
+      "training_sample": "finite-resolver-answer-v1"
+    },
+    "registry_fingerprint": "b7754c4dc4fe55daed4617572d4c7433c2d4d77e5c2d038d8b2388d9b743a6e4"
+  },
+  "samples": [
+    {
+      "id": "requests-baseline",
+      "label_rule": "finite-resolver-answer-v1",
+      "observation": {
+        "citations": [
+          "environment:declared-mac:platform_python_implementation",
+          "environment:declared-mac:python_full_version",
+          "projects:certifi",
+          "projects:charset-normalizer",
+          "projects:idna",
+          "projects:requests",
+          "projects:urllib3",
+          "releases:certifi==2023.7.22",
+          "releases:certifi==2024.8.30",
+          "releases:certifi==2025.1.31",
+          "releases:charset-normalizer==3.1.0",
+          "releases:charset-normalizer==3.3.2",
+          "releases:charset-normalizer==3.4.2",
+          "releases:idna==3.10",
+          "releases:idna==3.4",
+          "releases:idna==3.7",
+          "releases:requests==2.31.0",
+          "releases:requests==2.32.0",
+          "releases:requests==2.32.3",
+          "releases:requests==2.32.5",
+          "releases:urllib3==1.26.18",
+          "releases:urllib3==2.0.0",
+          "releases:urllib3==2.0.7",
+          "releases:urllib3==2.2.3",
+          "releases:urllib3==2.5.0"
+        ],
+        "constraints": [
+          {
+            "kind": "dependency",
+            "project": "certifi",
+            "requirement": "certifi>=2017.4.17",
+            "source": "releases:requests==2.32.5"
+          },
+          {
+            "kind": "dependency",
+            "project": "charset-normalizer",
+            "requirement": "charset_normalizer<4,>=2",
+            "source": "releases:requests==2.32.5"
+          },
+          {
+            "kind": "dependency",
+            "project": "idna",
+            "requirement": "idna<4,>=2.5",
+            "source": "releases:requests==2.32.5"
+          },
+          {
+            "kind": "dependency",
+            "project": "urllib3",
+            "requirement": "urllib3<3,>=1.21.1",
+            "source": "releases:requests==2.32.5"
+          },
+          {
+            "kind": "python",
+            "project": "certifi",
+            "requirement": ">=3.6",
+            "source": "releases:certifi==2025.1.31"
+          },
+          {
+            "kind": "python",
+            "project": "charset-normalizer",
+            "requirement": ">=3.7",
+            "source": "releases:charset-normalizer==3.4.2"
+          },
+          {
+            "kind": "python",
+            "project": "idna",
+            "requirement": ">=3.6",
+            "source": "releases:idna==3.10"
+          },
+          {
+            "kind": "python",
+            "project": "requests",
+            "requirement": ">=3.9",
+            "source": "releases:requests==2.32.5"
+          },
+          {
+            "kind": "python",
+            "project": "urllib3",
+            "requirement": ">=3.9",
+            "source": "releases:urllib3==2.5.0"
+          },
+          {
+            "kind": "root",
+            "project": "requests",
+            "requirement": "requests>=2.31",
+            "source": "root"
+          }
+        ],
+        "issues": [],
+        "scope": "Selected finite release universe; declared constraints only, not runtime compatibility or all PyPI.",
+        "selection": {
+          "certifi": "2025.1.31",
+          "charset-normalizer": "3.4.2",
+          "idna": "3.10",
+          "requests": "2.32.5",
+          "urllib3": "2.5.0"
+        },
+        "status": "resolved"
+      },
+      "query": {
+        "as_of": "2026-10-28",
+        "environment": "declared-mac",
+        "requirements": [
+          "requests>=2.31"
+        ]
+      },
+      "target": {
+        "action": "answer",
+        "arguments": {
+          "citations": [
+            "environment:declared-mac:platform_python_implementation",
+            "environment:declared-mac:python_full_version",
+            "projects:certifi",
+            "projects:charset-normalizer",
+            "projects:idna",
+            "projects:requests",
+            "projects:urllib3",
+            "releases:certifi==2023.7.22",
+            "releases:certifi==2024.8.30",
+            "releases:certifi==2025.1.31",
+            "releases:charset-normalizer==3.1.0",
+            "releases:charset-normalizer==3.3.2",
+            "releases:charset-normalizer==3.4.2",
+            "releases:idna==3.10",
+            "releases:idna==3.4",
+            "releases:idna==3.7",
+            "releases:requests==2.31.0",
+            "releases:requests==2.32.0",
+            "releases:requests==2.32.3",
+            "releases:requests==2.32.5",
+            "releases:urllib3==1.26.18",
+            "releases:urllib3==2.0.0",
+            "releases:urllib3==2.0.7",
+            "releases:urllib3==2.2.3",
+            "releases:urllib3==2.5.0"
+          ],
+          "selection": {
+            "certifi": "2025.1.31",
+            "charset-normalizer": "3.4.2",
+            "idna": "3.10",
+            "requests": "2.32.5",
+            "urllib3": "2.5.0"
+          },
+          "status": "resolved"
+        }
+      },
+      "snapshot_revision": 3,
+      "content_sha256": "3d27dec73df378bec71a37ad8bbc2e02bb78ae4078046e6d65e5522500e3b712"
+    }
+  ],
+  "changed_sample_ids": [
+    "requests-baseline"
+  ],
+  "receipts": {
+    "requests-baseline": {
+      "args": {
+        "id": "requests-baseline",
+        "query": {
+          "as_of": "2026-10-28",
+          "environment": "declared-mac",
+          "requirements": [
+            "requests>=2.31"
+          ]
+        }
+      },
+      "computed_at": 3,
+      "dependencies": [
+        {
+          "args": {
+            "as_of": "2026-10-28",
+            "environment": "declared-mac",
+            "requirements": [
+              "requests>=2.31"
+            ]
+          },
+          "kind": "task",
+          "name": "resolve",
+          "value_sha256": "53f00cf9290889e6edce6118b2d302cfedc9608159d457b63586cc1487527483"
+        }
+      ],
+      "execution_policy": {
+        "reason": "fixed_mode",
+        "requested_mode": "full",
+        "selected_mode": "full",
+        "snapshot": 3
+      },
+      "key_sha256": "a327d43830764878415a512bafd9f2be1bbf1415dcba5eee6d5db6e0fa5208ac",
+      "kind": "task",
+      "mode": "full",
+      "name": "training_sample",
+      "registry_epoch": 3,
+      "stats": {
+        "adaptive_coarse_runs": 0,
+        "adaptive_fallback_runs": 0,
+        "adaptive_full_runs": 0,
+        "adaptive_policy_seconds": 0.0,
+        "dependency_checks": 0,
+        "dependency_edges_written": 1,
+        "guard_checks": 0,
+        "guard_matches": 0,
+        "guard_seconds": 0.0,
+        "observation_changes": 1,
+        "query_executions": 0,
+        "query_receipt_writes": 0,
+        "query_reuses": 0,
+        "query_scans": 0,
+        "query_seconds": 0.0,
+        "run_seconds": 6.312504410743713e-05,
+        "runs": 1,
+        "task_executions": 1,
+        "task_reuses": 1,
+        "task_self_seconds": 2.5541987270116806e-05,
+        "task_validations": 0,
+        "trace_writes": 1,
+        "validation_self_seconds": 0.0
+      },
+      "status": "valid",
+      "validated_at": 3,
+      "validation_contract": "conservative_observation",
+      "value_sha256": "3d27dec73df378bec71a37ad8bbc2e02bb78ae4078046e6d65e5522500e3b712",
+      "version": "finite-resolver-answer-v1"
+    }
+  },
+  "scope": "Frozen labels over a declared finite catalog; existing adapters are not modified or unlearned."
+}

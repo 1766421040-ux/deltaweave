@@ -1,0 +1,23 @@
+{
+  "schema": "deltaweave.reference-confirmation.v1",
+  "frozen_at": "2026-10-28T02:53:10.294687+00:00",
+  "inputs": {
+    "cases.json": "02a3b45b3cf9a1f3a35137e02b544acbf062952ff1dfd939cb36fb745fd5c5a9",
+    "config.json": "d6d600ba868c70f5b6a051e21074cf8ded07dcb5ca7d2ea54241a4f6a904bd0c"
+  },
+  "source_sha256": {
+    "src/deltaweave/engine.py": "adad4b58f9fddcc5a2b1f554ba51f3abe8ae60847b650ada2f34b53fe76f154d",
+    "src/deltaweave/store.py": "8edc01ae86f4735022018c1850f026fc90bce7df9ba401ca98f6738f116e0994",
+    "src/deltaweave/domain.py": "9277c0ef43383cd3b0b1c12b99264f7e9e34315eee0cd7ae784239a6a7aa82b0",
+    "src/deltaweave/oracle.py": "87a50665b8bb2ce941b17490f4496a020245a60ab205e9cc9998e46d0d04aa04",
+    "src/deltaweave/session.py": "f59731de25e14c28da185cb14bda4d1f1169aec8a093d5a9f0ddec90dd277551",
+    "src/deltaweave/evidence.py": "a500113219525111c321e1d422cf851d54ba9403b0aef409b84b2a8b1210c687",
+    "src/deltaweave/provenance.py": "dbeb717825142228371cb9015bed201b75d20a291d61a658843f0c2050fa9780",
+    "src/deltaweave/learning_data.py": "29f13b7c823c5b93accd6974b8c25f03055a3a7e79b98fc0085f4e7aa2758c08",
+    "src/deltaweave/model.py": "c1131424ef5ae2958c71857ee6679fa77fe7570966fbf0e1f8f6f3f433525f40",
+    "src/deltaweave/cli.py": "9a4b1698cc2dfd043ef0285d8956e79d8271d069f7c0be248cdc18237515dcb4",
+    "scripts/audit_tokenizer.py": "c742ea7b19a7242a60aa996712846edc4dd724582e00d22a850288150619be5c",
+    "scripts/benchmark_reference.py": "f3ee8257614f9cd07ccc14388a2872b70f1cdd4055a454cbf393047fe246dd49",
+    "research/protocol-reference-v1.md": "915c3900df1731c8f27eb1f9aac018ea714de47a691436d0ac3488c156a985da"
+  }
+}

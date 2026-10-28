@@ -1,0 +1,121 @@
+{
+  "schema_version": 1,
+  "manifest_sha256": "6dc1fc6d40f38a3aa02f18b6796b000c52fa1c03f2d79b2f4be37dcddc783a56",
+  "snapshot_revision": 5,
+  "snapshot_sha256": "f90e33b0c5f5cade4ff7378a76feab5db54d077d693887628f6ef06097ce4b45",
+  "runtime_binding": {
+    "snapshot_revision": 5,
+    "snapshot_sha256": "f90e33b0c5f5cade4ff7378a76feab5db54d077d693887628f6ef06097ce4b45",
+    "registry_versions": {
+      "controller_python": "1",
+      "resolve": "finite-domain-v1",
+      "training_sample": "finite-resolver-answer-v1"
+    },
+    "registry_fingerprint": "b7754c4dc4fe55daed4617572d4c7433c2d4d77e5c2d038d8b2388d9b743a6e4"
+  },
+  "samples": [
+    {
+      "id": "requests-baseline",
+      "label_rule": "finite-resolver-answer-v1",
+      "observation": {
+        "citations": [],
+        "constraints": [],
+        "issues": [
+          "no complete finite-universe certificate: requests"
+        ],
+        "scope": "Selected finite release universe; declared constraints only, not runtime compatibility or all PyPI.",
+        "selection": {},
+        "status": "incomplete"
+      },
+      "query": {
+        "as_of": "2026-10-28",
+        "environment": "declared-mac",
+        "requirements": [
+          "requests>=2.31"
+        ]
+      },
+      "target": {
+        "action": "abstain",
+        "arguments": {
+          "reason": "incomplete_catalog"
+        }
+      },
+      "snapshot_revision": 5,
+      "content_sha256": "41653d415c207ff0c231e8abffb8b5f13b68e41465e84322ad1db1149bcb7666"
+    }
+  ],
+  "changed_sample_ids": [
+    "requests-baseline"
+  ],
+  "receipts": {
+    "requests-baseline": {
+      "args": {
+        "id": "requests-baseline",
+        "query": {
+          "as_of": "2026-10-28",
+          "environment": "declared-mac",
+          "requirements": [
+            "requests>=2.31"
+          ]
+        }
+      },
+      "computed_at": 5,
+      "dependencies": [
+        {
+          "args": {
+            "as_of": "2026-10-28",
+            "environment": "declared-mac",
+            "requirements": [
+              "requests>=2.31"
+            ]
+          },
+          "kind": "task",
+          "name": "resolve",
+          "value_sha256": "efc3ebfa4d4be8c5457b20bf8f04b55590a4a1ec32b7be7ca303ea7d1b0da728"
+        }
+      ],
+      "execution_policy": {
+        "reason": "fixed_mode",
+        "requested_mode": "coarse",
+        "selected_mode": "coarse",
+        "snapshot": 5
+      },
+      "key_sha256": "a327d43830764878415a512bafd9f2be1bbf1415dcba5eee6d5db6e0fa5208ac",
+      "kind": "task",
+      "mode": "coarse",
+      "name": "training_sample",
+      "registry_epoch": 3,
+      "stats": {
+        "adaptive_coarse_runs": 0,
+        "adaptive_fallback_runs": 0,
+        "adaptive_full_runs": 0,
+        "adaptive_policy_seconds": 0.0,
+        "dependency_checks": 1,
+        "dependency_edges_written": 1,
+        "guard_checks": 0,
+        "guard_matches": 0,
+        "guard_seconds": 0.0,
+        "observation_changes": 1,
+        "query_executions": 0,
+        "query_receipt_writes": 0,
+        "query_reuses": 0,
+        "query_scans": 0,
+        "query_seconds": 0.0,
+        "run_seconds": 7.883296348154545e-05,
+        "runs": 1,
+        "task_executions": 1,
+        "task_reuses": 2,
+        "task_self_seconds": 1.4333054423332214e-05,
+        "task_validations": 1,
+        "trace_writes": 1,
+        "validation_self_seconds": 4.5890919864177704e-07
+      },
+      "status": "valid",
+      "validated_at": 5,
+      "validation_contract": "conservative_observation",
+      "value_sha256": "41653d415c207ff0c231e8abffb8b5f13b68e41465e84322ad1db1149bcb7666",
+      "version": "finite-resolver-answer-v1"
+    }
+  },
+  "scope": "Frozen labels over a declared finite catalog; existing adapters are not modified or unlearned."
+}

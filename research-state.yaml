@@ -1,0 +1,48 @@
+project: DeltaWeave
+status: verified_local_publication_in_progress
+mode: research_and_local_execution
+user_decisions:
+  objective: Derive an effective and efficient knowledge-update framework coordinating Agent, RAG and SFT; validate locally and publish on GitHub.
+  priority: Research reasoning, correctness and update efficiency take priority over interface and implementation polish.
+  base_family: Official DeepSeek distilled checkpoint accepted.
+  domain: Unspecified; assistant may choose public or self-built data.
+  compute: Current Mac only; no cloud GPU or paid model API.
+  autonomy: Assistant decides direction and executes through validation and GitHub publication.
+selected_choices:
+  model: deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
+  model_revision: ad9f0ae0864d7fbcd1cd905e3c6c5b069cc8b562
+  domain: Versioned software dependency and compatibility knowledge, with independently checkable public metadata.
+  domain_status: AI selected finite public PyPI wheel metadata plus explicitly synthetic organization policies.
+  storage: Managed local SQLite transaction/outbox and immutable in-memory published snapshots.
+  default_execution: Coarse project scopes with classic equality cutoff; explicit full and adaptive alternatives.
+  default_policy: Deterministic rule controller; local DeepSeek is a measured optional behavior route.
+routes:
+  - id: R1
+    mechanism: Always recompute from a newly indexed snapshot with a frozen model.
+    status: Mandatory strong correctness baseline.
+  - id: R2
+    mechanism: Propagate changes through existing positive dependencies only.
+    status: Refuted within the tested finite transition set; 82 errors in 384 transitions.
+  - id: R3
+    mechanism: Track positive dependencies plus applicability and absence predicates; revalidate a conservative change frontier and reuse certified unaffected state.
+    status: Correct in bounded verification; fine predicates lose to indexed coarse/full on high fanout. No universal optimality claim.
+  - id: R4
+    mechanism: Update model parameters on new facts or behaviors after every change or after diagnostic batches.
+    status: Two frozen local LoRA runs complete. Behavior improves test 32/32 versus QA 20/32, but future combinations fall to 24/32. Per-update retraining not selected; unlearning not demonstrated.
+  - id: R5
+    mechanism: Bound observation reference output with immutable host expansion; compare full and compressed evidence contexts.
+    status: Independent 16-chain confirmation full 12/48, reference_context 12/48, reference 23/48. All three rule views 48/48. Output savings do not establish model reliability; optional experimental route only.
+invariants:
+  - No claim of algorithmic novelty before nearest-work and mechanism comparison.
+  - No test-derived training; future versions remain held out after protocol freeze.
+  - No model improvement claim based only on database or retrieval refresh.
+  - No free-form dependency completeness claim from graph bookkeeping alone.
+  - No generated statement is independent ground truth.
+completed:
+  - Nearest-work audit and conditional consistency arguments, with novelty limits.
+  - Official model revision and tokenizer boundary audit; actual MPS generation and two token-budget-matched LoRA runs.
+  - Independent domain oracle, finite counterexamples, SQLite outbox replay, immutable training provenance.
+  - Indexed full/coarse/predicate/adaptive cost comparison, retaining losing routes and timing corrections.
+  - Frozen test and future model evaluations; raw outputs and combination failures preserved.
+next_steps:
+  - Publish source plus checked adapter/data release assets and verify public bytes and CI.

@@ -1,0 +1,18 @@
+{
+  "reason": "Pre atomic result-receipt API; source bytes matching completed cost confirmation v3. Serial benchmark path is retained.",
+  "report": "experiments/updates-confirm-v3.json",
+  "report_sha256": "1847ab693d0dc19e8a2e1b29a46b0e821d89db55d6c5d1772c110c3c39aa7dd4",
+  "report_source_sha256": {
+    "scripts/benchmark_updates.py": "63e2b9a96b782f7c2aefacebe01fc634b44cc1ba45e09285faf56cfe07965ca3",
+    "src/deltaweave/engine.py": "b9f612fff4ea7b77ca5cf6d3a2b0d07020bcad214e648f2daada979102c8cba1",
+    "src/deltaweave/store.py": "8edc01ae86f4735022018c1850f026fc90bce7df9ba401ca98f6738f116e0994"
+  },
+  "files_sha256": {
+    "src/deltaweave/engine.py": "b9f612fff4ea7b77ca5cf6d3a2b0d07020bcad214e648f2daada979102c8cba1",
+    "src/deltaweave/store.py": "8edc01ae86f4735022018c1850f026fc90bce7df9ba401ca98f6738f116e0994",
+    "scripts/benchmark_updates.py": "63e2b9a96b782f7c2aefacebe01fc634b44cc1ba45e09285faf56cfe07965ca3",
+    "src/deltaweave/provenance.py": "dbeb717825142228371cb9015bed201b75d20a291d61a658843f0c2050fa9780",
+    "src/deltaweave/session.py": "65174516081cad2b768074bba263e297a474d0e464e56687cdfb7e38c155b536",
+    "src/deltaweave/lineage.py": "18cae263862712a3acb81a1358d674a25a65edc51c596b4953050ae8974d6342"
+  }
+}

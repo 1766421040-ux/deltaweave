@@ -1,0 +1,8 @@
+# Tested local environment; CPU-only users do not need these packages.
+# Hardware/kernel differences may alter sampled model outputs.
+torch==2.14.1
+transformers==4.57.6
+tokenizers==0.22.2
+peft==0.21.2
+accelerate==1.15.0
+safetensors==0.8.0

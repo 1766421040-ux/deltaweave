@@ -1,0 +1,2922 @@
+[
+  {
+    "id": "ref00-9c8ccb",
+    "family": "new_policy_environment",
+    "replica": 0,
+    "origin": "synthetic_confirmation_not_real_package_incident",
+    "tables": {
+      "projects": [
+        {
+          "id": "ref00-9c8ccb-app",
+          "project": "ref00-9c8ccb-app",
+          "complete": true
+        },
+        {
+          "id": "ref00-9c8ccb-lib",
+          "project": "ref00-9c8ccb-lib",
+          "complete": true
+        }
+      ],
+      "releases": [
+        {
+          "id": "ref00-9c8ccb-app@1.0",
+          "project": "ref00-9c8ccb-app",
+          "version": "1.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [
+            "ref00-9c8ccb-lib>=1"
+          ],
+          "provides_extra": [],
+          "yanked": false
+        },
+        {
+          "id": "ref00-9c8ccb-lib@1.0",
+          "project": "ref00-9c8ccb-lib",
+          "version": "1.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [],
+          "provides_extra": [],
+          "yanked": false
+        }
+      ],
+      "aliases": [],
+      "policies": [],
+      "environment": [
+        {
+          "id": "python_full_version",
+          "environment": "confirmation",
+          "field": "python_full_version",
+          "value": "3.12.4"
+        },
+        {
+          "id": "sys_platform",
+          "environment": "confirmation",
+          "field": "sys_platform",
+          "value": "linux"
+        }
+      ]
+    },
+    "query": {
+      "requirements": [
+        "ref00-9c8ccb-app"
+      ],
+      "environment": "confirmation",
+      "as_of": "2027-02-01"
+    },
+    "prevalidate": false,
+    "events": [
+      {
+        "label": "initial",
+        "upserts": {},
+        "deletes": {},
+        "query": null,
+        "publication_ready": true
+      },
+      {
+        "label": "new-transitive-policy",
+        "upserts": {
+          "policies": [
+            {
+              "id": "platform-policy",
+              "project": "ref00-9c8ccb-lib",
+              "kind": "require_env",
+              "field": "crypto_level",
+              "operator": "version",
+              "specifier": ">=4"
+            }
+          ]
+        },
+        "deletes": {},
+        "query": null,
+        "publication_ready": true
+      },
+      {
+        "label": "provide-new-field",
+        "upserts": {
+          "environment": [
+            {
+              "id": "crypto",
+              "environment": "confirmation",
+              "field": "crypto_level",
+              "value": "3"
+            }
+          ]
+        },
+        "deletes": {},
+        "query": null,
+        "publication_ready": true
+      }
+    ]
+  },
+  {
+    "id": "ref01-7bdfa7",
+    "family": "new_policy_environment",
+    "replica": 1,
+    "origin": "synthetic_confirmation_not_real_package_incident",
+    "tables": {
+      "projects": [
+        {
+          "id": "ref01-7bdfa7-app",
+          "project": "ref01-7bdfa7-app",
+          "complete": true
+        },
+        {
+          "id": "ref01-7bdfa7-lib",
+          "project": "ref01-7bdfa7-lib",
+          "complete": true
+        },
+        {
+          "id": "ref01-7bdfa7-leaf0",
+          "project": "ref01-7bdfa7-leaf0",
+          "complete": true
+        },
+        {
+          "id": "ref01-7bdfa7-leaf1",
+          "project": "ref01-7bdfa7-leaf1",
+          "complete": true
+        },
+        {
+          "id": "ref01-7bdfa7-leaf2",
+          "project": "ref01-7bdfa7-leaf2",
+          "complete": true
+        },
+        {
+          "id": "ref01-7bdfa7-leaf3",
+          "project": "ref01-7bdfa7-leaf3",
+          "complete": true
+        },
+        {
+          "id": "ref01-7bdfa7-leaf4",
+          "project": "ref01-7bdfa7-leaf4",
+          "complete": true
+        },
+        {
+          "id": "ref01-7bdfa7-leaf5",
+          "project": "ref01-7bdfa7-leaf5",
+          "complete": true
+        }
+      ],
+      "releases": [
+        {
+          "id": "ref01-7bdfa7-app@1.0",
+          "project": "ref01-7bdfa7-app",
+          "version": "1.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [
+            "ref01-7bdfa7-lib>=1",
+            "ref01-7bdfa7-leaf0>=1",
+            "ref01-7bdfa7-leaf1>=1",
+            "ref01-7bdfa7-leaf2>=1",
+            "ref01-7bdfa7-leaf3>=1",
+            "ref01-7bdfa7-leaf4>=1",
+            "ref01-7bdfa7-leaf5>=1"
+          ],
+          "provides_extra": [],
+          "yanked": false
+        },
+        {
+          "id": "ref01-7bdfa7-lib@1.0",
+          "project": "ref01-7bdfa7-lib",
+          "version": "1.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [],
+          "provides_extra": [],
+          "yanked": false
+        },
+        {
+          "id": "ref01-7bdfa7-leaf0@1.0",
+          "project": "ref01-7bdfa7-leaf0",
+          "version": "1.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [],
+          "provides_extra": [],
+          "yanked": false
+        },
+        {
+          "id": "ref01-7bdfa7-leaf0@2.0",
+          "project": "ref01-7bdfa7-leaf0",
+          "version": "2.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [],
+          "provides_extra": [],
+          "yanked": false
+        },
+        {
+          "id": "ref01-7bdfa7-leaf1@1.0",
+          "project": "ref01-7bdfa7-leaf1",
+          "version": "1.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [],
+          "provides_extra": [],
+          "yanked": false
+        },
+        {
+          "id": "ref01-7bdfa7-leaf1@2.0",
+          "project": "ref01-7bdfa7-leaf1",
+          "version": "2.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [],
+          "provides_extra": [],
+          "yanked": false
+        },
+        {
+          "id": "ref01-7bdfa7-leaf2@1.0",
+          "project": "ref01-7bdfa7-leaf2",
+          "version": "1.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [],
+          "provides_extra": [],
+          "yanked": false
+        },
+        {
+          "id": "ref01-7bdfa7-leaf2@2.0",
+          "project": "ref01-7bdfa7-leaf2",
+          "version": "2.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [],
+          "provides_extra": [],
+          "yanked": false
+        },
+        {
+          "id": "ref01-7bdfa7-leaf3@1.0",
+          "project": "ref01-7bdfa7-leaf3",
+          "version": "1.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [],
+          "provides_extra": [],
+          "yanked": false
+        },
+        {
+          "id": "ref01-7bdfa7-leaf3@2.0",
+          "project": "ref01-7bdfa7-leaf3",
+          "version": "2.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [],
+          "provides_extra": [],
+          "yanked": false
+        },
+        {
+          "id": "ref01-7bdfa7-leaf4@1.0",
+          "project": "ref01-7bdfa7-leaf4",
+          "version": "1.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [],
+          "provides_extra": [],
+          "yanked": false
+        },
+        {
+          "id": "ref01-7bdfa7-leaf4@2.0",
+          "project": "ref01-7bdfa7-leaf4",
+          "version": "2.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [],
+          "provides_extra": [],
+          "yanked": false
+        },
+        {
+          "id": "ref01-7bdfa7-leaf5@1.0",
+          "project": "ref01-7bdfa7-leaf5",
+          "version": "1.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [],
+          "provides_extra": [],
+          "yanked": false
+        },
+        {
+          "id": "ref01-7bdfa7-leaf5@2.0",
+          "project": "ref01-7bdfa7-leaf5",
+          "version": "2.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [],
+          "provides_extra": [],
+          "yanked": false
+        }
+      ],
+      "aliases": [],
+      "policies": [],
+      "environment": [
+        {
+          "id": "python_full_version",
+          "environment": "confirmation",
+          "field": "python_full_version",
+          "value": "3.12.4"
+        },
+        {
+          "id": "sys_platform",
+          "environment": "confirmation",
+          "field": "sys_platform",
+          "value": "linux"
+        }
+      ]
+    },
+    "query": {
+      "requirements": [
+        "ref01-7bdfa7-app"
+      ],
+      "environment": "confirmation",
+      "as_of": "2027-02-01"
+    },
+    "prevalidate": true,
+    "events": [
+      {
+        "label": "initial",
+        "upserts": {},
+        "deletes": {},
+        "query": null,
+        "publication_ready": true
+      },
+      {
+        "label": "new-transitive-policy",
+        "upserts": {
+          "policies": [
+            {
+              "id": "platform-policy",
+              "project": "ref01-7bdfa7-lib",
+              "kind": "require_env",
+              "field": "crypto_level",
+              "operator": "version",
+              "specifier": ">=4"
+            }
+          ]
+        },
+        "deletes": {},
+        "query": null,
+        "publication_ready": true
+      },
+      {
+        "label": "provide-new-field",
+        "upserts": {
+          "environment": [
+            {
+              "id": "crypto",
+              "environment": "confirmation",
+              "field": "crypto_level",
+              "value": "5"
+            }
+          ]
+        },
+        "deletes": {},
+        "query": null,
+        "publication_ready": true
+      }
+    ]
+  },
+  {
+    "id": "ref10-c05565",
+    "family": "withdrawal_insertion",
+    "replica": 0,
+    "origin": "synthetic_confirmation_not_real_package_incident",
+    "tables": {
+      "projects": [
+        {
+          "id": "ref10-c05565-app",
+          "project": "ref10-c05565-app",
+          "complete": true
+        },
+        {
+          "id": "ref10-c05565-lib",
+          "project": "ref10-c05565-lib",
+          "complete": true
+        }
+      ],
+      "releases": [
+        {
+          "id": "ref10-c05565-app@1.0",
+          "project": "ref10-c05565-app",
+          "version": "1.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [
+            "ref10-c05565-lib>=2"
+          ],
+          "provides_extra": [],
+          "yanked": false
+        },
+        {
+          "id": "ref10-c05565-lib@2.0",
+          "project": "ref10-c05565-lib",
+          "version": "2.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [],
+          "provides_extra": [],
+          "yanked": false
+        }
+      ],
+      "aliases": [],
+      "policies": [],
+      "environment": [
+        {
+          "id": "python_full_version",
+          "environment": "confirmation",
+          "field": "python_full_version",
+          "value": "3.12.4"
+        },
+        {
+          "id": "sys_platform",
+          "environment": "confirmation",
+          "field": "sys_platform",
+          "value": "linux"
+        }
+      ]
+    },
+    "query": {
+      "requirements": [
+        "ref10-c05565-app"
+      ],
+      "environment": "confirmation",
+      "as_of": "2027-02-01"
+    },
+    "prevalidate": false,
+    "events": [
+      {
+        "label": "initial",
+        "upserts": {},
+        "deletes": {},
+        "query": null,
+        "publication_ready": true
+      },
+      {
+        "label": "withdraw-only-admissible",
+        "upserts": {},
+        "deletes": {
+          "releases": [
+            "ref10-c05565-lib@2.0"
+          ]
+        },
+        "query": null,
+        "publication_ready": true
+      },
+      {
+        "label": "insert-replacement",
+        "upserts": {
+          "releases": [
+            {
+              "id": "ref10-c05565-lib@3.1",
+              "project": "ref10-c05565-lib",
+              "version": "3.1",
+              "requires_python": ">=3.8",
+              "requires_dist": [],
+              "provides_extra": [],
+              "yanked": false
+            }
+          ]
+        },
+        "deletes": {},
+        "query": null,
+        "publication_ready": true
+      }
+    ]
+  },
+  {
+    "id": "ref11-254529",
+    "family": "withdrawal_insertion",
+    "replica": 1,
+    "origin": "synthetic_confirmation_not_real_package_incident",
+    "tables": {
+      "projects": [
+        {
+          "id": "ref11-254529-app",
+          "project": "ref11-254529-app",
+          "complete": true
+        },
+        {
+          "id": "ref11-254529-lib",
+          "project": "ref11-254529-lib",
+          "complete": true
+        },
+        {
+          "id": "ref11-254529-leaf0",
+          "project": "ref11-254529-leaf0",
+          "complete": true
+        },
+        {
+          "id": "ref11-254529-leaf1",
+          "project": "ref11-254529-leaf1",
+          "complete": true
+        },
+        {
+          "id": "ref11-254529-leaf2",
+          "project": "ref11-254529-leaf2",
+          "complete": true
+        },
+        {
+          "id": "ref11-254529-leaf3",
+          "project": "ref11-254529-leaf3",
+          "complete": true
+        },
+        {
+          "id": "ref11-254529-leaf4",
+          "project": "ref11-254529-leaf4",
+          "complete": true
+        },
+        {
+          "id": "ref11-254529-leaf5",
+          "project": "ref11-254529-leaf5",
+          "complete": true
+        }
+      ],
+      "releases": [
+        {
+          "id": "ref11-254529-app@1.0",
+          "project": "ref11-254529-app",
+          "version": "1.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [
+            "ref11-254529-lib>=2",
+            "ref11-254529-leaf0>=1",
+            "ref11-254529-leaf1>=1",
+            "ref11-254529-leaf2>=1",
+            "ref11-254529-leaf3>=1",
+            "ref11-254529-leaf4>=1",
+            "ref11-254529-leaf5>=1"
+          ],
+          "provides_extra": [],
+          "yanked": false
+        },
+        {
+          "id": "ref11-254529-lib@2.0",
+          "project": "ref11-254529-lib",
+          "version": "2.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [],
+          "provides_extra": [],
+          "yanked": false
+        },
+        {
+          "id": "ref11-254529-leaf0@1.0",
+          "project": "ref11-254529-leaf0",
+          "version": "1.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [],
+          "provides_extra": [],
+          "yanked": false
+        },
+        {
+          "id": "ref11-254529-leaf0@2.0",
+          "project": "ref11-254529-leaf0",
+          "version": "2.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [],
+          "provides_extra": [],
+          "yanked": false
+        },
+        {
+          "id": "ref11-254529-leaf1@1.0",
+          "project": "ref11-254529-leaf1",
+          "version": "1.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [],
+          "provides_extra": [],
+          "yanked": false
+        },
+        {
+          "id": "ref11-254529-leaf1@2.0",
+          "project": "ref11-254529-leaf1",
+          "version": "2.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [],
+          "provides_extra": [],
+          "yanked": false
+        },
+        {
+          "id": "ref11-254529-leaf2@1.0",
+          "project": "ref11-254529-leaf2",
+          "version": "1.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [],
+          "provides_extra": [],
+          "yanked": false
+        },
+        {
+          "id": "ref11-254529-leaf2@2.0",
+          "project": "ref11-254529-leaf2",
+          "version": "2.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [],
+          "provides_extra": [],
+          "yanked": false
+        },
+        {
+          "id": "ref11-254529-leaf3@1.0",
+          "project": "ref11-254529-leaf3",
+          "version": "1.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [],
+          "provides_extra": [],
+          "yanked": false
+        },
+        {
+          "id": "ref11-254529-leaf3@2.0",
+          "project": "ref11-254529-leaf3",
+          "version": "2.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [],
+          "provides_extra": [],
+          "yanked": false
+        },
+        {
+          "id": "ref11-254529-leaf4@1.0",
+          "project": "ref11-254529-leaf4",
+          "version": "1.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [],
+          "provides_extra": [],
+          "yanked": false
+        },
+        {
+          "id": "ref11-254529-leaf4@2.0",
+          "project": "ref11-254529-leaf4",
+          "version": "2.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [],
+          "provides_extra": [],
+          "yanked": false
+        },
+        {
+          "id": "ref11-254529-leaf5@1.0",
+          "project": "ref11-254529-leaf5",
+          "version": "1.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [],
+          "provides_extra": [],
+          "yanked": false
+        },
+        {
+          "id": "ref11-254529-leaf5@2.0",
+          "project": "ref11-254529-leaf5",
+          "version": "2.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [],
+          "provides_extra": [],
+          "yanked": false
+        }
+      ],
+      "aliases": [],
+      "policies": [],
+      "environment": [
+        {
+          "id": "python_full_version",
+          "environment": "confirmation",
+          "field": "python_full_version",
+          "value": "3.12.4"
+        },
+        {
+          "id": "sys_platform",
+          "environment": "confirmation",
+          "field": "sys_platform",
+          "value": "linux"
+        }
+      ]
+    },
+    "query": {
+      "requirements": [
+        "ref11-254529-app"
+      ],
+      "environment": "confirmation",
+      "as_of": "2027-02-01"
+    },
+    "prevalidate": true,
+    "events": [
+      {
+        "label": "initial",
+        "upserts": {},
+        "deletes": {},
+        "query": null,
+        "publication_ready": true
+      },
+      {
+        "label": "withdraw-only-admissible",
+        "upserts": {},
+        "deletes": {
+          "releases": [
+            "ref11-254529-lib@2.0"
+          ]
+        },
+        "query": null,
+        "publication_ready": true
+      },
+      {
+        "label": "insert-replacement",
+        "upserts": {
+          "releases": [
+            {
+              "id": "ref11-254529-lib@3.1",
+              "project": "ref11-254529-lib",
+              "version": "3.1",
+              "requires_python": ">=3.8",
+              "requires_dist": [],
+              "provides_extra": [],
+              "yanked": false
+            }
+          ]
+        },
+        "deletes": {},
+        "query": null,
+        "publication_ready": true
+      }
+    ]
+  },
+  {
+    "id": "ref20-14ecb1",
+    "family": "same_value_provenance",
+    "replica": 0,
+    "origin": "synthetic_confirmation_not_real_package_incident",
+    "tables": {
+      "projects": [
+        {
+          "id": "ref20-14ecb1-app",
+          "project": "ref20-14ecb1-app",
+          "complete": true
+        },
+        {
+          "id": "ref20-14ecb1-lib",
+          "project": "ref20-14ecb1-lib",
+          "complete": true
+        }
+      ],
+      "releases": [
+        {
+          "id": "ref20-14ecb1-app@1.0",
+          "project": "ref20-14ecb1-app",
+          "version": "1.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [
+            "ref20-14ecb1-lib"
+          ],
+          "provides_extra": [],
+          "yanked": false
+        },
+        {
+          "id": "ref20-14ecb1-lib@1.0",
+          "project": "ref20-14ecb1-lib",
+          "version": "1.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [],
+          "provides_extra": [],
+          "yanked": false
+        }
+      ],
+      "aliases": [],
+      "policies": [],
+      "environment": [
+        {
+          "id": "python_full_version",
+          "environment": "confirmation",
+          "field": "python_full_version",
+          "value": "3.12.4"
+        },
+        {
+          "id": "sys_platform",
+          "environment": "confirmation",
+          "field": "sys_platform",
+          "value": "linux"
+        }
+      ]
+    },
+    "query": {
+      "requirements": [
+        "ref20-14ecb1-app"
+      ],
+      "environment": "confirmation",
+      "as_of": "2027-02-01"
+    },
+    "prevalidate": false,
+    "events": [
+      {
+        "label": "initial",
+        "upserts": {},
+        "deletes": {},
+        "query": null,
+        "publication_ready": true
+      },
+      {
+        "label": "same-value-new-artifact",
+        "upserts": {
+          "releases": [
+            {
+              "id": "ref20-14ecb1-lib@replacement",
+              "project": "ref20-14ecb1-lib",
+              "version": "1.0",
+              "requires_python": ">=3.8",
+              "requires_dist": [],
+              "provides_extra": [],
+              "yanked": false
+            }
+          ]
+        },
+        "deletes": {
+          "releases": [
+            "ref20-14ecb1-lib@1.0"
+          ]
+        },
+        "query": null,
+        "publication_ready": true
+      },
+      {
+        "label": "retract-new-artifact",
+        "upserts": {},
+        "deletes": {
+          "releases": [
+            "ref20-14ecb1-lib@replacement"
+          ]
+        },
+        "query": null,
+        "publication_ready": true
+      }
+    ]
+  },
+  {
+    "id": "ref21-6adfb8",
+    "family": "same_value_provenance",
+    "replica": 1,
+    "origin": "synthetic_confirmation_not_real_package_incident",
+    "tables": {
+      "projects": [
+        {
+          "id": "ref21-6adfb8-app",
+          "project": "ref21-6adfb8-app",
+          "complete": true
+        },
+        {
+          "id": "ref21-6adfb8-lib",
+          "project": "ref21-6adfb8-lib",
+          "complete": true
+        },
+        {
+          "id": "ref21-6adfb8-leaf0",
+          "project": "ref21-6adfb8-leaf0",
+          "complete": true
+        },
+        {
+          "id": "ref21-6adfb8-leaf1",
+          "project": "ref21-6adfb8-leaf1",
+          "complete": true
+        },
+        {
+          "id": "ref21-6adfb8-leaf2",
+          "project": "ref21-6adfb8-leaf2",
+          "complete": true
+        },
+        {
+          "id": "ref21-6adfb8-leaf3",
+          "project": "ref21-6adfb8-leaf3",
+          "complete": true
+        },
+        {
+          "id": "ref21-6adfb8-leaf4",
+          "project": "ref21-6adfb8-leaf4",
+          "complete": true
+        },
+        {
+          "id": "ref21-6adfb8-leaf5",
+          "project": "ref21-6adfb8-leaf5",
+          "complete": true
+        }
+      ],
+      "releases": [
+        {
+          "id": "ref21-6adfb8-app@1.0",
+          "project": "ref21-6adfb8-app",
+          "version": "1.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [
+            "ref21-6adfb8-lib",
+            "ref21-6adfb8-leaf0>=1",
+            "ref21-6adfb8-leaf1>=1",
+            "ref21-6adfb8-leaf2>=1",
+            "ref21-6adfb8-leaf3>=1",
+            "ref21-6adfb8-leaf4>=1",
+            "ref21-6adfb8-leaf5>=1"
+          ],
+          "provides_extra": [],
+          "yanked": false
+        },
+        {
+          "id": "ref21-6adfb8-lib@1.0",
+          "project": "ref21-6adfb8-lib",
+          "version": "1.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [],
+          "provides_extra": [],
+          "yanked": false
+        },
+        {
+          "id": "ref21-6adfb8-leaf0@1.0",
+          "project": "ref21-6adfb8-leaf0",
+          "version": "1.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [],
+          "provides_extra": [],
+          "yanked": false
+        },
+        {
+          "id": "ref21-6adfb8-leaf0@2.0",
+          "project": "ref21-6adfb8-leaf0",
+          "version": "2.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [],
+          "provides_extra": [],
+          "yanked": false
+        },
+        {
+          "id": "ref21-6adfb8-leaf1@1.0",
+          "project": "ref21-6adfb8-leaf1",
+          "version": "1.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [],
+          "provides_extra": [],
+          "yanked": false
+        },
+        {
+          "id": "ref21-6adfb8-leaf1@2.0",
+          "project": "ref21-6adfb8-leaf1",
+          "version": "2.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [],
+          "provides_extra": [],
+          "yanked": false
+        },
+        {
+          "id": "ref21-6adfb8-leaf2@1.0",
+          "project": "ref21-6adfb8-leaf2",
+          "version": "1.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [],
+          "provides_extra": [],
+          "yanked": false
+        },
+        {
+          "id": "ref21-6adfb8-leaf2@2.0",
+          "project": "ref21-6adfb8-leaf2",
+          "version": "2.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [],
+          "provides_extra": [],
+          "yanked": false
+        },
+        {
+          "id": "ref21-6adfb8-leaf3@1.0",
+          "project": "ref21-6adfb8-leaf3",
+          "version": "1.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [],
+          "provides_extra": [],
+          "yanked": false
+        },
+        {
+          "id": "ref21-6adfb8-leaf3@2.0",
+          "project": "ref21-6adfb8-leaf3",
+          "version": "2.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [],
+          "provides_extra": [],
+          "yanked": false
+        },
+        {
+          "id": "ref21-6adfb8-leaf4@1.0",
+          "project": "ref21-6adfb8-leaf4",
+          "version": "1.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [],
+          "provides_extra": [],
+          "yanked": false
+        },
+        {
+          "id": "ref21-6adfb8-leaf4@2.0",
+          "project": "ref21-6adfb8-leaf4",
+          "version": "2.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [],
+          "provides_extra": [],
+          "yanked": false
+        },
+        {
+          "id": "ref21-6adfb8-leaf5@1.0",
+          "project": "ref21-6adfb8-leaf5",
+          "version": "1.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [],
+          "provides_extra": [],
+          "yanked": false
+        },
+        {
+          "id": "ref21-6adfb8-leaf5@2.0",
+          "project": "ref21-6adfb8-leaf5",
+          "version": "2.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [],
+          "provides_extra": [],
+          "yanked": false
+        }
+      ],
+      "aliases": [],
+      "policies": [],
+      "environment": [
+        {
+          "id": "python_full_version",
+          "environment": "confirmation",
+          "field": "python_full_version",
+          "value": "3.12.4"
+        },
+        {
+          "id": "sys_platform",
+          "environment": "confirmation",
+          "field": "sys_platform",
+          "value": "linux"
+        }
+      ]
+    },
+    "query": {
+      "requirements": [
+        "ref21-6adfb8-app"
+      ],
+      "environment": "confirmation",
+      "as_of": "2027-02-01"
+    },
+    "prevalidate": true,
+    "events": [
+      {
+        "label": "initial",
+        "upserts": {},
+        "deletes": {},
+        "query": null,
+        "publication_ready": true
+      },
+      {
+        "label": "same-value-new-artifact",
+        "upserts": {
+          "releases": [
+            {
+              "id": "ref21-6adfb8-lib@replacement",
+              "project": "ref21-6adfb8-lib",
+              "version": "1.0",
+              "requires_python": ">=3.8",
+              "requires_dist": [],
+              "provides_extra": [],
+              "yanked": false
+            }
+          ]
+        },
+        "deletes": {
+          "releases": [
+            "ref21-6adfb8-lib@1.0"
+          ]
+        },
+        "query": null,
+        "publication_ready": true
+      },
+      {
+        "label": "retract-new-artifact",
+        "upserts": {},
+        "deletes": {
+          "releases": [
+            "ref21-6adfb8-lib@replacement"
+          ]
+        },
+        "query": null,
+        "publication_ready": true
+      }
+    ]
+  },
+  {
+    "id": "ref30-7e8508",
+    "family": "atomic_cross_rows",
+    "replica": 0,
+    "origin": "synthetic_confirmation_not_real_package_incident",
+    "tables": {
+      "projects": [
+        {
+          "id": "ref30-7e8508-app",
+          "project": "ref30-7e8508-app",
+          "complete": true
+        },
+        {
+          "id": "ref30-7e8508-lib",
+          "project": "ref30-7e8508-lib",
+          "complete": true
+        }
+      ],
+      "releases": [
+        {
+          "id": "ref30-7e8508-app@1.0",
+          "project": "ref30-7e8508-app",
+          "version": "1.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [
+            "ref30-7e8508-lib==3"
+          ],
+          "provides_extra": [],
+          "yanked": false
+        },
+        {
+          "id": "ref30-7e8508-lib@2.0",
+          "project": "ref30-7e8508-lib",
+          "version": "2.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [],
+          "provides_extra": [],
+          "yanked": false
+        }
+      ],
+      "aliases": [],
+      "policies": [],
+      "environment": [
+        {
+          "id": "python_full_version",
+          "environment": "confirmation",
+          "field": "python_full_version",
+          "value": "3.12.4"
+        },
+        {
+          "id": "sys_platform",
+          "environment": "confirmation",
+          "field": "sys_platform",
+          "value": "linux"
+        }
+      ]
+    },
+    "query": {
+      "requirements": [
+        "ref30-7e8508-app"
+      ],
+      "environment": "confirmation",
+      "as_of": "2027-02-01"
+    },
+    "prevalidate": false,
+    "events": [
+      {
+        "label": "initial",
+        "upserts": {},
+        "deletes": {},
+        "query": null,
+        "publication_ready": true
+      },
+      {
+        "label": "swap-demand-and-candidate-atomically",
+        "upserts": {
+          "releases": [
+            {
+              "id": "ref30-7e8508-app@1.0",
+              "project": "ref30-7e8508-app",
+              "version": "1.0",
+              "requires_python": ">=3.8",
+              "requires_dist": [
+                "ref30-7e8508-lib==2"
+              ],
+              "provides_extra": [],
+              "yanked": false
+            },
+            {
+              "id": "ref30-7e8508-lib@3.0",
+              "project": "ref30-7e8508-lib",
+              "version": "3.0",
+              "requires_python": ">=3.8",
+              "requires_dist": [],
+              "provides_extra": [],
+              "yanked": false
+            }
+          ]
+        },
+        "deletes": {
+          "releases": [
+            "ref30-7e8508-lib@2.0"
+          ]
+        },
+        "query": null,
+        "publication_ready": true
+      },
+      {
+        "label": "insert-matching-version",
+        "upserts": {
+          "releases": [
+            {
+              "id": "ref30-7e8508-lib@2.0",
+              "project": "ref30-7e8508-lib",
+              "version": "2.0",
+              "requires_python": ">=3.8",
+              "requires_dist": [],
+              "provides_extra": [],
+              "yanked": false
+            }
+          ]
+        },
+        "deletes": {},
+        "query": null,
+        "publication_ready": true
+      }
+    ]
+  },
+  {
+    "id": "ref31-f3a1da",
+    "family": "atomic_cross_rows",
+    "replica": 1,
+    "origin": "synthetic_confirmation_not_real_package_incident",
+    "tables": {
+      "projects": [
+        {
+          "id": "ref31-f3a1da-app",
+          "project": "ref31-f3a1da-app",
+          "complete": true
+        },
+        {
+          "id": "ref31-f3a1da-lib",
+          "project": "ref31-f3a1da-lib",
+          "complete": true
+        },
+        {
+          "id": "ref31-f3a1da-leaf0",
+          "project": "ref31-f3a1da-leaf0",
+          "complete": true
+        },
+        {
+          "id": "ref31-f3a1da-leaf1",
+          "project": "ref31-f3a1da-leaf1",
+          "complete": true
+        },
+        {
+          "id": "ref31-f3a1da-leaf2",
+          "project": "ref31-f3a1da-leaf2",
+          "complete": true
+        },
+        {
+          "id": "ref31-f3a1da-leaf3",
+          "project": "ref31-f3a1da-leaf3",
+          "complete": true
+        },
+        {
+          "id": "ref31-f3a1da-leaf4",
+          "project": "ref31-f3a1da-leaf4",
+          "complete": true
+        },
+        {
+          "id": "ref31-f3a1da-leaf5",
+          "project": "ref31-f3a1da-leaf5",
+          "complete": true
+        }
+      ],
+      "releases": [
+        {
+          "id": "ref31-f3a1da-app@1.0",
+          "project": "ref31-f3a1da-app",
+          "version": "1.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [
+            "ref31-f3a1da-lib==3",
+            "ref31-f3a1da-leaf0>=1",
+            "ref31-f3a1da-leaf1>=1",
+            "ref31-f3a1da-leaf2>=1",
+            "ref31-f3a1da-leaf3>=1",
+            "ref31-f3a1da-leaf4>=1",
+            "ref31-f3a1da-leaf5>=1"
+          ],
+          "provides_extra": [],
+          "yanked": false
+        },
+        {
+          "id": "ref31-f3a1da-lib@2.0",
+          "project": "ref31-f3a1da-lib",
+          "version": "2.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [],
+          "provides_extra": [],
+          "yanked": false
+        },
+        {
+          "id": "ref31-f3a1da-leaf0@1.0",
+          "project": "ref31-f3a1da-leaf0",
+          "version": "1.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [],
+          "provides_extra": [],
+          "yanked": false
+        },
+        {
+          "id": "ref31-f3a1da-leaf0@2.0",
+          "project": "ref31-f3a1da-leaf0",
+          "version": "2.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [],
+          "provides_extra": [],
+          "yanked": false
+        },
+        {
+          "id": "ref31-f3a1da-leaf1@1.0",
+          "project": "ref31-f3a1da-leaf1",
+          "version": "1.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [],
+          "provides_extra": [],
+          "yanked": false
+        },
+        {
+          "id": "ref31-f3a1da-leaf1@2.0",
+          "project": "ref31-f3a1da-leaf1",
+          "version": "2.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [],
+          "provides_extra": [],
+          "yanked": false
+        },
+        {
+          "id": "ref31-f3a1da-leaf2@1.0",
+          "project": "ref31-f3a1da-leaf2",
+          "version": "1.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [],
+          "provides_extra": [],
+          "yanked": false
+        },
+        {
+          "id": "ref31-f3a1da-leaf2@2.0",
+          "project": "ref31-f3a1da-leaf2",
+          "version": "2.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [],
+          "provides_extra": [],
+          "yanked": false
+        },
+        {
+          "id": "ref31-f3a1da-leaf3@1.0",
+          "project": "ref31-f3a1da-leaf3",
+          "version": "1.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [],
+          "provides_extra": [],
+          "yanked": false
+        },
+        {
+          "id": "ref31-f3a1da-leaf3@2.0",
+          "project": "ref31-f3a1da-leaf3",
+          "version": "2.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [],
+          "provides_extra": [],
+          "yanked": false
+        },
+        {
+          "id": "ref31-f3a1da-leaf4@1.0",
+          "project": "ref31-f3a1da-leaf4",
+          "version": "1.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [],
+          "provides_extra": [],
+          "yanked": false
+        },
+        {
+          "id": "ref31-f3a1da-leaf4@2.0",
+          "project": "ref31-f3a1da-leaf4",
+          "version": "2.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [],
+          "provides_extra": [],
+          "yanked": false
+        },
+        {
+          "id": "ref31-f3a1da-leaf5@1.0",
+          "project": "ref31-f3a1da-leaf5",
+          "version": "1.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [],
+          "provides_extra": [],
+          "yanked": false
+        },
+        {
+          "id": "ref31-f3a1da-leaf5@2.0",
+          "project": "ref31-f3a1da-leaf5",
+          "version": "2.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [],
+          "provides_extra": [],
+          "yanked": false
+        }
+      ],
+      "aliases": [],
+      "policies": [],
+      "environment": [
+        {
+          "id": "python_full_version",
+          "environment": "confirmation",
+          "field": "python_full_version",
+          "value": "3.12.4"
+        },
+        {
+          "id": "sys_platform",
+          "environment": "confirmation",
+          "field": "sys_platform",
+          "value": "linux"
+        }
+      ]
+    },
+    "query": {
+      "requirements": [
+        "ref31-f3a1da-app"
+      ],
+      "environment": "confirmation",
+      "as_of": "2027-02-01"
+    },
+    "prevalidate": true,
+    "events": [
+      {
+        "label": "initial",
+        "upserts": {},
+        "deletes": {},
+        "query": null,
+        "publication_ready": true
+      },
+      {
+        "label": "swap-demand-and-candidate-atomically",
+        "upserts": {
+          "releases": [
+            {
+              "id": "ref31-f3a1da-app@1.0",
+              "project": "ref31-f3a1da-app",
+              "version": "1.0",
+              "requires_python": ">=3.8",
+              "requires_dist": [
+                "ref31-f3a1da-lib==2",
+                "ref31-f3a1da-leaf0>=1",
+                "ref31-f3a1da-leaf1>=1",
+                "ref31-f3a1da-leaf2>=1",
+                "ref31-f3a1da-leaf3>=1",
+                "ref31-f3a1da-leaf4>=1",
+                "ref31-f3a1da-leaf5>=1"
+              ],
+              "provides_extra": [],
+              "yanked": false
+            },
+            {
+              "id": "ref31-f3a1da-lib@3.0",
+              "project": "ref31-f3a1da-lib",
+              "version": "3.0",
+              "requires_python": ">=3.8",
+              "requires_dist": [],
+              "provides_extra": [],
+              "yanked": false
+            }
+          ]
+        },
+        "deletes": {
+          "releases": [
+            "ref31-f3a1da-lib@2.0"
+          ]
+        },
+        "query": null,
+        "publication_ready": true
+      },
+      {
+        "label": "insert-matching-version",
+        "upserts": {
+          "releases": [
+            {
+              "id": "ref31-f3a1da-lib@2.0",
+              "project": "ref31-f3a1da-lib",
+              "version": "2.0",
+              "requires_python": ">=3.8",
+              "requires_dist": [],
+              "provides_extra": [],
+              "yanked": false
+            }
+          ]
+        },
+        "deletes": {},
+        "query": null,
+        "publication_ready": true
+      }
+    ]
+  },
+  {
+    "id": "ref40-713dde",
+    "family": "alias_policy",
+    "replica": 0,
+    "origin": "synthetic_confirmation_not_real_package_incident",
+    "tables": {
+      "projects": [
+        {
+          "id": "ref40-713dde-app",
+          "project": "ref40-713dde-app",
+          "complete": true
+        },
+        {
+          "id": "ref40-713dde-lib",
+          "project": "ref40-713dde-lib",
+          "complete": true
+        }
+      ],
+      "releases": [
+        {
+          "id": "ref40-713dde-app@1.0",
+          "project": "ref40-713dde-app",
+          "version": "1.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [],
+          "provides_extra": [],
+          "yanked": false
+        },
+        {
+          "id": "ref40-713dde-lib@4.0",
+          "project": "ref40-713dde-lib",
+          "version": "4.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [],
+          "provides_extra": [],
+          "yanked": false
+        }
+      ],
+      "aliases": [
+        {
+          "id": "routing",
+          "alias": "ref40-713dde-legacy",
+          "target": "ref40-713dde-app"
+        }
+      ],
+      "policies": [],
+      "environment": [
+        {
+          "id": "python_full_version",
+          "environment": "confirmation",
+          "field": "python_full_version",
+          "value": "3.12.4"
+        },
+        {
+          "id": "sys_platform",
+          "environment": "confirmation",
+          "field": "sys_platform",
+          "value": "linux"
+        }
+      ]
+    },
+    "query": {
+      "requirements": [
+        "ref40-713dde-legacy"
+      ],
+      "environment": "confirmation",
+      "as_of": "2027-02-01"
+    },
+    "prevalidate": false,
+    "events": [
+      {
+        "label": "not-yet-published",
+        "upserts": {},
+        "deletes": {},
+        "query": null,
+        "publication_ready": false
+      },
+      {
+        "label": "publish-with-unrelated-deny",
+        "upserts": {
+          "policies": [
+            {
+              "id": "deny-lib",
+              "project": "ref40-713dde-lib",
+              "kind": "deny",
+              "versions": ">=4"
+            }
+          ]
+        },
+        "deletes": {},
+        "query": null,
+        "publication_ready": true
+      },
+      {
+        "label": "alias-enters-denied-project",
+        "upserts": {
+          "aliases": [
+            {
+              "id": "routing",
+              "alias": "ref40-713dde-legacy",
+              "target": "ref40-713dde-lib"
+            }
+          ]
+        },
+        "deletes": {},
+        "query": null,
+        "publication_ready": true
+      }
+    ]
+  },
+  {
+    "id": "ref41-512b35",
+    "family": "alias_policy",
+    "replica": 1,
+    "origin": "synthetic_confirmation_not_real_package_incident",
+    "tables": {
+      "projects": [
+        {
+          "id": "ref41-512b35-app",
+          "project": "ref41-512b35-app",
+          "complete": true
+        },
+        {
+          "id": "ref41-512b35-lib",
+          "project": "ref41-512b35-lib",
+          "complete": true
+        },
+        {
+          "id": "ref41-512b35-leaf0",
+          "project": "ref41-512b35-leaf0",
+          "complete": true
+        },
+        {
+          "id": "ref41-512b35-leaf1",
+          "project": "ref41-512b35-leaf1",
+          "complete": true
+        },
+        {
+          "id": "ref41-512b35-leaf2",
+          "project": "ref41-512b35-leaf2",
+          "complete": true
+        },
+        {
+          "id": "ref41-512b35-leaf3",
+          "project": "ref41-512b35-leaf3",
+          "complete": true
+        },
+        {
+          "id": "ref41-512b35-leaf4",
+          "project": "ref41-512b35-leaf4",
+          "complete": true
+        },
+        {
+          "id": "ref41-512b35-leaf5",
+          "project": "ref41-512b35-leaf5",
+          "complete": true
+        }
+      ],
+      "releases": [
+        {
+          "id": "ref41-512b35-app@1.0",
+          "project": "ref41-512b35-app",
+          "version": "1.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [
+            "ref41-512b35-leaf0>=1",
+            "ref41-512b35-leaf1>=1",
+            "ref41-512b35-leaf2>=1",
+            "ref41-512b35-leaf3>=1",
+            "ref41-512b35-leaf4>=1",
+            "ref41-512b35-leaf5>=1"
+          ],
+          "provides_extra": [],
+          "yanked": false
+        },
+        {
+          "id": "ref41-512b35-lib@4.0",
+          "project": "ref41-512b35-lib",
+          "version": "4.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [],
+          "provides_extra": [],
+          "yanked": false
+        },
+        {
+          "id": "ref41-512b35-leaf0@1.0",
+          "project": "ref41-512b35-leaf0",
+          "version": "1.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [],
+          "provides_extra": [],
+          "yanked": false
+        },
+        {
+          "id": "ref41-512b35-leaf0@2.0",
+          "project": "ref41-512b35-leaf0",
+          "version": "2.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [],
+          "provides_extra": [],
+          "yanked": false
+        },
+        {
+          "id": "ref41-512b35-leaf1@1.0",
+          "project": "ref41-512b35-leaf1",
+          "version": "1.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [],
+          "provides_extra": [],
+          "yanked": false
+        },
+        {
+          "id": "ref41-512b35-leaf1@2.0",
+          "project": "ref41-512b35-leaf1",
+          "version": "2.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [],
+          "provides_extra": [],
+          "yanked": false
+        },
+        {
+          "id": "ref41-512b35-leaf2@1.0",
+          "project": "ref41-512b35-leaf2",
+          "version": "1.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [],
+          "provides_extra": [],
+          "yanked": false
+        },
+        {
+          "id": "ref41-512b35-leaf2@2.0",
+          "project": "ref41-512b35-leaf2",
+          "version": "2.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [],
+          "provides_extra": [],
+          "yanked": false
+        },
+        {
+          "id": "ref41-512b35-leaf3@1.0",
+          "project": "ref41-512b35-leaf3",
+          "version": "1.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [],
+          "provides_extra": [],
+          "yanked": false
+        },
+        {
+          "id": "ref41-512b35-leaf3@2.0",
+          "project": "ref41-512b35-leaf3",
+          "version": "2.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [],
+          "provides_extra": [],
+          "yanked": false
+        },
+        {
+          "id": "ref41-512b35-leaf4@1.0",
+          "project": "ref41-512b35-leaf4",
+          "version": "1.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [],
+          "provides_extra": [],
+          "yanked": false
+        },
+        {
+          "id": "ref41-512b35-leaf4@2.0",
+          "project": "ref41-512b35-leaf4",
+          "version": "2.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [],
+          "provides_extra": [],
+          "yanked": false
+        },
+        {
+          "id": "ref41-512b35-leaf5@1.0",
+          "project": "ref41-512b35-leaf5",
+          "version": "1.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [],
+          "provides_extra": [],
+          "yanked": false
+        },
+        {
+          "id": "ref41-512b35-leaf5@2.0",
+          "project": "ref41-512b35-leaf5",
+          "version": "2.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [],
+          "provides_extra": [],
+          "yanked": false
+        }
+      ],
+      "aliases": [
+        {
+          "id": "routing",
+          "alias": "ref41-512b35-legacy",
+          "target": "ref41-512b35-app"
+        }
+      ],
+      "policies": [],
+      "environment": [
+        {
+          "id": "python_full_version",
+          "environment": "confirmation",
+          "field": "python_full_version",
+          "value": "3.12.4"
+        },
+        {
+          "id": "sys_platform",
+          "environment": "confirmation",
+          "field": "sys_platform",
+          "value": "linux"
+        }
+      ]
+    },
+    "query": {
+      "requirements": [
+        "ref41-512b35-legacy"
+      ],
+      "environment": "confirmation",
+      "as_of": "2027-02-01"
+    },
+    "prevalidate": true,
+    "events": [
+      {
+        "label": "not-yet-published",
+        "upserts": {},
+        "deletes": {},
+        "query": null,
+        "publication_ready": false
+      },
+      {
+        "label": "publish-with-unrelated-deny",
+        "upserts": {
+          "policies": [
+            {
+              "id": "deny-lib",
+              "project": "ref41-512b35-lib",
+              "kind": "deny",
+              "versions": ">=4"
+            }
+          ]
+        },
+        "deletes": {},
+        "query": null,
+        "publication_ready": true
+      },
+      {
+        "label": "alias-enters-denied-project",
+        "upserts": {
+          "aliases": [
+            {
+              "id": "routing",
+              "alias": "ref41-512b35-legacy",
+              "target": "ref41-512b35-lib"
+            }
+          ]
+        },
+        "deletes": {},
+        "query": null,
+        "publication_ready": true
+      }
+    ]
+  },
+  {
+    "id": "ref50-373e85",
+    "family": "clock_without_write",
+    "replica": 0,
+    "origin": "synthetic_confirmation_not_real_package_incident",
+    "tables": {
+      "projects": [
+        {
+          "id": "ref50-373e85-app",
+          "project": "ref50-373e85-app",
+          "complete": true
+        },
+        {
+          "id": "ref50-373e85-lib",
+          "project": "ref50-373e85-lib",
+          "complete": true
+        }
+      ],
+      "releases": [
+        {
+          "id": "ref50-373e85-app@1.0",
+          "project": "ref50-373e85-app",
+          "version": "1.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [
+            "ref50-373e85-lib"
+          ],
+          "provides_extra": [],
+          "yanked": false
+        },
+        {
+          "id": "ref50-373e85-lib@1.0",
+          "project": "ref50-373e85-lib",
+          "version": "1.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [],
+          "provides_extra": [],
+          "yanked": false
+        }
+      ],
+      "aliases": [],
+      "policies": [
+        {
+          "id": "embargo",
+          "project": "ref50-373e85-lib",
+          "kind": "deny",
+          "valid_from": "2027-03-01",
+          "valid_until": "2027-04-01"
+        }
+      ],
+      "environment": [
+        {
+          "id": "python_full_version",
+          "environment": "confirmation",
+          "field": "python_full_version",
+          "value": "3.12.4"
+        },
+        {
+          "id": "sys_platform",
+          "environment": "confirmation",
+          "field": "sys_platform",
+          "value": "linux"
+        }
+      ]
+    },
+    "query": {
+      "requirements": [
+        "ref50-373e85-app"
+      ],
+      "environment": "confirmation",
+      "as_of": "2027-02-01"
+    },
+    "prevalidate": false,
+    "events": [
+      {
+        "label": "initial",
+        "upserts": {},
+        "deletes": {},
+        "query": null,
+        "publication_ready": true
+      },
+      {
+        "label": "time-enters-policy",
+        "upserts": {},
+        "deletes": {},
+        "query": {
+          "requirements": [
+            "ref50-373e85-app"
+          ],
+          "environment": "confirmation",
+          "as_of": "2027-03-15"
+        },
+        "publication_ready": true
+      },
+      {
+        "label": "time-exits-policy",
+        "upserts": {},
+        "deletes": {},
+        "query": {
+          "requirements": [
+            "ref50-373e85-app"
+          ],
+          "environment": "confirmation",
+          "as_of": "2027-04-01"
+        },
+        "publication_ready": true
+      }
+    ]
+  },
+  {
+    "id": "ref51-10b5d1",
+    "family": "clock_without_write",
+    "replica": 1,
+    "origin": "synthetic_confirmation_not_real_package_incident",
+    "tables": {
+      "projects": [
+        {
+          "id": "ref51-10b5d1-app",
+          "project": "ref51-10b5d1-app",
+          "complete": true
+        },
+        {
+          "id": "ref51-10b5d1-lib",
+          "project": "ref51-10b5d1-lib",
+          "complete": true
+        },
+        {
+          "id": "ref51-10b5d1-leaf0",
+          "project": "ref51-10b5d1-leaf0",
+          "complete": true
+        },
+        {
+          "id": "ref51-10b5d1-leaf1",
+          "project": "ref51-10b5d1-leaf1",
+          "complete": true
+        },
+        {
+          "id": "ref51-10b5d1-leaf2",
+          "project": "ref51-10b5d1-leaf2",
+          "complete": true
+        },
+        {
+          "id": "ref51-10b5d1-leaf3",
+          "project": "ref51-10b5d1-leaf3",
+          "complete": true
+        },
+        {
+          "id": "ref51-10b5d1-leaf4",
+          "project": "ref51-10b5d1-leaf4",
+          "complete": true
+        },
+        {
+          "id": "ref51-10b5d1-leaf5",
+          "project": "ref51-10b5d1-leaf5",
+          "complete": true
+        }
+      ],
+      "releases": [
+        {
+          "id": "ref51-10b5d1-app@1.0",
+          "project": "ref51-10b5d1-app",
+          "version": "1.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [
+            "ref51-10b5d1-lib",
+            "ref51-10b5d1-leaf0>=1",
+            "ref51-10b5d1-leaf1>=1",
+            "ref51-10b5d1-leaf2>=1",
+            "ref51-10b5d1-leaf3>=1",
+            "ref51-10b5d1-leaf4>=1",
+            "ref51-10b5d1-leaf5>=1"
+          ],
+          "provides_extra": [],
+          "yanked": false
+        },
+        {
+          "id": "ref51-10b5d1-lib@1.0",
+          "project": "ref51-10b5d1-lib",
+          "version": "1.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [],
+          "provides_extra": [],
+          "yanked": false
+        },
+        {
+          "id": "ref51-10b5d1-leaf0@1.0",
+          "project": "ref51-10b5d1-leaf0",
+          "version": "1.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [],
+          "provides_extra": [],
+          "yanked": false
+        },
+        {
+          "id": "ref51-10b5d1-leaf0@2.0",
+          "project": "ref51-10b5d1-leaf0",
+          "version": "2.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [],
+          "provides_extra": [],
+          "yanked": false
+        },
+        {
+          "id": "ref51-10b5d1-leaf1@1.0",
+          "project": "ref51-10b5d1-leaf1",
+          "version": "1.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [],
+          "provides_extra": [],
+          "yanked": false
+        },
+        {
+          "id": "ref51-10b5d1-leaf1@2.0",
+          "project": "ref51-10b5d1-leaf1",
+          "version": "2.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [],
+          "provides_extra": [],
+          "yanked": false
+        },
+        {
+          "id": "ref51-10b5d1-leaf2@1.0",
+          "project": "ref51-10b5d1-leaf2",
+          "version": "1.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [],
+          "provides_extra": [],
+          "yanked": false
+        },
+        {
+          "id": "ref51-10b5d1-leaf2@2.0",
+          "project": "ref51-10b5d1-leaf2",
+          "version": "2.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [],
+          "provides_extra": [],
+          "yanked": false
+        },
+        {
+          "id": "ref51-10b5d1-leaf3@1.0",
+          "project": "ref51-10b5d1-leaf3",
+          "version": "1.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [],
+          "provides_extra": [],
+          "yanked": false
+        },
+        {
+          "id": "ref51-10b5d1-leaf3@2.0",
+          "project": "ref51-10b5d1-leaf3",
+          "version": "2.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [],
+          "provides_extra": [],
+          "yanked": false
+        },
+        {
+          "id": "ref51-10b5d1-leaf4@1.0",
+          "project": "ref51-10b5d1-leaf4",
+          "version": "1.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [],
+          "provides_extra": [],
+          "yanked": false
+        },
+        {
+          "id": "ref51-10b5d1-leaf4@2.0",
+          "project": "ref51-10b5d1-leaf4",
+          "version": "2.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [],
+          "provides_extra": [],
+          "yanked": false
+        },
+        {
+          "id": "ref51-10b5d1-leaf5@1.0",
+          "project": "ref51-10b5d1-leaf5",
+          "version": "1.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [],
+          "provides_extra": [],
+          "yanked": false
+        },
+        {
+          "id": "ref51-10b5d1-leaf5@2.0",
+          "project": "ref51-10b5d1-leaf5",
+          "version": "2.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [],
+          "provides_extra": [],
+          "yanked": false
+        }
+      ],
+      "aliases": [],
+      "policies": [
+        {
+          "id": "embargo",
+          "project": "ref51-10b5d1-lib",
+          "kind": "deny",
+          "valid_from": "2027-03-01",
+          "valid_until": "2027-04-01"
+        }
+      ],
+      "environment": [
+        {
+          "id": "python_full_version",
+          "environment": "confirmation",
+          "field": "python_full_version",
+          "value": "3.12.4"
+        },
+        {
+          "id": "sys_platform",
+          "environment": "confirmation",
+          "field": "sys_platform",
+          "value": "linux"
+        }
+      ]
+    },
+    "query": {
+      "requirements": [
+        "ref51-10b5d1-app"
+      ],
+      "environment": "confirmation",
+      "as_of": "2027-02-01"
+    },
+    "prevalidate": true,
+    "events": [
+      {
+        "label": "initial",
+        "upserts": {},
+        "deletes": {},
+        "query": null,
+        "publication_ready": true
+      },
+      {
+        "label": "time-enters-policy",
+        "upserts": {},
+        "deletes": {},
+        "query": {
+          "requirements": [
+            "ref51-10b5d1-app"
+          ],
+          "environment": "confirmation",
+          "as_of": "2027-03-15"
+        },
+        "publication_ready": true
+      },
+      {
+        "label": "time-exits-policy",
+        "upserts": {},
+        "deletes": {},
+        "query": {
+          "requirements": [
+            "ref51-10b5d1-app"
+          ],
+          "environment": "confirmation",
+          "as_of": "2027-04-01"
+        },
+        "publication_ready": true
+      }
+    ]
+  },
+  {
+    "id": "ref60-8a83b7",
+    "family": "unknown_field",
+    "replica": 0,
+    "origin": "synthetic_confirmation_not_real_package_incident",
+    "tables": {
+      "projects": [
+        {
+          "id": "ref60-8a83b7-app",
+          "project": "ref60-8a83b7-app",
+          "complete": true
+        },
+        {
+          "id": "ref60-8a83b7-lib",
+          "project": "ref60-8a83b7-lib",
+          "complete": true
+        }
+      ],
+      "releases": [
+        {
+          "id": "ref60-8a83b7-app@1.0",
+          "project": "ref60-8a83b7-app",
+          "version": "1.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [
+            "ref60-8a83b7-lib; sys_platform == \"linux\""
+          ],
+          "provides_extra": [],
+          "yanked": false
+        },
+        {
+          "id": "ref60-8a83b7-lib@1.0",
+          "project": "ref60-8a83b7-lib",
+          "version": "1.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [],
+          "provides_extra": [],
+          "yanked": false
+        }
+      ],
+      "aliases": [],
+      "policies": [],
+      "environment": [
+        {
+          "id": "python_full_version",
+          "environment": "confirmation",
+          "field": "python_full_version",
+          "value": "3.12.4"
+        },
+        {
+          "id": "sys_platform",
+          "environment": "confirmation",
+          "field": "sys_platform",
+          "value": "linux"
+        }
+      ]
+    },
+    "query": {
+      "requirements": [
+        "ref60-8a83b7-app"
+      ],
+      "environment": "confirmation",
+      "as_of": "2027-02-01"
+    },
+    "prevalidate": false,
+    "events": [
+      {
+        "label": "initial",
+        "upserts": {},
+        "deletes": {},
+        "query": null,
+        "publication_ready": true
+      },
+      {
+        "label": "remove-explicit-environment",
+        "upserts": {},
+        "deletes": {
+          "environment": [
+            "sys_platform"
+          ]
+        },
+        "query": null,
+        "publication_ready": true
+      },
+      {
+        "label": "provide-changed-environment",
+        "upserts": {
+          "environment": [
+            {
+              "id": "sys_platform",
+              "environment": "confirmation",
+              "field": "sys_platform",
+              "value": "win32"
+            }
+          ]
+        },
+        "deletes": {},
+        "query": null,
+        "publication_ready": true
+      }
+    ]
+  },
+  {
+    "id": "ref61-75059d",
+    "family": "unknown_field",
+    "replica": 1,
+    "origin": "synthetic_confirmation_not_real_package_incident",
+    "tables": {
+      "projects": [
+        {
+          "id": "ref61-75059d-app",
+          "project": "ref61-75059d-app",
+          "complete": true
+        },
+        {
+          "id": "ref61-75059d-lib",
+          "project": "ref61-75059d-lib",
+          "complete": true
+        },
+        {
+          "id": "ref61-75059d-leaf0",
+          "project": "ref61-75059d-leaf0",
+          "complete": true
+        },
+        {
+          "id": "ref61-75059d-leaf1",
+          "project": "ref61-75059d-leaf1",
+          "complete": true
+        },
+        {
+          "id": "ref61-75059d-leaf2",
+          "project": "ref61-75059d-leaf2",
+          "complete": true
+        },
+        {
+          "id": "ref61-75059d-leaf3",
+          "project": "ref61-75059d-leaf3",
+          "complete": true
+        },
+        {
+          "id": "ref61-75059d-leaf4",
+          "project": "ref61-75059d-leaf4",
+          "complete": true
+        },
+        {
+          "id": "ref61-75059d-leaf5",
+          "project": "ref61-75059d-leaf5",
+          "complete": true
+        }
+      ],
+      "releases": [
+        {
+          "id": "ref61-75059d-app@1.0",
+          "project": "ref61-75059d-app",
+          "version": "1.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [
+            "ref61-75059d-lib; sys_platform == \"linux\"",
+            "ref61-75059d-leaf0>=1",
+            "ref61-75059d-leaf1>=1",
+            "ref61-75059d-leaf2>=1",
+            "ref61-75059d-leaf3>=1",
+            "ref61-75059d-leaf4>=1",
+            "ref61-75059d-leaf5>=1"
+          ],
+          "provides_extra": [],
+          "yanked": false
+        },
+        {
+          "id": "ref61-75059d-lib@1.0",
+          "project": "ref61-75059d-lib",
+          "version": "1.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [],
+          "provides_extra": [],
+          "yanked": false
+        },
+        {
+          "id": "ref61-75059d-leaf0@1.0",
+          "project": "ref61-75059d-leaf0",
+          "version": "1.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [],
+          "provides_extra": [],
+          "yanked": false
+        },
+        {
+          "id": "ref61-75059d-leaf0@2.0",
+          "project": "ref61-75059d-leaf0",
+          "version": "2.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [],
+          "provides_extra": [],
+          "yanked": false
+        },
+        {
+          "id": "ref61-75059d-leaf1@1.0",
+          "project": "ref61-75059d-leaf1",
+          "version": "1.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [],
+          "provides_extra": [],
+          "yanked": false
+        },
+        {
+          "id": "ref61-75059d-leaf1@2.0",
+          "project": "ref61-75059d-leaf1",
+          "version": "2.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [],
+          "provides_extra": [],
+          "yanked": false
+        },
+        {
+          "id": "ref61-75059d-leaf2@1.0",
+          "project": "ref61-75059d-leaf2",
+          "version": "1.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [],
+          "provides_extra": [],
+          "yanked": false
+        },
+        {
+          "id": "ref61-75059d-leaf2@2.0",
+          "project": "ref61-75059d-leaf2",
+          "version": "2.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [],
+          "provides_extra": [],
+          "yanked": false
+        },
+        {
+          "id": "ref61-75059d-leaf3@1.0",
+          "project": "ref61-75059d-leaf3",
+          "version": "1.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [],
+          "provides_extra": [],
+          "yanked": false
+        },
+        {
+          "id": "ref61-75059d-leaf3@2.0",
+          "project": "ref61-75059d-leaf3",
+          "version": "2.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [],
+          "provides_extra": [],
+          "yanked": false
+        },
+        {
+          "id": "ref61-75059d-leaf4@1.0",
+          "project": "ref61-75059d-leaf4",
+          "version": "1.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [],
+          "provides_extra": [],
+          "yanked": false
+        },
+        {
+          "id": "ref61-75059d-leaf4@2.0",
+          "project": "ref61-75059d-leaf4",
+          "version": "2.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [],
+          "provides_extra": [],
+          "yanked": false
+        },
+        {
+          "id": "ref61-75059d-leaf5@1.0",
+          "project": "ref61-75059d-leaf5",
+          "version": "1.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [],
+          "provides_extra": [],
+          "yanked": false
+        },
+        {
+          "id": "ref61-75059d-leaf5@2.0",
+          "project": "ref61-75059d-leaf5",
+          "version": "2.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [],
+          "provides_extra": [],
+          "yanked": false
+        }
+      ],
+      "aliases": [],
+      "policies": [],
+      "environment": [
+        {
+          "id": "python_full_version",
+          "environment": "confirmation",
+          "field": "python_full_version",
+          "value": "3.12.4"
+        },
+        {
+          "id": "sys_platform",
+          "environment": "confirmation",
+          "field": "sys_platform",
+          "value": "linux"
+        }
+      ]
+    },
+    "query": {
+      "requirements": [
+        "ref61-75059d-app"
+      ],
+      "environment": "confirmation",
+      "as_of": "2027-02-01"
+    },
+    "prevalidate": true,
+    "events": [
+      {
+        "label": "initial",
+        "upserts": {},
+        "deletes": {},
+        "query": null,
+        "publication_ready": true
+      },
+      {
+        "label": "remove-explicit-environment",
+        "upserts": {},
+        "deletes": {
+          "environment": [
+            "python_full_version"
+          ]
+        },
+        "query": null,
+        "publication_ready": true
+      },
+      {
+        "label": "provide-changed-environment",
+        "upserts": {
+          "environment": [
+            {
+              "id": "python_full_version",
+              "environment": "confirmation",
+              "field": "python_full_version",
+              "value": "3.13.1"
+            }
+          ]
+        },
+        "deletes": {},
+        "query": null,
+        "publication_ready": true
+      }
+    ]
+  },
+  {
+    "id": "ref70-287e4f",
+    "family": "finite_pool",
+    "replica": 0,
+    "origin": "synthetic_confirmation_not_real_package_incident",
+    "tables": {
+      "projects": [
+        {
+          "id": "ref70-287e4f-app",
+          "project": "ref70-287e4f-app",
+          "complete": true
+        },
+        {
+          "id": "ref70-287e4f-lib",
+          "project": "ref70-287e4f-lib",
+          "complete": true
+        }
+      ],
+      "releases": [
+        {
+          "id": "ref70-287e4f-app@1.0",
+          "project": "ref70-287e4f-app",
+          "version": "1.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [],
+          "provides_extra": [],
+          "yanked": false
+        },
+        {
+          "id": "ref70-287e4f-lib@1.0",
+          "project": "ref70-287e4f-lib",
+          "version": "1.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [],
+          "provides_extra": [],
+          "yanked": false
+        }
+      ],
+      "aliases": [],
+      "policies": [],
+      "environment": [
+        {
+          "id": "python_full_version",
+          "environment": "confirmation",
+          "field": "python_full_version",
+          "value": "3.12.4"
+        },
+        {
+          "id": "sys_platform",
+          "environment": "confirmation",
+          "field": "sys_platform",
+          "value": "linux"
+        }
+      ]
+    },
+    "query": {
+      "requirements": [
+        "ref70-287e4f-app>=2"
+      ],
+      "environment": "confirmation",
+      "as_of": "2027-02-01"
+    },
+    "prevalidate": false,
+    "events": [
+      {
+        "label": "initial",
+        "upserts": {},
+        "deletes": {},
+        "query": null,
+        "publication_ready": true
+      },
+      {
+        "label": "add-first-admissible",
+        "upserts": {
+          "releases": [
+            {
+              "id": "ref70-287e4f-app@2.4",
+              "project": "ref70-287e4f-app",
+              "version": "2.4",
+              "requires_python": ">=3.8",
+              "requires_dist": [
+                "ref70-287e4f-lib"
+              ],
+              "provides_extra": [],
+              "yanked": false
+            }
+          ]
+        },
+        "deletes": {},
+        "query": null,
+        "publication_ready": true
+      },
+      {
+        "label": "withdraw-completeness-not-release",
+        "upserts": {},
+        "deletes": {
+          "projects": [
+            "ref70-287e4f-lib"
+          ]
+        },
+        "query": null,
+        "publication_ready": true
+      }
+    ]
+  },
+  {
+    "id": "ref71-752e04",
+    "family": "finite_pool",
+    "replica": 1,
+    "origin": "synthetic_confirmation_not_real_package_incident",
+    "tables": {
+      "projects": [
+        {
+          "id": "ref71-752e04-app",
+          "project": "ref71-752e04-app",
+          "complete": true
+        },
+        {
+          "id": "ref71-752e04-lib",
+          "project": "ref71-752e04-lib",
+          "complete": true
+        },
+        {
+          "id": "ref71-752e04-leaf0",
+          "project": "ref71-752e04-leaf0",
+          "complete": true
+        },
+        {
+          "id": "ref71-752e04-leaf1",
+          "project": "ref71-752e04-leaf1",
+          "complete": true
+        },
+        {
+          "id": "ref71-752e04-leaf2",
+          "project": "ref71-752e04-leaf2",
+          "complete": true
+        },
+        {
+          "id": "ref71-752e04-leaf3",
+          "project": "ref71-752e04-leaf3",
+          "complete": true
+        },
+        {
+          "id": "ref71-752e04-leaf4",
+          "project": "ref71-752e04-leaf4",
+          "complete": true
+        },
+        {
+          "id": "ref71-752e04-leaf5",
+          "project": "ref71-752e04-leaf5",
+          "complete": true
+        }
+      ],
+      "releases": [
+        {
+          "id": "ref71-752e04-app@1.0",
+          "project": "ref71-752e04-app",
+          "version": "1.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [
+            "ref71-752e04-leaf0>=1",
+            "ref71-752e04-leaf1>=1",
+            "ref71-752e04-leaf2>=1",
+            "ref71-752e04-leaf3>=1",
+            "ref71-752e04-leaf4>=1",
+            "ref71-752e04-leaf5>=1"
+          ],
+          "provides_extra": [],
+          "yanked": false
+        },
+        {
+          "id": "ref71-752e04-lib@1.0",
+          "project": "ref71-752e04-lib",
+          "version": "1.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [],
+          "provides_extra": [],
+          "yanked": false
+        },
+        {
+          "id": "ref71-752e04-leaf0@1.0",
+          "project": "ref71-752e04-leaf0",
+          "version": "1.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [],
+          "provides_extra": [],
+          "yanked": false
+        },
+        {
+          "id": "ref71-752e04-leaf0@2.0",
+          "project": "ref71-752e04-leaf0",
+          "version": "2.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [],
+          "provides_extra": [],
+          "yanked": false
+        },
+        {
+          "id": "ref71-752e04-leaf1@1.0",
+          "project": "ref71-752e04-leaf1",
+          "version": "1.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [],
+          "provides_extra": [],
+          "yanked": false
+        },
+        {
+          "id": "ref71-752e04-leaf1@2.0",
+          "project": "ref71-752e04-leaf1",
+          "version": "2.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [],
+          "provides_extra": [],
+          "yanked": false
+        },
+        {
+          "id": "ref71-752e04-leaf2@1.0",
+          "project": "ref71-752e04-leaf2",
+          "version": "1.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [],
+          "provides_extra": [],
+          "yanked": false
+        },
+        {
+          "id": "ref71-752e04-leaf2@2.0",
+          "project": "ref71-752e04-leaf2",
+          "version": "2.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [],
+          "provides_extra": [],
+          "yanked": false
+        },
+        {
+          "id": "ref71-752e04-leaf3@1.0",
+          "project": "ref71-752e04-leaf3",
+          "version": "1.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [],
+          "provides_extra": [],
+          "yanked": false
+        },
+        {
+          "id": "ref71-752e04-leaf3@2.0",
+          "project": "ref71-752e04-leaf3",
+          "version": "2.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [],
+          "provides_extra": [],
+          "yanked": false
+        },
+        {
+          "id": "ref71-752e04-leaf4@1.0",
+          "project": "ref71-752e04-leaf4",
+          "version": "1.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [],
+          "provides_extra": [],
+          "yanked": false
+        },
+        {
+          "id": "ref71-752e04-leaf4@2.0",
+          "project": "ref71-752e04-leaf4",
+          "version": "2.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [],
+          "provides_extra": [],
+          "yanked": false
+        },
+        {
+          "id": "ref71-752e04-leaf5@1.0",
+          "project": "ref71-752e04-leaf5",
+          "version": "1.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [],
+          "provides_extra": [],
+          "yanked": false
+        },
+        {
+          "id": "ref71-752e04-leaf5@2.0",
+          "project": "ref71-752e04-leaf5",
+          "version": "2.0",
+          "requires_python": ">=3.8",
+          "requires_dist": [],
+          "provides_extra": [],
+          "yanked": false
+        }
+      ],
+      "aliases": [],
+      "policies": [],
+      "environment": [
+        {
+          "id": "python_full_version",
+          "environment": "confirmation",
+          "field": "python_full_version",
+          "value": "3.12.4"
+        },
+        {
+          "id": "sys_platform",
+          "environment": "confirmation",
+          "field": "sys_platform",
+          "value": "linux"
+        }
+      ]
+    },
+    "query": {
+      "requirements": [
+        "ref71-752e04-app>=2"
+      ],
+      "environment": "confirmation",
+      "as_of": "2027-02-01"
+    },
+    "prevalidate": true,
+    "events": [
+      {
+        "label": "initial",
+        "upserts": {},
+        "deletes": {},
+        "query": null,
+        "publication_ready": true
+      },
+      {
+        "label": "add-first-admissible",
+        "upserts": {
+          "releases": [
+            {
+              "id": "ref71-752e04-app@2.4",
+              "project": "ref71-752e04-app",
+              "version": "2.4",
+              "requires_python": ">=3.8",
+              "requires_dist": [
+                "ref71-752e04-lib",
+                "ref71-752e04-leaf0>=1",
+                "ref71-752e04-leaf1>=1",
+                "ref71-752e04-leaf2>=1",
+                "ref71-752e04-leaf3>=1",
+                "ref71-752e04-leaf4>=1",
+                "ref71-752e04-leaf5>=1"
+              ],
+              "provides_extra": [],
+              "yanked": false
+            }
+          ]
+        },
+        "deletes": {},
+        "query": null,
+        "publication_ready": true
+      },
+      {
+        "label": "withdraw-completeness-not-release",
+        "upserts": {},
+        "deletes": {
+          "projects": [
+            "ref71-752e04-lib"
+          ]
+        },
+        "query": null,
+        "publication_ready": true
+      }
+    ]
+  }
+]

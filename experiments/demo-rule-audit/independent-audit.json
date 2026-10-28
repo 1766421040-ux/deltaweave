@@ -1,0 +1,173 @@
+{
+  "format": "deltaweave.demo-independent-audit.v1",
+  "passed": true,
+  "model_used": false,
+  "report_sha256": "fd73f6665b1547f442474940279756ee569470301766606c629535502b6529c1",
+  "source_sha256": {
+    "src/deltaweave/cli.py": "2e9825842c45a88a7f4020231a07a8b81a3eef9be78b0745bd1c08211faaa329",
+    "src/deltaweave/domain.py": "9277c0ef43383cd3b0b1c12b99264f7e9e34315eee0cd7ae784239a6a7aa82b0",
+    "src/deltaweave/oracle.py": "87a50665b8bb2ce941b17490f4496a020245a60ab205e9cc9998e46d0d04aa04",
+    "src/deltaweave/sqlite_source.py": "2c2b5707e93619dc2dcc69a88e06afe5c7db4651acddd4ad506a2c7dbdb18a35",
+    "src/deltaweave/session.py": "65174516081cad2b768074bba263e297a474d0e464e56687cdfb7e38c155b536",
+    "src/deltaweave/lineage.py": "18cae263862712a3acb81a1358d674a25a65edc51c596b4953050ae8974d6342",
+    "src/deltaweave/engine.py": "b9f612fff4ea7b77ca5cf6d3a2b0d07020bcad214e648f2daada979102c8cba1",
+    "src/deltaweave/store.py": "8edc01ae86f4735022018c1850f026fc90bce7df9ba401ca98f6738f116e0994",
+    "src/deltaweave/provenance.py": "dbeb717825142228371cb9015bed201b75d20a291d61a658843f0c2050fa9780"
+  },
+  "method": "Reconstruct every public-catalog-plus-synthetic-event state independently of Store.commit; brute-force oracle and witness checks; canonical content hashes recomputed independently; shared packaging parser remains a common-mode risk. Citation row existence and selected-release support checked, not minimal proof completeness.",
+  "rows": [
+    {
+      "event": "initial",
+      "oracle_status": "resolved",
+      "oracle_assignments_examined": 1,
+      "answer_action": "answer",
+      "selected_requests": "2.32.5",
+      "changed_sample_ids": [
+        "requests-baseline"
+      ],
+      "checks": {
+        "completed": true,
+        "oracle_answer_valid": true,
+        "rule_not_model": true,
+        "source_identity": true,
+        "source_local_revision_mapping": true,
+        "snapshot_hash_all_equal": true,
+        "runtime_binding_equal": true,
+        "manifest_hash": true,
+        "sample_content_and_target": true,
+        "changed_sample_ids": true
+      },
+      "passed": true
+    },
+    {
+      "event": "new_org_constraint",
+      "oracle_status": "resolved",
+      "oracle_assignments_examined": 19,
+      "answer_action": "answer",
+      "selected_requests": "2.31.0",
+      "changed_sample_ids": [
+        "requests-baseline"
+      ],
+      "checks": {
+        "completed": true,
+        "oracle_answer_valid": true,
+        "rule_not_model": true,
+        "source_identity": true,
+        "source_local_revision_mapping": true,
+        "snapshot_hash_all_equal": true,
+        "runtime_binding_equal": true,
+        "manifest_hash": true,
+        "sample_content_and_target": true,
+        "changed_sample_ids": true,
+        "source_commit_receipt": true
+      },
+      "passed": true
+    },
+    {
+      "event": "unrelated_project_policy",
+      "oracle_status": "resolved",
+      "oracle_assignments_examined": 19,
+      "answer_action": "answer",
+      "selected_requests": "2.31.0",
+      "changed_sample_ids": [],
+      "checks": {
+        "completed": true,
+        "oracle_answer_valid": true,
+        "rule_not_model": true,
+        "source_identity": true,
+        "source_local_revision_mapping": true,
+        "snapshot_hash_all_equal": true,
+        "runtime_binding_equal": true,
+        "manifest_hash": true,
+        "sample_content_and_target": true,
+        "changed_sample_ids": true,
+        "source_commit_receipt": true
+      },
+      "passed": true
+    },
+    {
+      "event": "remove_org_constraint",
+      "oracle_status": "resolved",
+      "oracle_assignments_examined": 1,
+      "answer_action": "answer",
+      "selected_requests": "2.32.5",
+      "changed_sample_ids": [
+        "requests-baseline"
+      ],
+      "checks": {
+        "completed": true,
+        "oracle_answer_valid": true,
+        "rule_not_model": true,
+        "source_identity": true,
+        "source_local_revision_mapping": true,
+        "snapshot_hash_all_equal": true,
+        "runtime_binding_equal": true,
+        "manifest_hash": true,
+        "sample_content_and_target": true,
+        "changed_sample_ids": true,
+        "source_commit_receipt": true
+      },
+      "passed": true
+    },
+    {
+      "event": "withdraw_selected_file",
+      "oracle_status": "resolved",
+      "oracle_assignments_examined": 1,
+      "answer_action": "answer",
+      "selected_requests": "2.32.3",
+      "changed_sample_ids": [
+        "requests-baseline"
+      ],
+      "checks": {
+        "completed": true,
+        "oracle_answer_valid": true,
+        "rule_not_model": true,
+        "source_identity": true,
+        "source_local_revision_mapping": true,
+        "snapshot_hash_all_equal": true,
+        "runtime_binding_equal": true,
+        "manifest_hash": true,
+        "sample_content_and_target": true,
+        "changed_sample_ids": true,
+        "source_commit_receipt": true
+      },
+      "passed": true
+    },
+    {
+      "event": "remove_completeness_certificate",
+      "oracle_status": "incomplete",
+      "oracle_assignments_examined": 1,
+      "answer_action": "abstain",
+      "selected_requests": null,
+      "changed_sample_ids": [
+        "requests-baseline"
+      ],
+      "checks": {
+        "completed": true,
+        "oracle_answer_valid": true,
+        "rule_not_model": true,
+        "source_identity": true,
+        "source_local_revision_mapping": true,
+        "snapshot_hash_all_equal": true,
+        "runtime_binding_equal": true,
+        "manifest_hash": true,
+        "sample_content_and_target": true,
+        "changed_sample_ids": true,
+        "source_commit_receipt": true
+      },
+      "passed": true
+    }
+  ],
+  "checks": {
+    "six_events": true,
+    "final_database_matches_reconstructed_events": true,
+    "final_source_revision": true,
+    "contiguous_outbox": true,
+    "catalog_hash": true,
+    "outbox_1": true,
+    "outbox_2": true,
+    "outbox_3": true,
+    "outbox_4": true,
+    "outbox_5": true
+  }
+}

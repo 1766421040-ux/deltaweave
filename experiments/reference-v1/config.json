@@ -1,0 +1,35 @@
+{
+  "schema": "deltaweave.reference-confirmation.v1",
+  "seed": 20261031,
+  "views": [
+    "full",
+    "reference_context",
+    "reference"
+  ],
+  "chains": 16,
+  "sessions_per_view": 48,
+  "engine_mode": "coarse",
+  "max_actions": 3,
+  "semantic_cache": true,
+  "oracle_max_assignments": 200000,
+  "reference_prompt_version": "bound-observation-reference-v2",
+  "generation": {
+    "seed": 42,
+    "device": "mps",
+    "dtype": "bfloat16",
+    "max_new_tokens": 2048,
+    "max_seconds": 120.0,
+    "max_input_tokens": 2048,
+    "do_sample": true,
+    "temperature": 0.6,
+    "top_p": 0.95,
+    "top_k": 0,
+    "num_beams": 1,
+    "repetition_penalty": 1.0,
+    "use_cache": true,
+    "seed_derivation": "sha256_deltaweave-generation-v1_seed_prompt_mod_2**31",
+    "completion_contract": "explicit_ids_close_think_json_eos_v1",
+    "auxiliary_parser": "sole_json_fence_only_no_value_repair_v1"
+  },
+  "scope": "Closed one-reference transport/control, not model evidence reasoning; synthetic new instances of known update families."
+}

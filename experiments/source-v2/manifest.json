@@ -1,0 +1,21 @@
+{
+  "stage": "indexed-v2-before-adaptive",
+  "files": {
+    "src/deltaweave/engine.py": {
+      "sha256": "6ecd73419521a97691892066eb65c5a678b5a00dc0c032a96ad246c4a1516ecc",
+      "bytes": 17652
+    },
+    "src/deltaweave/store.py": {
+      "sha256": "9605a37e9a5c1be5c979bc7bf6718fb2c0c9b7b2c119c9bc5e87d2e4a26b72cb",
+      "bytes": 13888
+    },
+    "src/deltaweave/__init__.py": {
+      "sha256": "ab82b8b8b43a4cad6dbf88b1fadcf506d753d1b3981bd5a4e956fb7157d287aa",
+      "bytes": 277
+    },
+    "tests/test_engine.py": {
+      "sha256": "f37d9c6a196598be4605d00dedb9e40c57bd2de14f04928cfe81ab87e524002f",
+      "bytes": 20025
+    }
+  }
+}

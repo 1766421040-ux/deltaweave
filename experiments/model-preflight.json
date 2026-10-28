@@ -1,0 +1,237 @@
+{
+  "scope": "Synthetic feasibility fixtures only; no benchmark or quality claim.",
+  "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+  "revision": "ad9f0ae0864d7fbcd1cd905e3c6c5b069cc8b562",
+  "versions": {
+    "torch": "2.14.1",
+    "transformers": "4.57.6",
+    "peft": "0.21.2"
+  },
+  "load_seconds": 2.375747000100091,
+  "tokenizer_audit": {
+    "schema_version": 1,
+    "audit_kind": "tokenizer_only_no_weights_no_forward",
+    "expected_model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+    "expected_revision": "ad9f0ae0864d7fbcd1cd905e3c6c5b069cc8b562",
+    "tokenizer_class": "LlamaTokenizerFast",
+    "bos_token_id": 151646,
+    "eos_token_id": 151643,
+    "pad_token_id": 151643,
+    "closing_think_is_registered_special_token": false,
+    "official_template_sha256": "56a1447ad31926fdc21fb07e56e5642bd9c850c4f52d8c8af7bbe5f079a84f5f",
+    "passed": true,
+    "official_full_chat_prefix_hazard_observed": true,
+    "joint_text_retokenization_hazard_observed": true,
+    "cases": [
+      {
+        "prompt_fixture": 0,
+        "rationale_fixture": 0,
+        "prompt_tokens": 19,
+        "completion_tokens_including_eos": 21,
+        "official_full_chat_prefix_equal": false,
+        "joint_text_encoding_equals_explicit_ids": true,
+        "first_supervised_token_id": 151649,
+        "assistant_only_mask_passed": true,
+        "roundtrip_passed": true
+      },
+      {
+        "prompt_fixture": 0,
+        "rationale_fixture": 1,
+        "prompt_tokens": 19,
+        "completion_tokens_including_eos": 31,
+        "official_full_chat_prefix_equal": false,
+        "joint_text_encoding_equals_explicit_ids": true,
+        "first_supervised_token_id": 785,
+        "assistant_only_mask_passed": true,
+        "roundtrip_passed": true
+      },
+      {
+        "prompt_fixture": 0,
+        "rationale_fixture": 2,
+        "prompt_tokens": 19,
+        "completion_tokens_including_eos": 22,
+        "official_full_chat_prefix_equal": false,
+        "joint_text_encoding_equals_explicit_ids": false,
+        "first_supervised_token_id": 271,
+        "assistant_only_mask_passed": true,
+        "roundtrip_passed": true
+      },
+      {
+        "prompt_fixture": 1,
+        "rationale_fixture": 0,
+        "prompt_tokens": 28,
+        "completion_tokens_including_eos": 21,
+        "official_full_chat_prefix_equal": false,
+        "joint_text_encoding_equals_explicit_ids": true,
+        "first_supervised_token_id": 151649,
+        "assistant_only_mask_passed": true,
+        "roundtrip_passed": true
+      },
+      {
+        "prompt_fixture": 1,
+        "rationale_fixture": 1,
+        "prompt_tokens": 28,
+        "completion_tokens_including_eos": 31,
+        "official_full_chat_prefix_equal": false,
+        "joint_text_encoding_equals_explicit_ids": true,
+        "first_supervised_token_id": 785,
+        "assistant_only_mask_passed": true,
+        "roundtrip_passed": true
+      },
+      {
+        "prompt_fixture": 1,
+        "rationale_fixture": 2,
+        "prompt_tokens": 28,
+        "completion_tokens_including_eos": 22,
+        "official_full_chat_prefix_equal": false,
+        "joint_text_encoding_equals_explicit_ids": false,
+        "first_supervised_token_id": 271,
+        "assistant_only_mask_passed": true,
+        "roundtrip_passed": true
+      },
+      {
+        "prompt_fixture": 2,
+        "rationale_fixture": 0,
+        "prompt_tokens": 27,
+        "completion_tokens_including_eos": 21,
+        "official_full_chat_prefix_equal": false,
+        "joint_text_encoding_equals_explicit_ids": true,
+        "first_supervised_token_id": 151649,
+        "assistant_only_mask_passed": true,
+        "roundtrip_passed": true
+      },
+      {
+        "prompt_fixture": 2,
+        "rationale_fixture": 1,
+        "prompt_tokens": 27,
+        "completion_tokens_including_eos": 31,
+        "official_full_chat_prefix_equal": false,
+        "joint_text_encoding_equals_explicit_ids": true,
+        "first_supervised_token_id": 785,
+        "assistant_only_mask_passed": true,
+        "roundtrip_passed": true
+      },
+      {
+        "prompt_fixture": 2,
+        "rationale_fixture": 2,
+        "prompt_tokens": 27,
+        "completion_tokens_including_eos": 22,
+        "official_full_chat_prefix_equal": false,
+        "joint_text_encoding_equals_explicit_ids": false,
+        "first_supervised_token_id": 271,
+        "assistant_only_mask_passed": true,
+        "roundtrip_passed": true
+      }
+    ],
+    "not_tested": [
+      "model_forward",
+      "memory_peak",
+      "training",
+      "generation_quality",
+      "reasoning_retention"
+    ],
+    "files_sha256": {
+      "config.json": "37bd455e9679d2959536270fed49d25cc7c290a64f6e52abb97c71345a9cee41",
+      "tokenizer.json": "88145e3c3249adc2546ede277e9819d6e405e19072456e4b521cbc724bd60773",
+      "tokenizer_config.json": "8ac8c85fb242563c2260baec0909debd69d718af6a0b3d90e6cab62b4d341cd5",
+      "generation_config.json": "72cbec1015da9ed03ad025483005cbf6481403abf947adfd54e504d1a66a2126"
+    },
+    "source_manifest_status": "tokenizer_config_files_match_download_manifest",
+    "download_manifest_sha256": "926204772f846b3b80a25d0ecddd6d9df6039062e182e736540c7fad384a5ae2"
+  },
+  "generation": [
+    {
+      "fixture": 0,
+      "input_tokens": 65,
+      "new_tokens": 424,
+      "seconds": 10.893118167063221,
+      "tokens_per_second": 38.923657441082376,
+      "eos": true,
+      "timed_out": false,
+      "hit_token_cap": false,
+      "raw": "Alright, I need to figure out how to respond to this user's query about a read-only dependency knowledge assistant. The example given is that for an alpha version of 1.0, a beta version of at least 2.0 is required. The beta version provided is 2.0, so the assistant should return that with an action set to \"answer\" and the arguments as {\"beta\":\"2.0\"}.\n\nFirst, I should make sure I understand the structure of the response. The example shows that the JSON object includes \"action\" as \"answer\" and the \"beta\" argument with the value \"2.0\". So, I need to replicate that format.\n\nI should also consider any potential edge cases. For instance, what if the alpha version is 1.0 and the beta version is exactly 2.0? That's acceptable because it meets the requirement of being at least 2.0. I don't need to add anything else; the example covers that scenario.\n\nAnother thing to think about is whether the assistant should handle multiple possible beta versions. But since the example only provides one beta version, I can stick with that, assuming the beta version provided is sufficient.\n\nI should also check if there are any specific instructions the user gave about the evidence. They mentioned to return precisely one JSON object after reasoning, so I don't need to worry about multiple responses.\n\nIn terms of the response format, I need to ensure that it's exactly as specified: a JSON object with \"action\" as \"answer\", the \"beta\" key, and the value as \"2.0\". No additional fields or changes should be made.\n\nSo, putting it all together, the JSON object should look like this:\n\n{\n  \"action\": \"answer\",\n  \"beta\": \"2.0\"\n}\n\nI think that's all there is to it. I'll present it as the final answer.\n</think>\n\nThe JSON object with the required arguments is as follows:\n\n```json\n{\n  \"action\": \"answer\",\n  \"beta\": \"2.0\"\n}\n```",
+      "parsed": null,
+      "parse_error": "Expecting value: line 1 column 1 (char 0)"
+    },
+    {
+      "fixture": 1,
+      "input_tokens": 63,
+      "new_tokens": 512,
+      "seconds": 11.5265945000574,
+      "tokens_per_second": 44.41901725591634,
+      "eos": false,
+      "timed_out": false,
+      "hit_token_cap": true,
+      "raw": "Okay, so I need to figure out how to determine which Python release supports the user's environment. The user mentioned that the Python version is missing, and I have to act as a read-only dependency knowledge assistant. The available actions are \"ask\", \"answer\", and \"abstain\". The user also specified not to guess, so I can't just assume a version.\n\nFirst, I should consider the context. The user is in a situation where their Python environment is missing a required dependency. They might be using a library or a script that depends on a specific Python version. Since the version is missing, they're probably trying to run something like a package that requires a certain version, which isn't installed.\n\nI remember that when you install Python versions, you can check the versions using tools like pip or conda. For example, using pip3 version_info to get the installed version. But in this case, the user doesn't have the version installed. So, they need a way to determine which version is available in their environment.\n\nI recall that tools like venv or virtualenv can help visualize the environment, but without installing anything, that might not be feasible. Another thought is to use the Python module index, which can be found via pip3 --version or conda3 --version. However, if the user hasn't installed Python yet, they might not have these commands.\n\nWait, but if the user hasn't installed Python, they might not have pip or conda installed either. So, maybe they need to install Python first. If I were to do that, I could suggest installing Python 3.10 or another version, but I'm not sure if that's necessary for this scenario.\n\nAlternatively, perhaps the user can check the Python version by running the pip command directly from their shell. For example, if they have pip installed, they can try running 'python3 --version' or 'conda3 --version'. But if they haven't installed pip or conda, that might not be possible.\n\nAnother approach is to use the Python module index, which can be accessed via the module index command, like 'python3 --version'. But again, without having pip or conda installed, that might not be the right way.\n\nWait, maybe I can suggest checking the Python version by using the 'python3 --version' command. If the user has pip or conda installed, they can run that command. But if not, they might need to install them first.\n\nAlternatively, perhaps the user can use",
+      "parsed": null,
+      "parse_error": "Expected exactly one closing thinking delimiter"
+    }
+  ],
+  "training_steps": [
+    {
+      "step": 1,
+      "loss": 5.326360702514648,
+      "seconds": 3.45509016700089,
+      "mps_allocated_bytes": 3660726528,
+      "mps_driver_allocated_bytes": 7449149440
+    },
+    {
+      "step": 2,
+      "loss": 5.198875427246094,
+      "seconds": 1.7500674580223858,
+      "mps_allocated_bytes": 3660628224,
+      "mps_driver_allocated_bytes": 7449149440
+    },
+    {
+      "step": 3,
+      "loss": 4.794162750244141,
+      "seconds": 1.7486857919720933,
+      "mps_allocated_bytes": 3660628224,
+      "mps_driver_allocated_bytes": 7449149440
+    },
+    {
+      "step": 4,
+      "loss": 4.198049545288086,
+      "seconds": 1.7464059999911115,
+      "mps_allocated_bytes": 3660628224,
+      "mps_driver_allocated_bytes": 7449149440
+    },
+    {
+      "step": 5,
+      "loss": 3.423727035522461,
+      "seconds": 1.7854293750133365,
+      "mps_allocated_bytes": 3660628224,
+      "mps_driver_allocated_bytes": 7449149440
+    },
+    {
+      "step": 6,
+      "loss": 2.7151498794555664,
+      "seconds": 1.7474381249630824,
+      "mps_allocated_bytes": 3660628224,
+      "mps_driver_allocated_bytes": 7449149440
+    },
+    {
+      "step": 7,
+      "loss": 2.132416248321533,
+      "seconds": 1.7673065420240164,
+      "mps_allocated_bytes": 3660628224,
+      "mps_driver_allocated_bytes": 7449149440
+    },
+    {
+      "step": 8,
+      "loss": 1.645451307296753,
+      "seconds": 1.7458296669647098,
+      "mps_allocated_bytes": 3660628224,
+      "mps_driver_allocated_bytes": 7449149440
+    }
+  ],
+  "trainable_parameters": 4616192,
+  "trainable_dtypes": [
+    "torch.float32"
+  ],
+  "training_sequence_tokens": 649,
+  "host_maxrss_raw": 535527424,
+  "host_maxrss_unit": "bytes",
+  "memory_note": "MPS allocations sampled after steps, not a proven peak.",
+  "passed": true
+}

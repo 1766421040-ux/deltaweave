@@ -1,0 +1,15 @@
+.cache/
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+runs/
+experiments/*.json.receipts/
+experiments/reference-confirm-*/ref*.json
+*.sqlite*
+node_modules/
+*.egg-info/
+build/
+dist/
+artifacts/*/adapter_model.safetensors
+data/learning/*.jsonl
