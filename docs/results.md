@@ -93,6 +93,8 @@
 
 生成墙钟分别为 416.79、91.25、100.67 秒，缓存命中分别 12、13、10 次；各路线实际动作轨迹因失败而不同。时间只包含新鲜生成，无重复运行区间，不是同成功覆盖下的等效任务加速。完整报告：[full](../experiments/reference-confirm-full/report.json)、[reference_context](../experiments/reference-confirm-reference_context/report.json)、[reference](../experiments/reference-confirm-reference/report.json)；冻结输入与规则审计见 [bundle](../experiments/reference-v1/manifest.json)。
 
+进一步按新鲜生成归因：full 有 15 个坏 JSON、7 个错误载荷、6 个错误动作；reference_context 分别为 12、7、8；reference 为 14、0、5。三臂均无输入超限、token cap 或超时造成的失败。压缩输入后仍有格式和优先级错误，不能把问题全归因于“证据太长”。长副本还采用 prevalidate，短副本不预验证，二者的成绩不能作为单一长度效应；三视图的配对比较保持了相同条件。[派生错误汇总](../experiments/reference-confirmation-summary.json) 保留报告摘要与分组分母。
+
 最终选择保留规则主路径与显式模型阻断，把短引用作为可复现的接口实验，不将其推荐为已解决的模型方案。这里没有发现必须依赖 SFT 才能实现正确知识更新的证据；SFT 的可测增益局限于已有覆盖下的模型接口行为。
 
 ## 7. 模型实验的解释原则

@@ -4,9 +4,65 @@
   "publication_status": "pending",
   "archive": {
     "filename": "deltaweave-artifacts-v0.1.0.zip",
-    "url": "https://github.com/1766421040-ux/deltaweave/releases/download/v0.1.0/deltaweave-artifacts-v0.1.0.zip",
+    "url": null,
     "sha256": "b9078114f7df68acd8edc36022f3c51f75bbf0a0fb1eaa683daf3600098d86fb",
-    "bytes": 34295413
+    "bytes": 34295413,
+    "parts": [
+      {
+        "filename": "deltaweave-artifacts-v0.1.0.zip.part01",
+        "url": "https://github.com/1766421040-ux/deltaweave/releases/download/v0.1.0/deltaweave-artifacts-v0.1.0.zip.part01",
+        "bytes": 4194304,
+        "sha256": "028bbc10d4f3f05310d94527977131d9c1391a3735136118eac046de753c7449"
+      },
+      {
+        "filename": "deltaweave-artifacts-v0.1.0.zip.part02",
+        "url": "https://github.com/1766421040-ux/deltaweave/releases/download/v0.1.0/deltaweave-artifacts-v0.1.0.zip.part02",
+        "bytes": 4194304,
+        "sha256": "be7e2ebf24f1afc744578b3d708cafc615d3030075e7c4b93495fce5ef66ba67"
+      },
+      {
+        "filename": "deltaweave-artifacts-v0.1.0.zip.part03",
+        "url": "https://github.com/1766421040-ux/deltaweave/releases/download/v0.1.0/deltaweave-artifacts-v0.1.0.zip.part03",
+        "bytes": 4194304,
+        "sha256": "64c855cd874faa9ab51ff8dabb5568e1a39993b693716424a3c082fbf0eeaa9d"
+      },
+      {
+        "filename": "deltaweave-artifacts-v0.1.0.zip.part04",
+        "url": "https://github.com/1766421040-ux/deltaweave/releases/download/v0.1.0/deltaweave-artifacts-v0.1.0.zip.part04",
+        "bytes": 4194304,
+        "sha256": "daed01b9faea4506e1a0f3ac65d9e0bc55e1f14ca46c064b135bd72c4b8c7881"
+      },
+      {
+        "filename": "deltaweave-artifacts-v0.1.0.zip.part05",
+        "url": "https://github.com/1766421040-ux/deltaweave/releases/download/v0.1.0/deltaweave-artifacts-v0.1.0.zip.part05",
+        "bytes": 4194304,
+        "sha256": "ff0db63d1f24ec19761c5b726f9a4029f752e5105a109f64bec28603f936ab64"
+      },
+      {
+        "filename": "deltaweave-artifacts-v0.1.0.zip.part06",
+        "url": "https://github.com/1766421040-ux/deltaweave/releases/download/v0.1.0/deltaweave-artifacts-v0.1.0.zip.part06",
+        "bytes": 4194304,
+        "sha256": "b20509e89603646efc48c8c3ae209269301deeaf083ee3b262efe258f7873860"
+      },
+      {
+        "filename": "deltaweave-artifacts-v0.1.0.zip.part07",
+        "url": "https://github.com/1766421040-ux/deltaweave/releases/download/v0.1.0/deltaweave-artifacts-v0.1.0.zip.part07",
+        "bytes": 4194304,
+        "sha256": "c8073e379d0012c328fae5b756ae3c2e78182fd6a022c7eba2d440bcf792accf"
+      },
+      {
+        "filename": "deltaweave-artifacts-v0.1.0.zip.part08",
+        "url": "https://github.com/1766421040-ux/deltaweave/releases/download/v0.1.0/deltaweave-artifacts-v0.1.0.zip.part08",
+        "bytes": 4194304,
+        "sha256": "160a300d3eecfcc4f67cc346759c6b3cf038106d6307071c0a6750a6a09ed9d8"
+      },
+      {
+        "filename": "deltaweave-artifacts-v0.1.0.zip.part09",
+        "url": "https://github.com/1766421040-ux/deltaweave/releases/download/v0.1.0/deltaweave-artifacts-v0.1.0.zip.part09",
+        "bytes": 740981,
+        "sha256": "2a8bb01855e6f0a7794bd931ad2f22819aea88b882cbee95f09addee064ff636"
+      }
+    ]
   },
   "files": {
     "artifacts/behavior/adapter_config.json": {

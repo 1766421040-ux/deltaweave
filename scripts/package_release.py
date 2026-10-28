@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import argparse
+from copy import deepcopy
 import hashlib
 import json
 from pathlib import Path
@@ -83,10 +84,45 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--root", type=Path, default=ROOT)
     parser.add_argument("--output", type=Path, default=ROOT / "dist" / bundle.ASSET_NAME)
+    parser.add_argument("--split-existing", action="store_true", help="Split an already verified ZIP into <=4 MiB assets; do not change its bytes")
     args = parser.parse_args()
-    manifest = package_release(args.root, args.output)
+    if args.split_existing:
+        manifest_path = args.root / "artifacts" / "release.json"
+        manifest = split_release(args.output, bundle.read_manifest(manifest_path))
+        manifest_path.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    else:
+        manifest = package_release(args.root, args.output)
     print(json.dumps({"publication_status": manifest["publication_status"], "archive": manifest["archive"],
                       "files": len(manifest["files"])}, indent=2))
+
+
+def split_release(archive_path, manifest, part_bytes=bundle.MAX_PART_BYTES):
+    """Transport-only split; the original archive and all member hashes stay fixed."""
+    bundle.verify_archive(archive_path, manifest)
+    if not bundle._positive_size(part_bytes, bundle.MAX_PART_BYTES):
+        raise ValueError("Invalid release part size")
+    if (manifest["archive"]["bytes"] + part_bytes - 1) // part_bytes > bundle.MAX_PARTS:
+        raise ValueError("Too many release parts")
+    changed = deepcopy(manifest)
+    parts = []
+    with Path(archive_path).open("rb") as source:
+        for index in range(1, bundle.MAX_PARTS + 1):
+            block = source.read(part_bytes)
+            if not block:
+                break
+            suffix = f".part{index:02d}"
+            path = Path(archive_path).with_name(bundle.ASSET_NAME + suffix)
+            spec = {"filename": path.name, "url": bundle.EXPECTED_URL + suffix,
+                    "bytes": len(block), "sha256": hashlib.sha256(block).hexdigest()}
+            if path.is_symlink() or (path.exists() and (not path.is_file() or path.stat().st_size != len(block) or bundle.file_sha256(path) != spec["sha256"])):
+                raise FileExistsError("Conflicting release part; refusing replacement")
+            if not path.exists():
+                with path.open("xb") as output:
+                    output.write(block)
+            parts.append(spec)
+    changed["archive"].update({"url": None, "parts": parts})
+    bundle.validate_manifest(changed)
+    return changed
 
 
 if __name__ == "__main__":

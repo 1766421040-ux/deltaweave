@@ -1,0 +1,239 @@
+{
+  "scope": "Derived from frozen confirmation without changing source, prompts or weights. Replica 1 also prevalidates old observations; length is not the only between-replica difference.",
+  "results": [
+    {
+      "view": "full",
+      "report": "experiments/reference-confirm-full/report.json",
+      "sha256": "2dffa67e9bf0cd59f0a1ea7ad6374cd73f0f316892a64303aacc58cf2dc1b272",
+      "summary": {
+        "sessions": 48,
+        "fresh_raw_contract": {
+          "numerator": 28,
+          "denominator": 56,
+          "rate": 0.5
+        },
+        "all_sessions_completed": {
+          "numerator": 12,
+          "denominator": 48,
+          "rate": 0.25
+        },
+        "oracle_appropriate_terminal": {
+          "numerator": 12,
+          "denominator": 48,
+          "rate": 0.25
+        },
+        "wrong_reference_acceptance": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "full_answer_oracle_agreement": {
+          "numerator": 8,
+          "denominator": 8,
+          "rate": 1.0
+        },
+        "cache_hits": 12,
+        "rule_actions": 0,
+        "terminal_statuses": {
+          "completed": 12,
+          "blocked_model_contract": 36
+        },
+        "expected_terminal_actions": {
+          "answer": 40,
+          "abstain": 5,
+          "wait": 2,
+          "ask": 1
+        },
+        "fresh_generation_cost": {
+          "input_tokens": {
+            "total": 32965,
+            "missing_receipts": 0,
+            "fresh_generation_denominator": 56
+          },
+          "new_tokens": {
+            "total": 9226,
+            "missing_receipts": 0,
+            "fresh_generation_denominator": 56
+          },
+          "seconds": {
+            "total": 416.7915507090511,
+            "missing_receipts": 0,
+            "fresh_generation_denominator": 56
+          }
+        }
+      },
+      "fresh_failures": {
+        "wrong_action:answer->refresh": 5,
+        "invalid_json": 15,
+        "wrong_payload": 7,
+        "wrong_action:abstain->ask": 1
+      },
+      "replica_results": {
+        "0": {
+          "sessions": 24,
+          "completed": 7
+        },
+        "1": {
+          "sessions": 24,
+          "completed": 5
+        }
+      }
+    },
+    {
+      "view": "reference_context",
+      "report": "experiments/reference-confirm-reference_context/report.json",
+      "sha256": "5f22e7c5b6ede4468b2cfb18283dec17382f8963d706193ef85b99d3549122c6",
+      "summary": {
+        "sessions": 48,
+        "fresh_raw_contract": {
+          "numerator": 28,
+          "denominator": 55,
+          "rate": 0.509090909090909
+        },
+        "all_sessions_completed": {
+          "numerator": 12,
+          "denominator": 48,
+          "rate": 0.25
+        },
+        "oracle_appropriate_terminal": {
+          "numerator": 12,
+          "denominator": 48,
+          "rate": 0.25
+        },
+        "wrong_reference_acceptance": {
+          "numerator": 0,
+          "denominator": 6,
+          "rate": 0.0
+        },
+        "full_answer_oracle_agreement": {
+          "numerator": 6,
+          "denominator": 6,
+          "rate": 1.0
+        },
+        "cache_hits": 13,
+        "rule_actions": 0,
+        "terminal_statuses": {
+          "blocked_model_contract": 36,
+          "completed": 12
+        },
+        "expected_terminal_actions": {
+          "answer": 40,
+          "abstain": 5,
+          "wait": 2,
+          "ask": 1
+        },
+        "fresh_generation_cost": {
+          "input_tokens": {
+            "total": 43220,
+            "missing_receipts": 0,
+            "fresh_generation_denominator": 55
+          },
+          "new_tokens": {
+            "total": 1945,
+            "missing_receipts": 0,
+            "fresh_generation_denominator": 55
+          },
+          "seconds": {
+            "total": 91.25363495235797,
+            "missing_receipts": 0,
+            "fresh_generation_denominator": 55
+          }
+        }
+      },
+      "fresh_failures": {
+        "wrong_action:refresh->answer": 3,
+        "wrong_action:abstain->refresh": 2,
+        "wrong_action:answer->refresh": 3,
+        "invalid_json": 12,
+        "wrong_payload": 7
+      },
+      "replica_results": {
+        "0": {
+          "sessions": 24,
+          "completed": 7
+        },
+        "1": {
+          "sessions": 24,
+          "completed": 5
+        }
+      }
+    },
+    {
+      "view": "reference",
+      "report": "experiments/reference-confirm-reference/report.json",
+      "sha256": "533a8772c69250a3b201ac52b8ff742828a5e2e5204c6ee34035f0f992989303",
+      "summary": {
+        "sessions": 48,
+        "fresh_raw_contract": {
+          "numerator": 39,
+          "denominator": 58,
+          "rate": 0.6724137931034483
+        },
+        "all_sessions_completed": {
+          "numerator": 23,
+          "denominator": 48,
+          "rate": 0.4791666666666667
+        },
+        "oracle_appropriate_terminal": {
+          "numerator": 23,
+          "denominator": 48,
+          "rate": 0.4791666666666667
+        },
+        "wrong_reference_acceptance": {
+          "numerator": 0,
+          "denominator": 19,
+          "rate": 0.0
+        },
+        "full_answer_oracle_agreement": {
+          "numerator": 19,
+          "denominator": 19,
+          "rate": 1.0
+        },
+        "cache_hits": 10,
+        "rule_actions": 0,
+        "terminal_statuses": {
+          "blocked_model_contract": 25,
+          "completed": 23
+        },
+        "expected_terminal_actions": {
+          "answer": 40,
+          "abstain": 5,
+          "wait": 2,
+          "ask": 1
+        },
+        "fresh_generation_cost": {
+          "input_tokens": {
+            "total": 35455,
+            "missing_receipts": 0,
+            "fresh_generation_denominator": 58
+          },
+          "new_tokens": {
+            "total": 2324,
+            "missing_receipts": 0,
+            "fresh_generation_denominator": 58
+          },
+          "seconds": {
+            "total": 100.66920621017925,
+            "missing_receipts": 0,
+            "fresh_generation_denominator": 58
+          }
+        }
+      },
+      "fresh_failures": {
+        "invalid_json": 14,
+        "wrong_action:answer->refresh": 4,
+        "wrong_action:abstain->ask": 1
+      },
+      "replica_results": {
+        "0": {
+          "sessions": 24,
+          "completed": 6
+        },
+        "1": {
+          "sessions": 24,
+          "completed": 17
+        }
+      }
+    }
+  ]
+}

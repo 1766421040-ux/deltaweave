@@ -42,6 +42,8 @@ DeepSeek 仓库与模型权重采用 MIT，原始 Qwen 来源为 Apache 2.0。�
 
 在同一六事件开发演示上，[`reference_context` 为 1/6](../experiments/demo-behavior-reference_context/report.json)，[`reference` 为 4/6](../experiments/demo-behavior-reference/report.json)。缺失 status、错误 JSON 括号和误复制完整证据 selection 仍会导致阻断。引用是观察到 full 失败后提出的可选接口实验；该回放不能视为独立确认，也没有证明引用路线已可靠修复问题。CLI 默认仍是规则策略与 full 视图，模型及两种引用视图都需显式启用。
 
+后续独立冻结的 16 条链确认中，full / reference_context / reference 分别完成 12/48、12/48、23/48 会话；三个规则视图都为 48/48。引用传输仍有坏 JSON 和动作优先级错误，因此不作为可靠模型方案推荐。没有继续使用确认结果调提示或训练。完整分母及错误归因见 [结果页](results.md) 和 [派生汇总](../experiments/reference-confirmation-summary.json)。
+
 ## 三个比较对象与数据干预
 
 | 对象 | 训练条件 | 可以回答的问题 |

@@ -29,6 +29,8 @@ ALLOWED_MEMBERS = tuple(sorted(
 MAX_ARCHIVE_BYTES = 128 * 1024 * 1024
 MAX_MEMBER_BYTES = 64 * 1024 * 1024
 MAX_UNCOMPRESSED_BYTES = 128 * 1024 * 1024
+MAX_PARTS = 64
+MAX_PART_BYTES = 4 * 1024 * 1024
 CHUNK = 256 * 1024
 
 
@@ -68,12 +70,29 @@ def validate_manifest(manifest):
     if manifest.get("publication_status") not in {"pending", "published", "verified"}:
         raise ValueError("Unknown publication status")
     archive = manifest.get("archive", {})
-    if archive.get("filename") != ASSET_NAME or archive.get("url") != EXPECTED_URL:
+    parts = archive.get("parts")
+    expected_url = None if parts is not None else EXPECTED_URL
+    if archive.get("filename") != ASSET_NAME or archive.get("url") != expected_url:
         raise ValueError("Unexpected release asset name or URL")
     if not _positive_size(archive.get("bytes"), MAX_ARCHIVE_BYTES):
         raise ValueError("Invalid/oversize archive length")
     if not isinstance(archive.get("sha256"), str) or not re.fullmatch(r"[0-9a-f]{64}", archive["sha256"]):
         raise ValueError("Invalid archive SHA256")
+    if parts is not None:
+        if not isinstance(parts, list) or not 1 <= len(parts) <= MAX_PARTS:
+            raise ValueError("Invalid release part count")
+        for index, part in enumerate(parts, 1):
+            if not isinstance(part, dict) or set(part) != {"filename", "url", "sha256", "bytes"}:
+                raise ValueError("Invalid release part fields")
+            suffix = f".part{index:02d}"
+            if part["filename"] != ASSET_NAME + suffix or part["url"] != EXPECTED_URL + suffix:
+                raise ValueError("Release part order/name/URL mismatch")
+            if not _positive_size(part["bytes"], MAX_PART_BYTES):
+                raise ValueError("Invalid release part size")
+            if not isinstance(part["sha256"], str) or not re.fullmatch(r"[0-9a-f]{64}", part["sha256"]):
+                raise ValueError("Invalid release part SHA256")
+        if sum(part["bytes"] for part in parts) != archive["bytes"]:
+            raise ValueError("Release part sizes do not sum to archive length")
     entries = manifest.get("files", {})
     if not isinstance(entries, dict) or set(entries) != set(ALLOWED_MEMBERS):
         raise ValueError("Manifest must contain exactly the explicit 13-file allowlist")
@@ -241,16 +260,19 @@ class SafeRedirect(urllib.request.HTTPRedirectHandler):
         return super().redirect_request(req, fp, code, msg, headers, newurl)
 
 
-def download_archive(manifest, cache_dir: Path):
-    validate_manifest(manifest)
-    spec = manifest["archive"]
-    _https_url(spec["url"])
-    cache_dir = Path(cache_dir)
-    cache_dir.mkdir(parents=True, exist_ok=True)
-    final = cache_dir / (spec["sha256"] + ".zip")
+def _cached_file(spec, cache_dir, suffix):
+    final = cache_dir / (spec["sha256"] + suffix)
     if final.exists() or final.is_symlink():
         if final.is_symlink() or not final.is_file() or final.stat().st_size != spec["bytes"] or file_sha256(final) != spec["sha256"]:
-            raise ValueError("Conflicting cached archive; refusing replacement")
+            raise ValueError("Conflicting cached archive/part; refusing replacement")
+        return final, True
+    return final, False
+
+
+def _download_asset(spec, cache_dir: Path, suffix):
+    _https_url(spec["url"])
+    final, present = _cached_file(spec, cache_dir, suffix)
+    if present:
         return final
     opener = urllib.request.build_opener(SafeRedirect())
     request = urllib.request.Request(spec["url"], headers={"User-Agent": "DeltaWeave-release-fetch/1", "Accept-Encoding": "identity"})
@@ -275,14 +297,46 @@ def download_archive(manifest, cache_dir: Path):
             temporary.unlink(missing_ok=True)
 
 
+def download_archive(manifest, cache_dir: Path):
+    """Resume at verified part boundaries, then verify the original whole ZIP."""
+    validate_manifest(manifest)
+    cache_dir = Path(cache_dir)
+    cache_dir.mkdir(parents=True, exist_ok=True)
+    spec = manifest["archive"]
+    final, present = _cached_file(spec, cache_dir, ".zip")
+    if present:
+        return final
+    if "parts" not in spec:
+        return _download_asset(spec, cache_dir, ".zip")
+    parts = [_download_asset(part, cache_dir, ".part") for part in spec["parts"]]
+    temporary = None
+    try:
+        with tempfile.NamedTemporaryFile(prefix="assemble-", suffix=".partial", dir=cache_dir, delete=False) as sink:
+            temporary = Path(sink.name)
+            for path, part in zip(parts, spec["parts"]):
+                with path.open("rb") as source:
+                    if _member_hash(source, part["bytes"], sink) != part["sha256"]:
+                        raise ValueError("Cached part changed during assembly")
+            sink.flush()
+            os.fsync(sink.fileno())
+        if temporary.stat().st_size != spec["bytes"] or file_sha256(temporary) != spec["sha256"]:
+            raise ValueError("Assembled archive SHA256/size mismatch")
+        os.link(temporary, final)
+        return final
+    finally:
+        if temporary is not None:
+            temporary.unlink(missing_ok=True)
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--manifest", type=Path, default=ROOT / "artifacts" / "release.json")
     parser.add_argument("--destination", type=Path, default=ROOT)
     parser.add_argument("--archive", type=Path, help="Offline ZIP; the identical checks still apply")
+    parser.add_argument("--cache", type=Path, default=ROOT / ".cache" / "releases", help="Verified ZIP/part cache; completed parts survive interrupted downloads")
     args = parser.parse_args()
     manifest = read_manifest(args.manifest)
-    archive = args.archive if args.archive is not None else download_archive(manifest, ROOT / ".cache" / "releases")
+    archive = args.archive if args.archive is not None else download_archive(manifest, args.cache)
     result = restore_archive(archive, manifest, args.destination)
     result["declared_publication_status"] = manifest["publication_status"]
     print(json.dumps(result, indent=2))

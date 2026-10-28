@@ -186,6 +186,93 @@ class ReleaseBundleTests(unittest.TestCase):
             self.assertEqual(cached, second)
             self.assertEqual(hashlib.sha256(cached.read_bytes()).hexdigest(), manifest["archive"]["sha256"])
 
+    def test_split_download_resumes_verified_parts_after_interruption(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            archive, original = fixture(root / "source")
+            manifest = package.split_release(archive, original, part_bytes=1024)
+            self.assertIsNone(manifest["archive"]["url"])
+            self.assertEqual(manifest["archive"]["sha256"], original["archive"]["sha256"])
+            self.assertEqual(package.split_release(archive, original, part_bytes=1024), manifest)
+            specs = manifest["archive"]["parts"]
+            payloads = {p["url"]: (archive.parent / p["filename"]).read_bytes() for p in specs}
+            class Response(io.BytesIO):
+                def __init__(self, url):
+                    super().__init__(payloads[url])
+                    self.url = url
+                    self.headers = {"Content-Length": str(len(payloads[url]))}
+                def geturl(self):
+                    return self.url
+            class Opener:
+                def __init__(self):
+                    self.calls = []
+                    self.fail_once = True
+                def open(self, request, timeout):
+                    self.calls.append(request.full_url)
+                    if request.full_url == specs[1]["url"] and self.fail_once:
+                        self.fail_once = False
+                        raise TimeoutError("Synthetic interrupted transfer")
+                    return Response(request.full_url)
+            opener = Opener()
+            with patch.object(fetch.urllib.request, "build_opener", return_value=opener):
+                with self.assertRaises(TimeoutError):
+                    fetch.download_archive(manifest, root / "cache")
+                self.assertEqual(len(list((root / "cache").glob("*.partial"))), 0)
+                cached = fetch.download_archive(manifest, root / "cache")
+                self.assertEqual(fetch.restore_archive(cached, manifest, root / "restored")["restored"], 13)
+                self.assertEqual(fetch.download_archive(manifest, root / "cache"), cached)
+            self.assertEqual(opener.calls.count(specs[0]["url"]), 1)
+            self.assertEqual(opener.calls.count(specs[1]["url"]), 2)
+            self.assertEqual(cached.read_bytes(), archive.read_bytes())
+
+    def test_part_manifest_reordering_host_size_and_hash_are_rejected(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            archive, original = fixture(root / "source")
+            manifest = package.split_release(archive, original, part_bytes=1024)
+            mutations = []
+            wrong = deepcopy(manifest)
+            wrong["archive"]["parts"].reverse()
+            mutations.append(wrong)
+            for key, value in (("url", "https://example.com/part"), ("bytes", 0), ("sha256", "bad")):
+                wrong = deepcopy(manifest)
+                wrong["archive"]["parts"][0][key] = value
+                mutations.append(wrong)
+            wrong = deepcopy(manifest)
+            wrong["archive"]["parts"] = []
+            mutations.append(wrong)
+            wrong = deepcopy(manifest)
+            wrong["archive"]["parts"][0]["bytes"] -= 1
+            mutations.append(wrong)
+            for wrong in mutations:
+                with self.subTest(manifest=wrong["archive"]), self.assertRaises(ValueError):
+                    fetch.validate_manifest(wrong)
+
+    def test_split_refuses_changed_parts_and_bad_assembled_archive(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            archive, original = fixture(root / "source")
+            manifest = package.split_release(archive, original, part_bytes=1024)
+            cache = root / "cache"
+            cache.mkdir()
+            for part in manifest["archive"]["parts"]:
+                (cache / (part["sha256"] + ".part")).write_bytes((archive.parent / part["filename"]).read_bytes())
+            wrong = deepcopy(manifest)
+            wrong["archive"]["sha256"] = "0" * 64
+            with patch.object(fetch.urllib.request, "build_opener") as network:
+                with self.assertRaisesRegex(ValueError, "Assembled archive"):
+                    fetch.download_archive(wrong, cache)
+                network.assert_not_called()
+            self.assertEqual(list(cache.glob("*.zip")), [])
+            self.assertEqual(list(cache.glob("*.partial")), [])
+            part = manifest["archive"]["parts"][0]
+            (archive.parent / part["filename"]).write_bytes(b"KEEP USER FILE")
+            with self.assertRaises(FileExistsError):
+                package.split_release(archive, original, part_bytes=1024)
+            (cache / (part["sha256"] + ".part")).write_bytes(b"TAMPERED CACHE")
+            with self.assertRaisesRegex(ValueError, "Conflicting cached"):
+                fetch.download_archive(manifest, cache)
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -58,6 +58,8 @@ flowchart LR
 建议 Python 3.12；支持 Python 3.10+。从仓库源码以 editable 模式安装：
 
 ```bash
+git clone https://github.com/1766421040-ux/deltaweave.git
+cd deltaweave
 python3.12 -m venv .venv
 source .venv/bin/activate
 python -m pip install -e '.[test]'
@@ -91,7 +93,7 @@ python -m deltaweave demo --output runs/demo-deepseek --mode coarse \
   --model .cache/deepseek-r1-distill-qwen-1.5b --adapter runs/behavior/adapter
 ```
 
-已训练 adapter 和确定性训练数据通过版本化 Release 附件提供，避免将底座或大型权重塞入源码历史。取得并逐文件校验后可直接使用 `artifacts/behavior`，无需重新训练：
+已训练 adapter 和确定性训练数据通过 [v0.1.0 Release](https://github.com/1766421040-ux/deltaweave/releases/tag/v0.1.0) 的 9 个分片附件提供。下载脚本自动合并，校验各分片、完整 ZIP 和全部 13 个文件；中断后重跑会复用已验证分片。取得后可直接使用 `artifacts/behavior`，无需重新训练；底座仍需按上节单独下载：
 
 ```bash
 python scripts/fetch_release.py

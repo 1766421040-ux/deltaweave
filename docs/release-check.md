@@ -1,8 +1,8 @@
-# 本地发布验收记录
+# 发布验收记录
 
 2026-10-28，在 macOS 27.0.1 / arm64、CPython 3.12.14 上完成独立 CPU 验收。使用 `/private/tmp` 下新建的虚拟环境，`include-system-site-packages = false`；执行命令时清除 `PYTHONPATH` 并设置 `PYTHONNOUSERSITE=1`。没有借用项目旧环境或相邻项目的测试依赖。
 
-最初独立环境验收通过 **105 个测试、57 个子测试；5 个可选模型测试跳过**。增加引用合同和发布包校验后，又把将发布的源码（排除所有 Git 忽略文件）复制到新临时目录，使用现有 CPU 测试环境完成 **133 passed、5 skipped、66 subtests passed**。后一次是干净源码检查，不冒称另建了全新环境。本记录验证 CPU 框架与规则链路，不替代模型实验，也不表示 GitHub Actions 已运行。
+最初独立环境验收通过 **105 个测试、57 个子测试；5 个可选模型测试跳过**。增加引用合同和发布包校验后，又把将发布的源码（排除所有 Git 忽略文件）复制到新临时目录，使用现有 CPU 测试环境完成 **133 passed、5 skipped、66 subtests passed**。后一次是干净源码检查，不冒称另建了全新环境。随后增加分片传输与中断恢复测试，当前源码本机全量测试为 **136 passed、5 skipped、72 subtests passed**。CPU 框架验收不替代模型实验；远端 CI 收据单列于下。
 
 ## 安装与命令
 
@@ -26,6 +26,7 @@ python scripts/benchmark_domain.py --output /tmp/deltaweave-domain-new.json
 | --- | --- |
 | 初次独立环境 `python -m pytest -q` | 105 passed、5 skipped、57 subtests passed |
 | 最终待发布源码副本 `python -m pytest -q` | 133 passed、5 skipped、66 subtests passed；无底座、权重、训练 JSONL 或旧运行目录 |
+| 分片分发改动后本机全量 `python -m pytest -q` | 136 passed、5 skipped、72 subtests passed；使用现有 CPU 虚拟环境 |
 | CI 同款 SQLite demo，`adaptive` | 6 个状态全部完成，最终不完整目录正确拒答 |
 | CI 同款域基准 | 74 条链、157 个状态；4 个安全模式均与 oracle 一致 |
 | 已安装的 `deltaweave --help` | 正常列出 `demo` / `resolve` |
@@ -78,3 +79,15 @@ python scripts/benchmark_domain.py --output /tmp/deltaweave-domain-new.json
 本次构建成功的 wheel 包含 Python 模块，却不包含 `data/public/pypi-catalog.json` 或仓库根目录的 `scripts/`。因此当前受支持的复现入口是 **保留完整仓库的源码 checkout + editable 安装**；不能把该 wheel 当成自带数据和训练工具的独立分发包。没有测试从 sdist 或独立 wheel 完成全部演示，也没有发布 PyPI 包。
 
 本页 CPU 验收步骤未运行模型或调用 GPU。整个项目另已实际完成本机训练/评测；其行为与成本必须读取独立模型收据，不能从 CPU 测试通过推断。GitHub 发布结果以仓库与 Release 的实际回读核验为准。
+
+## GitHub 源码与远端 CI
+
+源码已发布到 [1766421040-ux/deltaweave](https://github.com/1766421040-ux/deltaweave)，实验发布提交为 `e5877dd13ef655fece6faa73d40bd0d6b00f477e`。179 个文件逐一核对 Git blob 摘要，远端树与本地发布索引均为 `18ecc3333d1cda17370b427124b547d45ef75924`；随后实际 fetch 回读一致。
+
+[GitHub Actions 40638152693](https://github.com/1766421040-ux/deltaweave/actions/runs/40638152693) 已完成，Ubuntu 的 Python 3.10 与 3.12 两个 job 均为 success。它们执行 CPU 测试、SQLite demo 和独立领域基准，不下载或运行模型。模型运行证据来自本机单独保存的收据。
+
+## 权重与训练数据分发
+
+完整 ZIP 为 34,295,413 字节，SHA-256 为 `b9078114f7df68acd8edc36022f3c51f75bbf0a0fb1eaa683daf3600098d86fb`。首次整包上传被服务端中断，因此改为 9 个最大 4 MiB 的分片；拆分没有改变原始 ZIP、两个 adapter 或任何训练数据字节。仓库内 [release manifest](../artifacts/release.json) 绑定分片顺序、长度、摘要与 13 个文件的摘要。
+
+`fetch_release.py` 只访问固定 GitHub Release URL，逐片校验并缓存，合并后再次核对完整 ZIP，随后核对成员白名单与解压摘要；既有目标文件不相同则拒绝覆盖。11 个分发测试包含模拟网络中断、已完成分片复用、错误顺序/URL/大小、分片损坏、合并摘要不一致和解压路径攻击。公开下载的实际验收状态以 manifest 的 `publication_status` 和后续验证收据为准。
